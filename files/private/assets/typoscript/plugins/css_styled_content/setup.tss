@@ -1,0 +1,86 @@
+/* Custom rewride of css_styled_content
+*/
+
+# ******************
+# CType: mailform
+# ******************
+tt_content.mailform.20 {
+	layout = <div class="row">###LABEL### ###FIELD###</div>
+	labelWrap.wrap = |
+	commentWrap.wrap = |
+	radioWrap.wrap = |<br />
+	radioWrap.accessibilityWrap = <fieldset###RADIO_FIELD_ID###><legend>###RADIO_GROUP_LABEL###</legend>|</fieldset>
+	REQ = 1
+	REQ.labelWrap.wrap = |
+	COMMENT.layout = <div class="csc-mailform-label">###LABEL###</div>
+	RADIO.layout = <div class="csc-mailform-field">###LABEL### <span class="csc-mailform-radio">###FIELD###</span></div>
+	LABEL.layout = <div class="csc-mailform-field">###LABEL### <span class="csc-mailform-label">###FIELD###</span></div>
+	goodMess = {$styles.content.mailform.goodMess}
+	badMess = {$styles.content.mailform.badMess}
+	redirect.field = pages
+	redirect.listNum = 0
+	recipient.field = subheader
+	data.field = bodytext
+	locationData = 1
+
+	params.radio = class="csc-mailform-radio"
+	params.check = class="csc-mailform-check"
+	params.submit = class="csc-mailform-submit"
+
+	stdWrap.wrap = |
+}
+
+
+# ****************
+# CType: menu
+# ****************
+tt_content.menu {
+	20 {
+		# "Menu of these pages"
+		default {
+			1 {
+				NO {
+					ATagTitle.field >
+                    stdWrap.cObject = COA
+                    stdWrap.cObject {
+                      10 = TEXT
+                      10.field = subtitle // title
+                    }
+				}
+			}
+		}
+
+        # "Menu of subpages to these pages"
+        1 {
+			1 {
+				NO {
+				    ATagTitle < tt_content.menu.20.default.1.NO.ATagTitle
+                    stdWrap {
+                        cObject < tt_content.menu.20.default.1.NO.stdWrap.cObject
+                    }
+				}
+			}
+        }
+    }
+}
+
+
+# ****************
+# CType: div
+# temp.element_layout -> ce_layout/setup.tss
+# ****************
+tt_content.div >
+tt_content.div = COA
+tt_content.div {
+    stdWrap.noTrimWrap = |<hr |>|
+
+    10 = COA
+    10 {
+        if.isTrue.field = layout
+        wrap = class="|"
+
+        10 = TEXT
+        10 < temp.element_layout
+    }
+
+}

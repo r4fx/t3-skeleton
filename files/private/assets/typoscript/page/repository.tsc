@@ -1,0 +1,36 @@
+#===================================================
+# PATHS
+#===================================================
+
+path {
+    html = files/private/assets/html
+    css = files/private/assets/styles/css
+    js = files/private/assets/js
+    images = files/private/assets/images
+}
+
+#===================================================
+# CSS
+#===================================================
+css{
+    mate = {$path.css}/mate.css
+    popup = {$path.js}/vendors/magnific-popup/magnific-popup.css
+    swiper = {$path.js}/vendors/swiper/idangerous.swiper.css
+}
+
+#===================================================
+# JS libs
+#===================================================
+js{
+    jquery = {$path.js}/jquery-2.1.1.min.js
+    popup = {$path.js}/vendors/magnific-popup/jquery.magnific-popup.min.js
+    swiper = {$path.js}/vendors/swiper/idangerous.swiper.min.js
+    app = {$path.js}/app.js
+}
+
+#===================================================
+# JS config
+#===================================================
+js.config{
+
+}

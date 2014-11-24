@@ -1,0 +1,77 @@
+#============================================================
+# BASE SETTINGS
+#============================================================
+
+config {
+    admPanel = 0
+    debug = 0
+    absRefPrefix = /
+    //baseURL = {$baseURL}
+    tx_cooluri_enable = 1
+    redirectOldLinksToNew = 1
+    cache_period = 604800
+    spamProtectEmailAddresses = ascii
+    spamProtectEmailAddresses_atSubst = @
+    index_metatags = 0
+    prefixLocalAnchors = 0
+    doctype = html5
+    metaCharset = utf-8
+    renderCharset = utf-8
+
+    meaningfulTempFilePrefix = 100
+    lockFilePath = files/public/
+
+    pageTitleFirst = 1
+    pageTitleSeparator = -
+    pageTitleSeparator.noTrimWrap = | | |
+
+    #== Optymalizacja
+    disablePrefixComment = 1
+    inlineStyle2TempFile = 1
+    #removeDefaultCss = 1
+    compressCss = 1
+    concatenateCss = 1
+    removeDefaultJS = 0
+    compressJs = 1
+    concatenateJs = 1
+
+    #== Multidomain setup
+    typolinkCheckRootline = 1
+    typolinkEnableLinksAcrossDomains = 1
+
+    headerComment = {$config.headerComment}
+}
+
+#============================================================
+# LANG SETTINGS
+#============================================================
+config {
+	linkVars = L(int)
+	language = pl
+	sys_language_uid = 0
+	locale_all = pl_PL.UTF-8
+	htmlTag_langKey = pl
+	sys_language_overlay = hideNonTranslated
+	sys_language_mode = content_fallback
+	sys_language_softMergeIfNotBlank = tt_content:image
+	#sys_language_softExclude = tt_content:imageorient
+	htmlTag_setParams := appendString( lang="pl")
+	plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
+}
+
+#============================================================
+# DEVELOPER SETTINGS (uzyj w urlu: &debug=1)
+#============================================================
+[globalVar = GP:debug=1]
+#[globalVar = TSFE : beUserLogin > 0]
+    plugin.tx_minify.enable = 0
+    plugin.tx_tinysource.enable = 0
+
+    config {
+        no_cache = 1
+        compressCss = 0
+        concatenateCss = 0
+        removeDefaultJS = 0
+        compressJs = 0
+    }
+[global]

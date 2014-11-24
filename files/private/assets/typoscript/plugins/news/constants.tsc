@@ -1,0 +1,37 @@
+plugin.tx_news {
+
+    view {
+        templateRootPath = files/private/assets/html/exts/news/Templates/
+        partialRootPath = files/private/assets/html/exts/news/Partials/
+        layoutRootPath = files/private/assets/html/exts/news/Layouts/
+    }
+
+    settings {
+        cssFile =
+
+        list {
+            paginateFile = {$plugin.tx_news.view.templateRootPath}ViewHelpers/Widget/Paginate/Index.html
+        }
+
+        details {
+            detailPid = 4
+        }
+    }
+
+    opengraph {
+        site_name = Przyjazny Tarchomin
+        type = website
+        admins =
+        locality = pl_PL
+    }
+
+    rss.channel {
+        title = Przyjazny Tarchomin
+        description =
+        link = {$baseURL}
+        language = pl_PL
+        copyright =
+        category =
+        generator = TYPO3 EXT:news
+    }
+}

@@ -1,0 +1,70 @@
+#
+# PREDEFINED CONFIGURATION
+#
+
+#============================================================
+# INTERFACE AND DEFAULT ACTIONS
+#============================================================
+mod.web_list {
+	itemsLimitSingleTable = 50
+	itemsLimitPerTable = 10
+	hideTables = static_template, static_countries, static_country_zones, static_currencies, static_languages, static_territories, static_taxes, static_markets
+}
+
+#============================================================
+# OPTIONS
+#============================================================
+options {
+	showHistory = 1
+	clipboardNumberPads = 2
+
+    hideModules = help
+
+	pageTree {
+	    showPageIdWithTitle = 1
+	    showDomainNameWithTitle = 0
+        #backgroundColor.26 = #D0DFEB
+	}
+
+    # htmlArea RTE
+    #**********************************
+    uploadFieldsInTopOfEB = 1
+    createFoldersInEB = 1
+    defaultUploadFolder = 1:/public/uploads/graphics/
+    HTMLAreaPspellMode = bad-spellers
+    enablePersonalDicts = 1
+}
+
+setup {
+    default {
+	    edit_wideDocument = 1
+		enableFlashUploader = 1
+		resizeTextareas_Flexible = 0
+		resizeTextareas_MaxHeight = 500
+		edit_docModuleUpload = 1
+		titleLen = 150
+		thumbnailsByDefault = 1
+        rteWidth = 95%
+        rteHeight = 400
+        rteResize = 1
+	}
+}
+
+#============================================================
+# Directmail
+#============================================================
+tx_directmail {
+	hideSteps = cat
+	hideTabs = dmail
+	defaultTab = int
+}
+
+#============================================================
+# Admin panel
+#============================================================
+admPanel {
+    override {
+        tsdebug.forceTemplateParsing = 1
+        preview.showHiddenPages = 1
+    }
+}

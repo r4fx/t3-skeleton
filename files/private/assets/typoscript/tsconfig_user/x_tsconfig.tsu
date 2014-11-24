@@ -1,0 +1,9 @@
+# CUSTOM BE-USER AND BE-GROUP CONFIG
+
+options {
+    clearCache {
+        // "cooluri" need ext:cooluriclearcache
+        pages = 1
+        cooluri = 1
+    }
+}

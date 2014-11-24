@@ -1,0 +1,135 @@
+page = PAGE
+page {
+    typeNum = 0
+
+    #============================================================
+	# STYLES
+    #============================================================
+	includeCSS {
+        swiper = {$css.swiper}
+        mate = {$css.mate}
+
+        #tablet = {$css.tablet}
+  		#tablet.media = screen and (max-width: 768px)
+	}
+
+    #============================================================
+	# SCRIPTS IN HEAD
+    #============================================================
+	includeJSlibs {
+        jquery = {$js.jquery}
+        popup = {$js.popup}
+        swiper = {$js.swiper}
+        app = {$js.app}
+	}
+
+    #============================================================
+	# JS LIBS IN FOOTER
+    #============================================================
+	includeJSFooterlibs {
+
+    }
+
+
+    #============================================================
+	# HEADER DATA
+    #============================================================
+    headerData {
+
+        7 = TEXT
+        7.value (
+            {$headerData.touchIcon}
+        )
+
+        #============================================================
+        # GOOGLE ANALITICS
+        #============================================================
+
+        /*
+        1000 = TEXT
+        1000.value (
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-xxxxxxx-xx');
+          ga('send', 'pageview');
+        </script>
+        )
+        */
+
+    }
+}
+
+#============================================================
+# FB NEEDS
+#============================================================
+page.101 = TEXT
+page.101.value (
+    <div id="fb-root"></div>
+    <script>
+        (function(d){
+          var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+          js = d.createElement('script'); js.id = id; js.async = true;
+          js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=282194921932239&version=v2.0";
+          d.getElementsByTagName('head')[0].appendChild(js);
+        }(document));
+    </script>
+)
+
+
+# Tiny source
+plugin.tx_tinysource {
+    body {
+        stripTabs = 0
+        stripDoubleSpaces = 0
+    }
+}
+
+
+#============================================================
+# RTE DODATKOWY CONFIG
+#============================================================
+lib.parseFunc_RTE {
+    # Rozszerzamy liste dozwolonych tagow
+    allowTags := addToList(cite,code,iframe,object,param,embed,t3content)
+
+    # Nie chcemy wrapować nowych obiektów tagami p lub div
+    nonTypoTagStdWrap.encapsLines {
+        encapsTagList := addToList(cite, code, p, div, iframe, t3content)
+        remapTag.DIV >
+    }
+
+    # Nowe tagi
+    tags {
+        t3content = CONTENT
+        t3content {
+            table = tt_content
+            select {
+                pidInList = 12
+                where = uid=###CONTENT_ID###
+                markers {
+                    CONTENT_ID.current = 1
+                }
+            }
+
+            wrap = <div class="t3Tag">|</div>
+        }
+    }
+}
+
+# Pamiętamy o RTE dla tt_news
+# plugin.tt_news.displaySingle.content_stdWrap.parseFunc < lib.parseFunc_RTE
+
+
+#==============================
+# RTE FIXES
+#==============================
+
+# FIX STYLES FOR BLOCKQUOTE TAG
+lib.parseFunc_RTE.externalBlocks.blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
+
+# FIX TABLE CLASS FOR RTE
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list >

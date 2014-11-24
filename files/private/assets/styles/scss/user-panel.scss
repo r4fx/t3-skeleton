@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+// ============================================================
+// IMPORT SETTINGS & HELPER FUNCTIONS
+// ============================================================
+@import "settings";
+@import "toolbox";
+@import "mixins";
+@import "bootstrap-override";
+
+
+// ============================================================
+
+.full-bkg {
+  background: no-repeat center fixed;
+  background-size: cover;
+
+  &.bkg-starter {
+    background-image: url("../../images/bkg-start-1.jpg");
+  }
+}
+
+img{
+  max-width: 100%;
+}
+
+.centered{
+  @include centerer();
+}
+
+
+// ============================================================
+// BUTTONS
+// ============================================================
+.btn-social {
+  width: 365px;
+  color: #fff;
+
+  &.btn-social-fb {
+    background-color: #3D5B96;
+  }
+
+  &.btn-social-google {
+    background-color: #DC4C39;
+  }
+
+  &:hover{
+    color: #fff;
+  }
+
+  @include respondto(phone){
+    width: 100%;
+  }
+}
+
+// ============================================================
+// NAVIGATIONS
+// ============================================================
+
+nav {
+  a {
+    padding: 5px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      list-style-type: none;
+
+      &:first-child:before {
+        content: none;
+      }
+
+      &:before {
+        content: '';
+        border-left: 1px solid $color__base--first;
+        margin: 0 5px;
+        font-size: 70%;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// ============================================================
+// TABELS
+// ============================================================
+
+.cstm-table {
+  display: table;
+
+  .row {
+    display: table-row;
+    margin: inherit;
+
+    &.row-vertical-middle {
+      [class^="col-"],
+      [class*=" col-"]{
+        vertical-align: middle;
+      }
+    }
+  }
+
+  [class^="col-"],
+  [class*=" col-"]{
+    display: table-cell;
+    float: none;
+  }
+}
+
+// ============================================================
+// HEADER
+// ============================================================
+
+header {
+  background-color: $color__base--first;
+  height: 80px;
+  padding: 5px 0;
+  color: #fff;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1000;
+
+  .logotype {
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      display: block;
+    }
+  }
+
+  .page-header {
+    margin: 0;
+    font-family: $font__base--light;
+    @include font-size(18px);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    border: 0;
+
+    &:before {
+      content: '';
+      border-left: 1px solid #fff;
+      margin: 0 15px;
+    }
+  }
+
+  @include respondto(phone){
+    height: 70px;
+  }
+}
+
+// ============================================================
+// ASIDE
+// ============================================================
+
+aside {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  bottom: 0;
+  height: calc(100% - 80px); // body - header
+  @include font-size(12px);
+  @include clear-fix;
+
+  @include respondto(phone) {
+    height: calc(100% - 70px);
+  }
+
+  [class*=level] {
+    width: 360px;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 1px 0 1px rgba(0, 0, 0, 0.25);
+  }
+
+  [class*=level-1] {
+    z-index: 200;
+  }
+
+  [class*=level-2] {
+    z-index: 100;
+  }
+
+  .filters{
+    background-color: #fff;
+
+    > div{
+      height: 50px;
+      border-bottom: 1px solid #E2E2E2;
+    }
+  }
+
+  .places{
+    height: calc(100% - 100px); // aside - filters
+    overflow-y: scroll;
+
+    .article{
+      display: block;
+      border-bottom: 1px solid #E2E2E2;
+      text-decoration: none;
+      color: $text__color--first;
+      @include transition();
+
+      &:hover{
+        background-color: #E3E3E3;
+      }
+
+      figure{
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      .details{
+        padding: 10px;
+        min-height: 100px;
+        max-height: 100px;
+        overflow: hidden;
+
+        > div, li{
+          margin-bottom: 5px;
+        }
+
+        .menu{
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+
+        .price{
+          color: $color__base--first;
+          font-family: $font__base--bold;
+          @include font-size(14px, 16px);
+
+          &:after{
+            content: '';
+            border-right: 1px solid #C3C3C3;
+            font-size: 9px;
+            vertical-align: middle;
+            margin: 0 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .single{
+    overflow-y: scroll;
+
+    > div{
+      padding: 20px;
+    }
+  }
+}
+
+// ============================================================
+// MAIN
+// ============================================================
+
+.nav-page {
+  @include font-size(22px);
+  font-family: $font__base--light;
+  margin-bottom: $grid__rowGutter*2;
+
+  li:before {
+    margin: 0 50px;
+    border-width: 2px;
+  }
+
+  .act a {
+    text-decoration: none;
+    font-family: $font__base--medium;
+  }
+
+  @include respondto(phone) {
+    li{
+      display: block;
+
+      &:before{
+        content: none;
+      }
+    }
+
+    a{
+      display: block;
+      padding: 5px;
+    }
+  }
+}
+
+.form-box {
+  width: 430px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  @include respondto(phone) {
+    width: 100%;
+  }
+
+  form{
+    padding: $grid__colGutter;
+  }
+
+  .form-header{
+    background-color: $color__base--first;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    width: 102%;
+    padding: 0 15px;
+    position: relative;
+    left: -1%;
+    top: -3px;
+    @include font-size(20px, 60px);
+
+    @include respondto(phone) {
+      width: 100%;
+      left: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .input-group .form-control {
+    width: 98%;
+  }
+}
+
+.form-box-centerd{
+  @include centerer;
+}
+
+.map{
+
+}
+
+
+
+// ============================================================
+// FOOTER
+// ============================================================
+
+footer{
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .location{
+    background-color: $color__base--first;
+    color: $text__color--second;
+    padding: 5px 10px;
+    font-family: $font__base--light;
+    float: right;
+
+    @include respondto(mobile){
+      float: none;
+    }
+  }
+}

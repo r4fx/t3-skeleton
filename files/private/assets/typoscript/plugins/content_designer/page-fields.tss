@@ -1,0 +1,17 @@
+pages.tx_contentdesigner_flexform.settings {
+    #cObjectFlexFile = private/assets/typoscript/plugins/content_designer/page-fields.xml
+
+    tca = --div--;Settings,tx_contentdesigner_flexform
+
+    cObject.sDEF {
+        sheetTitle = Settings
+
+        el {
+            hidePageHeader {
+                label = Hide page header
+                config.type = check
+            }
+        }
+    }
+
+}

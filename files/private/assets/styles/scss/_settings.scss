@@ -1,0 +1,96 @@
+// SIZES
+// ============================================================
+$page__width--maxsize: 1170px;
+$page__width--minsize: 320px;
+
+$breakPoint__desktop: 1024px;
+$breakPoint__tablet: 768px;
+$breakPoint__phone: 719px;
+
+
+// FONTS
+// ============================================================
+// [i] --file should contain the names of the files in the specified --dir
+$font__base--dir: "../../fonts/roboto/";
+$font__base--file: Roboto-Regular, Roboto-Medium, Roboto-Bold, Roboto-Italic, Roboto-Light; // (1,2,3,4,x)
+$font__base--safeFamily: Arial;
+$font__base--generic: sans-serif;
+
+$font__base--simple: Arial, $font__base--generic;
+$font__base--regular: quote(nth($font__base--file, 1)), $font__base--safeFamily, $font__base--generic;
+$font__base--medium: quote(nth($font__base--file, 2)), $font__base--safeFamily, $font__base--generic;
+$font__base--bold: quote(nth($font__base--file, 3)), $font__base--safeFamily, $font__base--generic;
+$font__base--italic: quote(nth($font__base--file, 4)), $font__base--safeFamily, $font__base--generic;
+$font__base--light: quote(nth($font__base--file, 5)), $font__base--safeFamily, $font__base--generic;
+
+
+// COLORS BASE PALETTE
+// get your palette for quick start: https://color.adobe.com/pl/create/color-wheel/
+// ============================================================
+$color__base--first: #D6353B;
+$color__base--second: #fff;
+
+$color__message--alert: #ff3724;
+$color__message--warning: #ffb82d;
+$color__message--info: #249cff;
+$color__message--success: #0fce47;
+
+
+// TEXTS
+// ============================================================
+
+//+ sizes
+$text__size--xxl: 30px;
+$text__size--xl: 22px;
+$text__size--l: 18px;
+$text__size--m: 16px;
+$text__size--s: 12px;
+
+
+//+ colors
+$text__color--first: #000;
+$text__color--second: #fff;
+$text__color--third: #D6353B;
+$text__color--link: #D6353B;
+
+//+ lines
+$text__line--base: 20;
+
+
+// BLOCKS
+// ============================================================
+
+//+ colors
+$block__color--first: #D6353B;
+$block__color--second: #E3E3E3;
+$block__color--third: #F6F6F6;
+
+
+// BORDERS
+// ============================================================
+$border__size: 1px;
+$border__style: solid;
+$border__color--first: #E9E9E9;
+$border__color--second: #919191;
+$border__radius: 0;
+
+
+// MARGINS
+// ============================================================
+$margin--image: 15px;
+$margin--section: 50px;
+
+
+// GRID
+// ============================================================
+$grid__columns: 12;
+$grid__colGutter: 15px;
+$grid__rowGutter: 20px;
+$grid__documentGutter: 15px;
+
+
+// TRANSITIONS
+// ============================================================
+$trans__base--duration: 0.4s !default;
+$trans__base--timing: ease !default;
+$trans__base--delay: 0s !default;

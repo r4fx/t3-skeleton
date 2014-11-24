@@ -1,0 +1,60 @@
+#==================================================
+# USTAWIENIA DLA NEWS LISTY I DETAILS NA JEDNEJ STRONIE
+#==================================================
+
+temp.newsSettings = USER
+temp.newsSettings {
+    userFunc = tx_extbase_core_bootstrap->run
+    pluginName = Pi1
+    extensionName = News
+    controller = News
+    persistence =< plugin.tx_news.persistence
+    view =< plugin.tx_news.view
+
+    settings =< plugin.tx_news.settings
+    settings {
+        categoryConjunction = OR
+        startingpoint = 3
+        backPid = 14
+        #categories = 1
+        //limit = 30
+        //detailPid = 31
+        //overrideFlexformSettingsIfEmpty := addToList(detailPid)
+    }
+}
+
+#==================================================
+# LIST NEWS
+#==================================================
+
+temp.news_list < temp.newsSettings
+temp.news_list {
+    action = list
+    switchableControllerActions.News.1 = list
+
+    settings {
+        // list settings for list goes here
+    }
+}
+
+#==================================================
+# SINGLE NEWS
+#==================================================
+
+temp.news_detail < temp.newsSettings
+temp.news_detail {
+    action = detail
+    switchableControllerActions.News.1 = detail
+
+    settings {
+        // news settings for detail goes here
+    }
+}
+
+[globalVar = GP:tx_news_pi1|news > 0]
+    lib.news < temp.news_detail
+[else]
+    lib.news = COA
+    lib.news.wrap = <div class="box">|</div>
+    lib.news.10 < temp.news_list
+[end]

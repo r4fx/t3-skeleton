@@ -1,0 +1,148 @@
+// lib helpers ;)
+// ID news
+lib.newsUid = TEXT
+lib.newsUid.data = GP:tx_news_pi1|news
+
+// News settings
+plugin.tx_news {
+
+  settings {
+    cropMaxCharacters = 500
+    displayDummyIfNoMedia = 0
+    includeSubCategories = 0
+    dateField = datetime
+    //dateFormat = %B.%Y
+
+    overrideFlexformSettingsIfEmpty := addToList(startingpoint)
+    startingpoint = 3
+
+    link {
+      typesOpeningInNewWindow = 2
+      hrDate = 0
+      hrDate {
+        day = j
+        month = n
+        year = Y
+      }
+ 
+      skipControllerAndAction = 0
+    }
+
+    orderBy = datetime
+    orderDirection = desc
+    orderByRespectTopNews = 0
+    #orderByAllowed = sorting,author,uid,title,teaser,author,tstamp,crdate,datetime,categories.title
+
+    analytics {
+      social {
+          facebookLike = 1
+          facebookShare = 0
+          twitter = 1
+          googlePlus = 0
+      }
+    }
+
+    facebookLocale = pl_PL
+    googlePlusLocale = pl
+    disqusLocale = pl
+ 
+ 
+    # ----------------------------
+    #  List
+    # ----------------------------
+    list {
+ 
+      showMoreLink = 1
+ 
+      media {
+        image {
+          maxWidth =
+          maxHeight =
+          width = 311c
+          height = 311c
+        }
+ 
+        dummyImage = typo3conf/ext/news/Resources/Public/Images/dummy-preview-image.png
+      }
+ 
+      paginate {
+        templatePath = {$plugin.tx_news.settings.list.paginateFile}
+        itemsPerPage = 15
+        insertAbove = 0
+        insertBelow = 1
+        prevNextHeaderTags = 1
+        maximumNumberOfLinks = 3
+      }
+    }
+ 
+ 
+    # ----------------------------
+    #  Detail
+    # ----------------------------
+
+    defaultDetailPid = {$plugin.tx_news.settings.detail.detailPid}
+
+    detail {
+        errorHandling = pageNotFoundHandler
+        registerProperties = keywords, title
+        showSocialShareButtons = 1
+
+        media {
+            image {
+              lightbox = popup
+              maxWidth = 331
+              maxHeight = 250
+            }
+
+            video {
+              width = 640
+              height = 360
+            }
+        }
+    }
+ 
+    # ----------------------------
+    #  Search
+    # ----------------------------
+    search {
+      fields = teaser, title, bodytext
+    }
+ 
+ 
+    # ----------------------------
+    #  Common
+    # ----------------------------
+    relatedFiles {
+      download {
+        labelStdWrap {
+          cObject = TEXT
+        }
+      }
+    }
+ 
+    opengraph {
+      site_name = {$plugin.tx_news.opengraph.site_name}
+      type = {$plugin.tx_news.opengraph.type}
+      admins = {$plugin.tx_news.opengraph.admins}
+      email = {$plugin.tx_news.opengraph.email}
+      phone_number = {$plugin.tx_news.opengraph.phone_number}
+      fax_number = {$plugin.tx_news.opengraph.fax_number}
+      latitude = {$plugin.tx_news.opengraph.latitude}
+      longitude = {$plugin.tx_news.opengraph.longitude}
+      street-adress = {$plugin.tx_news.opengraph.street-adress}
+      locality = {$plugin.tx_news.opengraph.locality}
+      region = {$plugin.tx_news.opengraph.region}
+      postal-code = {$plugin.tx_news.opengraph.postal-code}
+      country-name = {$plugin.tx_news.opengraph.country-name}
+    }
+  }
+
+    # ----------------------------
+    # Modify the translation
+    # ----------------------------
+    _LOCAL_LANG {
+        pl {
+            more-link = czytaj dalej
+        }
+    }
+}

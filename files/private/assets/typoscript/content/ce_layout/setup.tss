@@ -1,0 +1,80 @@
+/*
+* EDYTUJ TEZ PLIK tsconfig.tsp
+* DOC REF: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
+*/
+
+#============================================================
+# CONTENT LAYOUT
+#============================================================
+temp.element_layout = CASE
+temp.element_layout {
+    key.field = layout
+
+    0 = TEXT
+    0.noTrimWrap = | | |
+
+    10 < .0
+    10.value = inline-center
+
+    11 < .0
+    11.value = inline-left
+
+    12 < .0
+    12.value = inline-right
+
+    13 < .0
+    13.value = mini
+}
+
+#============================================================
+# CONTENT FRAMES
+#============================================================
+tt_content.stdWrap.innerWrap.cObject {
+
+    # Not accesible objects: 1,5,6,10,11,12,20,21,66
+
+    66 >
+
+    #========== BOX
+    30 = TEXT
+    30.value = |
+
+    #========== [DEFAULT]
+    0 < .default
+    0.10.cObject.default.value = <div
+    0.20.10 = COA
+    0.20.10 {
+        10 = TEXT
+        10.value = box
+        20 = TEXT
+        20 < temp.element_layout
+    }
+    0.30.cObject.default.value = >|</div>
+
+
+    #========== BOX [TEXT SIZE 24]
+    31 < .default
+    31.10.cObject.default.value = <div
+    31.20.10 = COA
+    31.20.10 {
+        10 = TEXT
+        10.value = box text-size--24
+        20 = TEXT
+        20 < temp.element_layout
+    }
+    31.30.cObject.default.value = >|</div>
+
+
+
+    #========== COLOR BOX
+    40 < .default
+    40.10.cObject.default.value = <section
+    40.20.10 = COA
+    40.20.10 {
+        10 = TEXT
+        10.value = color-box color-box--green
+        20 = TEXT
+        20 < temp.element_layout
+    }
+    40.30.cObject.default.value = ><div class="box">|</div></section>
+}

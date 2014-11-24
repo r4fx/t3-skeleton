@@ -1,0 +1,79 @@
+protocol = http://
+[globalString = _SERVER|HTTPS=on]
+    protocol = https://
+[END]
+
+baseURL = http://przyjaznytarchomin.waw.pl/
+
+[globalString = ENV:HTTP_HOST=beta.t3go.pl]
+    baseURL = {$protocol}beta.t3go.pl/
+[END]
+
+#===================================================
+# FLUID SETTINGS
+#===================================================
+settings {
+    # cat = FLUID Settings/xxx/010; type=string; label= Show/hide page header: 1 - show (default), 0 - hide
+    showHeader = 1
+}
+
+#===================================================
+# META TAGS VALUES
+#===================================================
+meta {
+    description = Stowarzyszenie Przyjazny Tarchomin
+    keywords = Tarchomin, Nowodwory
+}
+
+#===================================================
+# PAGE CONFIG
+#===================================================
+config {
+	headerComment = ======= Created by frontside [frontside.in] ======= 2014 =======
+}
+
+
+#===================================================
+# USTAWIENIA CONTENTU
+#===================================================
+
+styles.content.links.extTarget =
+styles.content.imgtext {
+    maxW =
+    maxWInText =
+    linkWrap.width =
+    linkWrap.height =
+    linkWrap.lightboxEnabled = 1
+    linkWrap.lightboxCssClass = popup
+    linkWrap.lightboxRelAttribute = {field:uid}
+}
+
+#===================================================
+# HEADER DATA
+#===================================================
+headerData {
+  touchIcon (
+    <link rel="shortcut icon" href="{$path.images}/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="{$path.images}/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{$path.images}/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{$path.images}/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{$path.images}/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{$path.images}/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{$path.images}/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{$path.images}/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{$path.images}/favicons/apple-touch-icon-152x152.png">
+    <meta name="apple-mobile-web-app-title" content="Przyjazny Tarchomin">
+    <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileImage" content="{$path.images}/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{$path.images}/favicons/browserconfig.xml">
+    <meta name="application-name" content="Przyjazny Tarchomin">
+  )
+}
+
+#===== RSS - strona do RSSa
+xmlnewsfeed_id = 8

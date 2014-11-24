@@ -1,0 +1,62 @@
+#===================================================
+# MAIN NAVIGATION
+#===================================================
+lib.mainNav = HMENU
+lib.mainNav {
+    special = list
+    special.value = 14,10,6,5,16,15,4
+    wrap = <ul>|</ul>
+
+    1 = TMENU
+    1 {
+        wrap = |
+        NO {
+            allWrap = <li>|</li>
+        }
+
+        ACT = 1
+        ACT {
+            allWrap = <li class="act">|</li>
+        }
+    }
+}
+
+#===================================================
+# SUBPAGE NAVIGATION
+#===================================================
+lib.subNav = HMENU
+lib.subNav {
+    entryLevel = 1
+
+    1 = TMENU
+    1 {
+        wrap = <ul>|</ul>
+
+        NO {
+            allWrap = <li>|</li>
+        }
+
+        ACT = 1
+        ACT {
+            allWrap = <li class="act">|</li>
+        }
+    }
+}
+
+
+#===================================================
+# NAGLOWEK/TYTUL PODSTRONY
+#===================================================
+lib.header = TEXT
+lib.header.data = page:subtitle // page:title
+
+
+#===================================================
+# AUTOMATYCZNY ROK PRZY COPYRIGHT
+#===================================================
+lib.copyright = TEXT
+lib.copyright {
+    data = date:U
+    strftime = %Y
+    noTrimWrap = |
+}

@@ -1,0 +1,58 @@
+page.10 = FLUIDTEMPLATE
+page.10 {
+    format = html
+
+    // Template files with sections for content, dynamic changed based on BE layout
+    file {
+        stdWrap.cObject = CASE
+        stdWrap.cObject {
+            key.data = levelfield:-1, backend_layout_next_level, slide
+            key.override.field = backend_layout
+
+            default = TEXT
+            default.value = {$path.html}/templates/main.html
+
+            1 < .default
+
+            2 = TEXT
+            2.value = {$path.html}/templates/subpage.html
+        }
+    }
+
+    // Folder that contains skeleton Fluid layouts
+    layoutRootPath = {$path.html}/layouts/
+
+    // Folder that contains Fluid partials
+    partialRootPath = {$path.html}/partials/
+
+    variables {
+        // Dynamic FE layout change based on BE layout
+        layout = CASE
+        layout {
+            key.data = page:backend_layout // levelfield:-2, backend_layout_next_level, slide
+
+            default = TEXT
+            default.value = main
+
+            1 < .default
+
+            2 = TEXT
+            2.value = subpage
+        }
+
+        content-main < styles.content.get
+        content-main {
+            select.where = colPos = 0
+        }
+
+        content-aside < styles.content.get
+        content-aside {
+            select.where = colPos = 1
+            slide = -1
+        }
+    }
+
+    settings {
+        copyrightYearFrom = 2011
+    }
+}

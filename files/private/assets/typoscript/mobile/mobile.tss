@@ -1,0 +1,24 @@
+/*  Functions (user_isMobile, user_isTablet) have been brought by ext:px_mobiledetect
+*/
+
+#============================================================
+# MOBILE (phone and tablet)
+#============================================================
+[userFunc = user_isMobile]
+
+    # JS
+	page.includeJSFooterlibs {
+        mobile = {$js.mobile}
+	}
+
+	# DISABLE
+	lib.breadCrumbs >
+[global]
+
+
+#============================================================
+# TABLET
+#============================================================
+[userFunc = user_isTablet]
+    #some processing
+[global]

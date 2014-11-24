@@ -1,0 +1,4 @@
+<FilesMatch "\.(ts|tss|tsc|tsp|tsu)$">
+ order deny,allow 
+ deny from all 
+</FilesMatch>

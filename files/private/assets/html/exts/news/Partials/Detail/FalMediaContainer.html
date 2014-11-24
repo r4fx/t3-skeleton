@@ -1,0 +1,12 @@
+<f:if condition="{media}">
+    <f:for each="{media}" as="mediaElement">
+        <f:if condition="{mediaElement.originalResource.type} == 2">
+            <f:render partial="Detail/FalMediaImage" arguments="{mediaElement: mediaElement, settings:settings}"/>
+        </f:if>
+        <f:if condition="{mediaElement.originalResource.type} == 4">
+            <f:render partial="Detail/FalMediaVideo" arguments="{mediaElement: mediaElement, settings:settings}"/>
+        </f:if>
+    </f:for>
+</f:if>
+
+
