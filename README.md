@@ -1,6 +1,6 @@
 ##TYPO3 skeleton
 
-TYPO3 skeleton to startowy pakiet dla każdego nowego projektu stawianego na TYPO3.
+TYPO3 skeleton to startowy pakiet dla projektów budowanych na TYPO3.
 
 W skład skeletona wchodzą:
 
