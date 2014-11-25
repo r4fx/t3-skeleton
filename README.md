@@ -1,4 +1,5 @@
-##TYPO3 skeleton
+TYPO3 skeleton
+=====
 
 TYPO3 skeleton to startowy pakiet dla projektów budowanych na TYPO3.
 
@@ -13,7 +14,6 @@ W skład skeletona wchodzą:
 - [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
 - [x] prekonfigurowane ustawienia TypoScript dla RTE (rtehtmlarea)
 - [ ] ...
-
 
 
 Instalowanie
