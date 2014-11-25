@@ -23,7 +23,7 @@ Pliki TypoScript należy załączyć w BE wg poniższego:
 
 ### Ustawienia dla stron
 
-#### Page Setup
+** Page Setup **
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/page/" extensions="tss">
@@ -31,7 +31,7 @@ Pliki TypoScript należy załączyć w BE wg poniższego:
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/" extensions="tss">
 ```
 
-#### Page Constants
+** Page Constants **
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/page/" extensions="tsc">
@@ -40,7 +40,7 @@ Pliki TypoScript należy załączyć w BE wg poniższego:
 ```
 
 
-#### Page TSConfig
+** Page TSConfig **
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_page/" extensions="tsp">
@@ -50,7 +50,7 @@ Pliki TypoScript należy załączyć w BE wg poniższego:
 ### Ustawienia dla użytkowników
 
 
-#### User/User group TSConfig
+** User/User group TSConfig **
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_user/" extensions="tsu">
