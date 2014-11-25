@@ -17,12 +17,33 @@ W skład skeletona wchodzą:
 
 
 Instalowanie
+=====
+
+Nowe ustawienia systemowe
 -----
 
-Pliki TypoScript należy załączyć w BE wg poniższyxh przykładów:
+**Do ustawienia z poziomu modułu INSTALL TOOL**
+
+zmiana roboczego katalogu systemowego
+```javascript
+[BE][fileadminDir] = files/
+```
+
+zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE
+```javascript
+[BE][RTE_imageStorageDir] = files/public/uploads/
+```
+
+zmiana domyśnego katalogu systemowego dla plików statycznych
+```javascript
+[BE][staticFileEditPath] = files/static/
+```
 
 
-### Ustawienia dla stron
+Załączenie plików TypoScript
+-----
+
+Pliki TypoScript należy załączyć w BE wg poniższych przykładów:
 
 **Page Setup**
 
