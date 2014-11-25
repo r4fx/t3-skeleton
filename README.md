@@ -23,7 +23,7 @@ Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliś
 Nazwa `fileadmin` mogła koajrzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
 użytkownków. Adres url do ogólnie dostępnych plików na stronie www z nazwą `fileadmin` nie kojarzył się dobrze.
 
-Według nas nowo przyjęta nazwa *`files`* jest bardziej przyjazna dla użytkowników i wyszukiwarek.
+Według nas nowo przyjęta nazwa `files` jest bardziej przyjazna dla użytkowników i wyszukiwarek.
 Dzięki tej zmianie wszystkie linki do plików załączanych przez redaktorów TYPO3 będą miały
 bardziej przyjazną formę.
 
