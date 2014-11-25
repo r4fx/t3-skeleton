@@ -2,7 +2,7 @@
 
 TYPO3 skeleton to startowy pakiet dla każdego nowego projektu stawianego na TYPO3.
 
-W skład skeletona wchodzi:
+W skład skeletona wchodzą:
 
 - [x] struktura katalogów i pliki (HTML i TypoScript) na potrzeby FLUID TEMPLATES
 - [x] struktura katalogów i pliki na potrzeby Front endu (SCSS, JS, HTML)
