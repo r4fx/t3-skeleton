@@ -19,6 +19,16 @@ W skład skeletona wchodzą:
 Instalowanie
 =====
 
+Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
+Nazwa `fileadmin` mogła koajrzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
+użytkownków. Adres url do ogólnie dostępnych plików na stronie www z nazwą `fileadmin` nie kojarzył się dobrze.
+
+Według nas nowo przyjęta nazwa jest bardziej przyjazna dla użytkowników i wyszukiwarek.
+Dzięki tej zmianie wszystkie linki do plików załączanych przez redaktorów TYPO3 będą miały
+bardziej przyjazną formę.
+
+
+
 Nowe ustawienia systemowe
 -----
 
@@ -66,16 +76,12 @@ Załączenie plików TypoScript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/" extensions="tsc">
 ```
 
-
 **Page TSConfig**
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_page/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="FILE:files/private/assets/typoscript/plugins/news/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/news/" extensions="tsp">
 ```
-
-### Ustawienia dla użytkowników
-
 
 **User/User group TSConfig**
 
