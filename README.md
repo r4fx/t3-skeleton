@@ -43,7 +43,11 @@ zmiana domyśnego katalogu systemowego dla plików statycznych
 Załączenie plików TypoScript
 -----
 
-Pliki TypoScript należy załączyć w BE wg poniższych przykładów:
+> Pliki TS dołączane będą rekursywnie wg ustalonej konwencji rozszerzeń dla plików
+> **.tss** - TypoScript Setup
+> **.tsc** - TypoScript Constants
+> **.tsp** - Page TSConfig
+> **.tsu** - User TSConfig
 
 **Page Setup**
 
