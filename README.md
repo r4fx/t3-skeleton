@@ -44,10 +44,11 @@ Załączenie plików TypoScript
 -----
 
 > Pliki TS dołączane będą rekursywnie wg ustalonej konwencji rozszerzeń dla plików
-> **.tss** - TypoScript Setup
-> **.tsc** - TypoScript Constants
-> **.tsp** - Page TSConfig
-> **.tsu** - User TSConfig
+
+> - **.tss** - TypoScript Setup
+> - **.tsc** - TypoScript Constants
+> - **.tsp** - Page TSConfig
+> - **.tsu** - User TSConfig
 
 **Page Setup**
 
