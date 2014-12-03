@@ -8,7 +8,7 @@
 
     #*** News default Pid
     module {
-        # nie dziala obecnie ?
+        # include problems
         defaultPid.tx_news_domain_model_news = 4
         redirectToPageOnStart = 4
     }
