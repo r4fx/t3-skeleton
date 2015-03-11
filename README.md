@@ -64,6 +64,7 @@ Załączenie plików TypoScript
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/page/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/content/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/" extensions="tss">
 ```
@@ -80,7 +81,9 @@ Załączenie plików TypoScript
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_page/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/content/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/news/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/rtehtmlarea/" extensions="tsp">
 ```
 
 **User/User group TSConfig**
