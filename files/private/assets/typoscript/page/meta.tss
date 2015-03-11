@@ -64,18 +64,18 @@ page.headerData {
 
         40 = TEXT
         40 {
-            value = <meta property="fb:page_id" content="1512393058989481" />
+            // Find your fb profile id -> http://findmyfacebookid.com/
+            value = <meta property="fb:page_id" content="148253535239842">
         }
 
         45 = TEXT
         45 {
-            value = <meta property="og:description" content="Stowarzyszenie Przyjazny Tarchomin">
+            value = <meta property="og:description" content="T3go">
         }
     }
 }
 
-// Single view news
-[globalVar = TSFE:id=3]
-    # Reset Open Graph
+// Disable default open graph for single view of news plugin (news has own OG tags)
+[globalVar = GP:tx_news_pi1|news > 0]
     page.headerData.301 >
 [end]
