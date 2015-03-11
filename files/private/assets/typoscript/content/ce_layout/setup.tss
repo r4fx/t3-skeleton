@@ -78,3 +78,6 @@ tt_content.stdWrap.innerWrap.cObject {
     }
     40.30.cObject.default.value = ><div class="box">|</div></section>
 }
+
+# Usunięcie tagów typu <a id="c123"></a> dla wersji językowych
+tt_content.stdWrap.prepend >
