@@ -29,6 +29,3 @@ Thumbs.db
 bower_components
 node_modules
 .sass-cache
-
-# Project files
-todo.txt
