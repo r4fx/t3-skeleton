@@ -90,19 +90,19 @@ plugin.tx_tinysource {
 
 
 #============================================================
-# RTE DODATKOWY CONFIG
+# RTE ADDITIONAL CONFIG
 #============================================================
 lib.parseFunc_RTE {
-    # Rozszerzamy liste dozwolonych tagow
+    // Extend default list of allowed tags
     allowTags := addToList(cite,code,iframe,object,param,embed,t3content)
 
-    # Nie chcemy wrapować nowych obiektów tagami p lub div
+    // Do not wrap these tags
     nonTypoTagStdWrap.encapsLines {
-        encapsTagList := addToList(cite, code, p, div, iframe, t3content)
+        encapsTagList := addToList(cite,code,p,div,iframe,t3content)
         remapTag.DIV >
     }
 
-    # Nowe tagi
+    // New tags
     tags {
         t3content = CONTENT
         t3content {
@@ -120,13 +120,9 @@ lib.parseFunc_RTE {
     }
 }
 
-# Pamiętamy o RTE dla tt_news
-# plugin.tt_news.displaySingle.content_stdWrap.parseFunc < lib.parseFunc_RTE
-
-
-#==============================
+#============================================================
 # RTE FIXES
-#==============================
+#============================================================
 
 # FIX STYLES FOR BLOCKQUOTE TAG
 lib.parseFunc_RTE.externalBlocks.blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
