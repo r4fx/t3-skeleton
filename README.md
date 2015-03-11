@@ -21,7 +21,7 @@ Instalowanie
 =====
 
 Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
-Nazwa `fileadmin` mogła koajrzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
+Nazwa `fileadmin` mogła koajarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
 użytkownków. Adres url do ogólnie dostępnych plików na stronie www z nazwą `fileadmin` nie kojarzył się dobrze.
 
 Według nas nowo przyjęta nazwa `files` jest bardziej przyjazna dla użytkowników i wyszukiwarek.
