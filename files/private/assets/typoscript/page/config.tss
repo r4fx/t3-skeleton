@@ -6,7 +6,7 @@ config {
     admPanel = 0
     debug = 0
     absRefPrefix = /
-    //baseURL = {$baseURL}
+    #baseURL = {$baseURL} // You really don't have to use it
     tx_cooluri_enable = 1
     redirectOldLinksToNew = 1
     cache_period = 604800
@@ -25,7 +25,13 @@ config {
     pageTitleSeparator = -
     pageTitleSeparator.noTrimWrap = | | |
 
-    #== Optymalizacja
+    // Multidomain setup
+    typolinkCheckRootline = 1
+    typolinkEnableLinksAcrossDomains = 1
+
+    headerComment = {$config.headerComment}
+
+    // Performance settings
     disablePrefixComment = 1
     inlineStyle2TempFile = 1
     #removeDefaultCss = 1
@@ -35,16 +41,9 @@ config {
     compressJs = 1
     concatenateJs = 1
 
-    #== Multidomain setup
-    typolinkCheckRootline = 1
-    typolinkEnableLinksAcrossDomains = 1
-
-    headerComment = {$config.headerComment}
-
-    #== Cache-Control header
+    // Cache-Control header
     sendCacheHeaders = 1
     additionalHeaders = Cache-Control: max-age=3600
-
 }
 
 #============================================================
@@ -65,10 +64,9 @@ config {
 }
 
 #============================================================
-# DEVELOPER SETTINGS (uzyj w urlu: &debug=1)
+# DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 #============================================================
 [globalVar = GP:debug=1]
-#[globalVar = TSFE : beUserLogin > 0]
     plugin.tx_minify.enable = 0
     plugin.tx_tinysource.enable = 0
 
