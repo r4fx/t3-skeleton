@@ -15,6 +15,7 @@ W skład skeletona wchodzą:
 - [x] prekonfigurowane ustawienia TypoScript dla RTE (rtehtmlarea)
 - [ ] ...
 
+** Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.X wzwyż **
 
 Instalowanie
 =====
