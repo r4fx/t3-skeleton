@@ -1,18 +1,28 @@
 User-Agent: *
+
+#---------------------------------------------------------
+# Allow
+#---------------------------------------------------------
+
 Allow: /
+Allow: /sitemap.xml
+Allow: /typo3temp/compressor/
+
+#---------------------------------------------------------
+# Disallow
+#---------------------------------------------------------
+
+Disallow: /*?id=*
 
 Disallow: /files/private/
 Disallow: /files/_processed_/
 Disallow: /files/_temp_/
 
-Disallow: /xview/
 Disallow: /typo3/
-Disallow: /t3lib/
-Disallow: /typo3conf/
 Disallow: /typo3_src/
+Disallow: /typo3conf/
 Disallow: /typo3temp/
-Disallow: /cgi-bin/
-Disallow: /*?id=*
 
-# Sitemap
-#Allow: /sitemap.xml
+Disallow: /cgi-bin/
+Disallow: /xhprof/
+Disallow: /xview/
