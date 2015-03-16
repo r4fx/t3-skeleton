@@ -406,13 +406,10 @@ FileETag None
 # ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
-	RewriteCond %{REQUEST_URI} ^/naglowek-strony-obslugiwany-przez-checkboxa [NC]
-	RewriteRule .* /naglowki-obslugiwane-przez-checkboxy/ [L,R=301]
-
 	RewriteCond %{REQUEST_URI} ^/anatomia-htmlarea-rte-wstaeep/ [NC]
 	RewriteRule .* /anatomia-htmlarea-rte-wstep/ [L,R=301]
 
-	# przekierowuje nawet z adresu bez slasha na koncu
+	# Ignore trailing slash
 	RewriteCond %{REQUEST_URI} ^/anatomia-htmlarea-rte-czesc-1-dozwolone-tagi(/|$) [NC]
 	RewriteRule .* /anatomia-htmlarea-rte-czesc-1-dozwolone-tagi-allowtags-iframe/ [L,R=301]
 </IfModule>

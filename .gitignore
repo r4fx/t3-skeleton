@@ -10,7 +10,9 @@
 # Ignore content of root directory, subdirectories and their contents.
 # Allow to process the direct contents of dir,
 # giving other patterns a chance to “un-exclude” some bit of the content (!dir/sub/)
+!/
 /*
+
 
 #---------------------------------------------------------
 # Don't ignore those files & paths
@@ -35,7 +37,7 @@
 
 #files/private/assets/styles/css
 .git/
-.htaccess
+/*.htaccess
 
 #/*.htaccess
 #/t3lib/
