@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cooluri>
+ 
+    <cache>
+        <usecache>1</usecache><!-- READONLY -->
+
+        <params2cool>
+            <!-- how often (in days) should be links updated 
+            (Typo3 cache needs to be cleared) -->
+            <checkforchangeevery>1</checkforchangeevery>
+        </params2cool>
+
+        <cool2params>
+            <!-- how many days should old links 
+            (those that are redirected to existing) should be kept active -->
+            <oldlinksvalidfor>90</oldlinksvalidfor>
+        </cool2params>
+    
+        <pagenotfound>
+            <status>HTTP/1.0 404 Not Found</status>
+            <behavior type="userfunc">tx_cooluri->pageNotFound</behavior>
+
+            <!-- possible @type values:
+            page - will show a file (loaded using file_get_contents)
+            redirect - will redirect to a certaing URL
+            message - will output a message
+            userfunc - user function is called, there's a default implementation of standard TYPO3 404 handling
+            <behavior type="userfunc">tx_cooluri->pageNotFound</behavior>
+            -->
+        </pagenotfound>
+    </cache>
+
+
+    <!-- ================================================================= -->
+
+
+    <!-- bind a domain with a language
+    @key - language id - L parameter value
+    value - domain name
+    -->
+    <!--
+    <domainlanguages>
+        <domain lang="0">www.example.com</domain>
+        <domain lang="1">www.example.pl</domain>
+        <domain lang="2">www.example.de</domain>
+    </domainlanguages>
+    -->
+
+
+    <!-- ================================================================= -->
+
+
+    <!-- Default value when a parameter is not set (tests "isset", not "empty") -->
+    <!-- 
+    <defaults>
+        <value key="L">pl</value>
+    </defaults> 
+    -->
+
+
+    <!-- ================================================================= -->
+
+
+    <!-- this will put L param to the first position, for more magic see manual -->
+    <paramorder>
+        <param>L</param>
+    </paramorder>
+
+
+    <!-- ================================================================= -->
+
+
+    <valuemaps>
+        <valuemap>
+            <parameter>L</parameter>
+            <!-- L is empty of 0, result is empty -->
+            <value key="">0</value>
+            <!-- L is 1, result is "en" -->
+            <value key="en">1</value>
+            <value key="de">2</value>
+        </valuemap>
+
+        <!-- ke_search -->
+        <valuemap>
+            <parameter>tx_kesearch_pi1[resetFilters]</parameter>
+            <value key="">0</value>
+            <value key="filter">1</value>
+        </valuemap>
+        <!-- END: ke_search -->
+
+    </valuemaps>
+
+
+    <!-- ================================================================= -->
+
+
+    <pagepath>
+        <!-- first non-empty value will be used -->
+        <title>tx_realurl_pathsegment, alias, nav_title, title</title>
+
+        <saveto>id</saveto><!-- READONLY -->
+        <default>0</default><!-- READONLY -->
+
+        <userfunc>tx_cooluri->getPageTitle</userfunc>
+        <t3conv>1</t3conv>
+    </pagepath>
+ 
+
+    <!-- ================================================================= -->
+
+
+    <uriparts>
+
+        <!-- nn_address -->
+        <part>
+            <parameter>tx_nnaddress_list[person]</parameter>
+            <lookindb>
+                <to>SELECT CONCAT( first_name, '-', last_name ) FROM tx_nnaddress_domain_model_person WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <translatetoif>
+                    <match>^[0-9]+$</match>
+                </translatetoif>
+                <t3conv>1</t3conv>
+            </lookindb>
+        </part>
+        <!-- END: nn_address -->
+
+        <!-- news -->
+        <part>
+            <parameter>tx_news_pi1[news]</parameter>
+            <lookindb>
+                <to>SELECT CONCAT( title , '-', uid ) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <translatetoif>
+                    <match>^[0-9]+$</match>
+                </translatetoif>
+                <t3conv>1</t3conv>
+            </lookindb>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][categories]</parameter>
+            <lookindb>
+                <to>SELECT title FROM sys_category WHERE uid=$1</to>
+                <t3conv>1</t3conv>
+            </lookindb>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][tags]</parameter>
+            <lookindb>
+                <to>SELECT title FROM tx_news_domain_model_tag WHERE uid=$1</to>
+                <t3conv>1</t3conv>
+            </lookindb>
+        </part>
+        <!-- END: news -->
+
+
+        <!-- COMMON PATTERNS -->
+
+        <!-- this will just add this parameter value to URL -->
+        <part>
+            <parameter>paramA</parameter>
+        </part>
+    </uriparts>
+
+
+    <!-- ================================================================= -->
+
+
+    <predefinedparts>
+        <part>
+            <parameter>cHash</parameter>
+        </part>
+
+        <part>
+            <parameter>no_cache</parameter>
+        </part>
+
+        <!-- news -->
+        <part>
+            <parameter>tx_news_pi1[controller]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[action]</parameter>
+        </part>
+
+        <part key="page/(.*)" regexp="1">
+            <parameter>tx_news_pi1[@widget_0][currentPage]</parameter>
+        </part>
+        <!-- END: news -->
+
+        <!-- ke_search -->
+        <part>
+            <parameter>tx_kesearch_pi1[page]</parameter>
+        </part>
+
+        <part key="sortfield-(.*)" regexp="1">
+            <parameter>tx_kesearch_pi1[sortByField]</parameter>
+        </part>
+
+        <part key="sortdir-(.*)" regexp="1">
+            <parameter>tx_kesearch_pi1[sortByDir]</parameter>
+        </part>
+
+        <part key="q=(.*)" regexp="1">
+            <parameter>tx_kesearch_pi1[sword]</parameter>
+        </part>
+
+        <!-- END: ke_search -->
+
+
+
+        <!-- COMMON PATTERNS -->
+
+        <!-- parts defined this way will be removed from URL -->
+        <part>
+            <parameter>paramC</parameter>
+        </part>
+
+        <!-- this will prefix a value with "prefix-". Cannot be localized. -->
+        <part key="prefix-(.*)" regexp="1">
+            <parameter>paramD</parameter>
+        </part>
+
+        <!-- if parameter matches value, key will be added to URL
+             with mutliple values, use valuemaps
+        -->
+        <part key="thisWillAppearInUrl">
+            <parameter>paramE</parameter>
+            <value>ifParamEMatcesThisValue</value>
+        </part>
+    </predefinedparts>
+
+
+    <!-- ================================================================= -->
+
+
+    <!-- READONLY START -->
+    <cooluris>1</cooluris>
+  
+</cooluri>

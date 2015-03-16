@@ -1,31 +1,97 @@
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.log
-*.orig
-*.rej
-*.swo
-*.swp
-*.vi
-*.zip
-*~
+##########################################################
+# TYPO3 Skeleton ignore
+# PRO TIP: http://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder/5534865#5534865
+##########################################################
 
-# OS or Editor folders
-._*
-.cache
+#---------------------------------------------------------
+# Ignore all at start
+#---------------------------------------------------------
+
+# Ignore content of root directory, subdirectories and their contents.
+# Allow to process the direct contents of dir,
+# giving other patterns a chance to “un-exclude” some bit of the content (!dir/sub/)
+/*
+
+#---------------------------------------------------------
+# Don't ignore those files & paths
+#---------------------------------------------------------
+
+!/typo3conf/CoolUriConf.xml
+!/typo3conf/AdditionalConfiguration.php
+
+!/files/private/
+!/xview/
+!.gitignore
+!README*
+
+# Custom per project, add new lines below:
+!/typo3conf/ext/linkhandler
+!/typo3conf/ext/evo_*
+!/typo3conf/ext/edge_*
+
+#---------------------------------------------------------
+# Make sure to ignore those paths & files
+#---------------------------------------------------------
+
+#files/private/assets/styles/css
+.git/
+.htaccess
+
+#/*.htaccess
+#/t3lib/
+#/typo3/
+#/typo3_src/
+#/typo3conf/
+#/typo3temp/
+#/uploads/
+
+
+#---------------------------------------------------------
+# IDE Data Files
+#---------------------------------------------------------
+.idea/
+
+
+#---------------------------------------------------------
+# OS generated files
+#---------------------------------------------------------
+
 .DS_Store
-.idea
-.git
-.project
-.settings
-.tmproj
-*.esproj
-*.sublime-project
-*.sublime-workspace
-nbproject
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Folders to ignore
-bower_components
-node_modules
-.sass-cache
+#---------------------------------------------------------
+# Packages
+#---------------------------------------------------------
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#---------------------------------------------------------
+# Logs and databases
+#---------------------------------------------------------
+
+*.log
+*.sql
+*.sqlite
+
+#---------------------------------------------------------
+# Compiled source
+#---------------------------------------------------------
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
