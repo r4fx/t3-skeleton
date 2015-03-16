@@ -10,9 +10,7 @@
 # Ignore content of root directory, subdirectories and their contents.
 # Allow to process the direct contents of dir,
 # giving other patterns a chance to “un-exclude” some bit of the content (!dir/sub/)
-!/
 /*
-
 
 #---------------------------------------------------------
 # Don't ignore those files & paths
@@ -20,11 +18,10 @@
 
 !/typo3conf/CoolUriConf.xml
 !/typo3conf/AdditionalConfiguration.php
-
 !/files/private/
 !/xview/
 !.gitignore
-!README*
+!README.md
 
 # Custom per project, add new lines below:
 !/typo3conf/ext/linkhandler
@@ -35,23 +32,13 @@
 # Make sure to ignore those paths & files
 #---------------------------------------------------------
 
-#files/private/assets/styles/css
-.git/
-/*.htaccess
-
-#/*.htaccess
-#/t3lib/
-#/typo3/
-#/typo3_src/
-#/typo3conf/
-#/typo3temp/
-#/uploads/
+.git/*
 
 
 #---------------------------------------------------------
 # IDE Data Files
 #---------------------------------------------------------
-.idea/
+.idea/*
 
 
 #---------------------------------------------------------
