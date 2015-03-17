@@ -4,23 +4,6 @@
 <!-- Main section for content -->
 <f:section name="content">
     <section>
-        <f:if condition="{data.uid} > 1">
-            <f:if condition="{data.hidePageHeader} != 1">
-                <header>
-                    <h1>
-                        <f:if condition="{data.subtitle}">
-                            <f:then>
-                                {data.subtitle}
-                            </f:then>
-                            <f:else>
-                                {data.title}
-                            </f:else>
-                        </f:if>
-                    </h1>
-                </header>
-            </f:if>
-        </f:if>
-
         <div>
             <f:format.raw>{content-main}</f:format.raw>
         </div>
