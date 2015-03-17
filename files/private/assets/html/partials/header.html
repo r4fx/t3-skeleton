@@ -1,20 +1,19 @@
-<div class="box">
+<div>
     <figure class="logo">
         <a href="/">
             <img src="/files/private/assets/images/logo.png">
         </a>
     </figure>
 
-    <span class="nav-trigger">&#9776;</span>
     <nav>
         <f:cObject typoscriptObjectPath="lib.mainNav"/>
     </nav>
 </div>
+
 <f:if condition="{data.uid} > 1">
     <hr>
 
-    <div class="box">
-
+    <div>
         <nav class="subNav">
             <f:cObject typoscriptObjectPath="lib.subNav"/>
         </nav>
