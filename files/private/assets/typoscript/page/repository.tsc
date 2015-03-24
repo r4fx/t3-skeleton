@@ -33,4 +33,15 @@ js{
 #===================================================
 js.config{
 
+    # Cookie box
+    #===================================================
+    cookieBox (
+        $.cookieBox({
+            privacyPolicy: true,
+            cookiesPageURL: '/polityka-plikow-cookies/',
+            textParagraph_1: '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach statystycznych.</p>',
+            textParagraph_2: '',
+            animation: true
+        });
+    )
 }

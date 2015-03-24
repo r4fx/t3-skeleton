@@ -18,16 +18,15 @@ page {
     #============================================================
 	includeJSlibs {
         jquery = {$js.jquery}
-        popup = {$js.popup}
-        swiper = {$js.swiper}
-        app = {$js.app}
 	}
 
     #============================================================
 	# JS LIBS IN FOOTER
     #============================================================
 	includeJSFooterlibs {
-
+        popup = {$js.popup}
+        swiper = {$js.swiper}
+        app = {$js.app}
     }
 
 
@@ -59,7 +58,20 @@ page {
         </script>
         )
         */
+    }
 
+    #============================================================
+    # FOOTER DATA
+    #============================================================
+    footerData.777 = TEXT
+    footerData.777 {
+        wrap = <script>$(document).ready(function () {|});</script>
+
+        value (
+            {$js.config.magnificPopup.ajax}
+            {$js.config.magnificPopup.image}
+            {$js.config.cookieBox}
+        )
     }
 }
 
