@@ -12,8 +12,6 @@ Allow: /typo3temp/compressor/
 # Disallow
 #---------------------------------------------------------
 
-Disallow: /*?id=*
-
 Disallow: /files/private/
 Disallow: /files/_processed_/
 Disallow: /files/_temp_/
@@ -26,3 +24,6 @@ Disallow: /typo3temp/
 Disallow: /cgi-bin/
 Disallow: /xhprof/
 Disallow: /xview/
+
+Disallow: *no_cache*
+Disallow: /*?id=*
