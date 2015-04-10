@@ -92,3 +92,14 @@ Załączenie plików TypoScript
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_user/" extensions="tsu">
 ```
+
+
+Wtyczki
+-----
+Przy pracy z szablonami FLUID nieocenionymi wtyczkami mogą okazać się:
+
+* Content Designer - http://typo3.org/extensions/repository/view/content_designer
+* VHS: Fluid ViewHelpers - http://typo3.org/extensions/repository/view/vhs
+
+W źródlach Skeletona znajduje się konfiguracja wtyczki Content Design na potrzeby ukrywania nagłówka podstrony.
+Po instalacji wtyczki i dołączeniu pliku `/plugins/content_designer/page-fields.tss` w edycji strony zostanie dodana nowa zakładka `Settings`.
