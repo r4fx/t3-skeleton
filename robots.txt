@@ -26,4 +26,5 @@ Disallow: /xhprof/
 Disallow: /xview/
 
 Disallow: *no_cache*
+Disallow: *debug*
 Disallow: /*?id=*
