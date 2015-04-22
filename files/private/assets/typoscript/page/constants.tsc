@@ -3,7 +3,8 @@ protocol = http://
     protocol = https://
 [END]
 
-baseURL = http://przyjaznytarchomin.waw.pl/
+# baseURL should be only used for specific cases
+baseURL = http://t3go.pl/
 
 [globalString = ENV:HTTP_HOST=beta.t3go.pl]
     baseURL = {$protocol}beta.t3go.pl/
@@ -21,15 +22,15 @@ settings {
 # META TAGS VALUES
 #===================================================
 meta {
-    description = Stowarzyszenie Przyjazny Tarchomin
-    keywords = Tarchomin, Nowodwory
+    description =
+    keywords =
 }
 
 #===================================================
 # PAGE CONFIG
 #===================================================
 config {
-	headerComment = ======= Created by frontside [frontside.in] ======= 2014 =======
+	headerComment = ======= Created by frontside [fside.pl] ======= 2015 =======
 }
 
 
@@ -62,7 +63,7 @@ headerData {
     <link rel="apple-touch-icon" sizes="120x120" href="{$path.images}/favicons/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon" sizes="76x76" href="{$path.images}/favicons/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="{$path.images}/favicons/apple-touch-icon-152x152.png">
-    <meta name="apple-mobile-web-app-title" content="Przyjazny Tarchomin">
+    <meta name="apple-mobile-web-app-title" content="T3go">
     <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-196x196.png" sizes="196x196">
     <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-160x160.png" sizes="160x160">
     <link rel="icon" type="image/png" href="{$path.images}/favicons/favicon-96x96.png" sizes="96x96">
@@ -71,7 +72,7 @@ headerData {
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="{$path.images}/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="{$path.images}/favicons/browserconfig.xml">
-    <meta name="application-name" content="Przyjazny Tarchomin">
+    <meta name="application-name" content="T3go">
   )
 }
 

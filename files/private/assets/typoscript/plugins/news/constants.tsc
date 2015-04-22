@@ -19,14 +19,14 @@ plugin.tx_news {
     }
 
     opengraph {
-        site_name = Przyjazny Tarchomin
+        site_name =
         type = website
         admins =
         locality = pl_PL
     }
 
     rss.channel {
-        title = Przyjazny Tarchomin
+        title =
         description =
         link = {$baseURL}
         language = pl_PL
