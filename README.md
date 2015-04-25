@@ -13,7 +13,7 @@ W skład skeletona wchodzą:
 - [x] prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
 - [x] prekonfigurowane ustawienia TypoScript dla RTE (rtehtmlarea)
-- [ ] ...
+- [x] i więcej wkrótce (do spisania)
 
 **Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.X wzwyż**
 
@@ -24,7 +24,7 @@ Wstęp
 -----
 
 Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
-Nazwa `fileadmin` mogła koajarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
+Nazwa `fileadmin` mogła kojarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
 użytkownków. Adres url do ogólnie dostępnych plików na stronie www z nazwą `fileadmin` nie kojarzył się dobrze.
 
 Według nas nowo przyjęta nazwa `files` jest bardziej przyjazna dla użytkowników i wyszukiwarek.
@@ -36,19 +36,22 @@ bardziej przyjazną formę.
 Nowe ustawienia systemowe
 -----
 
-**Do ustawienia z poziomu modułu INSTALL TOOL**
+> Do ustawienia z poziomu modułu `Install`
 
-zmiana roboczego katalogu systemowego
+* zmiana roboczego katalogu systemowego
+
 ```javascript
 [BE][fileadminDir] = files/
 ```
 
-zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE
+* zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE
+
 ```javascript
 [BE][RTE_imageStorageDir] = files/public/uploads/
 ```
 
-zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej wersji 7.x)
+* zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej wersji 7.x)
+
 ```javascript
 [BE][staticFileEditPath] = files/static/
 ```
@@ -63,34 +66,35 @@ Ustawienia magazynów plików
 > Wykonaj poniższe kroki w korzeniu strony (id=0)
 > Niewymienone pola pozostaw domyślnie
 
-1. Utwórz rekord `Filemount` z ustawieniami:
+Utwórz rekord `Filemount` z ustawieniami:
 
-* `**Name**: Files root`
-* `**Base path**: files/`
+* `Name: Files root`
+* `Base path: files/`
 * `Is writable?: []`
 
-2. Utwórz drugi rekord `Filemount` z ustawieniami:
+Utwórz drugi rekord `Filemount` z ustawieniami:
 
-> ID tego rekordu powiązane z konfiguracją htmlArea RTE, patrz `defaultUploadFolder`, domyślne id w konfiguracji to `2`
+> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie id=2).
 
-* `**Name**: Public`
-* `**Base path**: files/public//`
-* `Is default storage?: - [x]`
+* `Name: Public`
+* `Base path: files/public//`
+* `Is default storage?: [x]`
 
 
 **Filemount**
 
 > Wykonaj poniższe kroki w korzeniu strony (id=0)
+
 > Niewymienone pola pozostaw domyślnie
 
-1. Utwórz rekord `Filemount` z ustawieniami:
+Utwórz rekord `Filemount` z ustawieniami:
 
 * `Label: Files root`
 * `Storage: Files root`
 * `Folder: /`
 * `Read-only: [x]`
 
-2. Utwórz drugi rekord `Filemount` z ustawieniami:
+Utwórz drugi rekord `Filemount` z ustawieniami:
 
 * `Label: Public`
 * `Storage: Public`
