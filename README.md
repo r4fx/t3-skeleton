@@ -82,14 +82,14 @@ Ustawienia magazynów plików
 
 ### Filemount
 
-** Utwórz rekord `Filemount` z ustawieniami: **
+**Utwórz rekord `Filemount` z ustawieniami:**
 
 * `Label: Files root`
 * `Storage: Files root`
 * `Folder: /`
 * `Read-only: [x]`
 
-** Utwórz drugi rekord `Filemount` z ustawieniami: **
+**Utwórz drugi rekord `Filemount` z ustawieniami:**
 
 * `Label: Public`
 * `Storage: Public`
