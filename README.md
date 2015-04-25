@@ -53,6 +53,7 @@ zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej w
 
 Ustawienia magazynów plików
 -----
+todo: dodać zrzuty ekranu (Filelist, root)
 
 **File Storage**
 
