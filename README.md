@@ -63,7 +63,7 @@ Ustawienia magazynów plików
 > Poniższe ustawienia wykonaj w korzeniu strony (id=0).
 > Niewymienone pola pozostaw domyślnie.
 
-###File Storage
+### File Storage
 
 **Utwórz rekord `File Storage` z ustawieniami:**
 
@@ -71,7 +71,7 @@ Ustawienia magazynów plików
 * `Base path: files/`
 * `Is writable?: []`
 
-Utwórz drugi rekord `File Storage` z ustawieniami:
+**Utwórz drugi rekord `File Storage` z ustawieniami:**
 
 > ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie w konfiguracji id=2).
 
@@ -82,21 +82,21 @@ Utwórz drugi rekord `File Storage` z ustawieniami:
 
 ### Filemount
 
-Utwórz rekord `Filemount` z ustawieniami:
+** Utwórz rekord `Filemount` z ustawieniami: **
 
 * `Label: Files root`
 * `Storage: Files root`
 * `Folder: /`
 * `Read-only: [x]`
 
-Utwórz drugi rekord `Filemount` z ustawieniami:
+** Utwórz drugi rekord `Filemount` z ustawieniami: **
 
 * `Label: Public`
 * `Storage: Public`
 * `Folder: /`
 
 
-**Automatyczne generowanie brakujących plików i katalogów**
+### Automatyczne generowanie brakujących plików i katalogów
 
 Na koniec wejdź do modułu `Install` w zakładkę `Folder structure` i naciśnij button `Try to fix file and folder permissions`,
 teraz żółte ostrzeżenia powinny się skorygować.
