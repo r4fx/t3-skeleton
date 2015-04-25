@@ -17,8 +17,11 @@ W skład skeletona wchodzą:
 
 **Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.X wzwyż**
 
-Instalowanie
+Instalacja
 =====
+
+Wstęp
+-----
 
 Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
 Nazwa `fileadmin` mogła koajarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
@@ -53,45 +56,45 @@ zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej w
 
 Ustawienia magazynów plików
 -----
-todo: dodać zrzuty ekranu (Filelist, root)
+`todo: dodać zrzuty ekranu (Filelist, root)`
 
 **File Storage**
 
-Wykonaj poniższe kroki w korzeniu strony (id=0)
+> Wykonaj poniższe kroki w korzeniu strony (id=0)
+> Niewymienone pola pozostaw domyślnie
 
 1. Utwórz rekord `Filemount` z ustawieniami:
 
-Name: `Files root`
-Base path: `files/`
+* `**Name**: Files root`
+* `**Base path**: files/`
+* `Is writable?: []`
 
-Is writable?: `[]`
+2. Utwórz drugi rekord `Filemount` z ustawieniami:
 
+> ID tego rekordu powiązane z konfiguracją htmlArea RTE, patrz `defaultUploadFolder`, domyślne id w konfiguracji to `2`
 
-1. Zmień nazwę domyślnie utworzonego magazynu plików (File Storage) z `fileadmin` na `files`.
-2. Dodaj drugi rekord dedykowany dla plików publicznych o nazwie `Public`, ze ścieżką relatywną `files/public/`.
-3. Jeśli żaden rekord `File Storage` nie występuje utwórz:
-    a) pierwszy rekord o nazwie `Files root` ze ścieżką relatywną `files/`, w dostępności zaznacz wszystkie opcje.
-    b) drugi rekord o nazwie `Public`, ze ścieżką relatywną `files/public/`, w dostępności zaznacz wszystkie opcje,
-    ustaw też dla tego rekordu opcję `Is default storage`.
-    (id tego rekordu powiązane z konfiguracją htmlArea RTE, patrz `defaultUploadFolder`, domyślne id w konfiguracji to `2`).
+* `**Name**: Public`
+* `**Base path**: files/public//`
+* `Is default storage?: - [x]`
 
 
 **Filemount**
 
-Wykonaj poniższe kroki w korzeniu strony (id=0)
+> Wykonaj poniższe kroki w korzeniu strony (id=0)
+> Niewymienone pola pozostaw domyślnie
 
 1. Utwórz rekord `Filemount` z ustawieniami:
 
-Label: `Files root`
-Storage: `Files root`
-Folder: `/`
-Read-only: `[x]`
+* `Label: Files root`
+* `Storage: Files root`
+* `Folder: /`
+* `Read-only: [x]`
 
 2. Utwórz drugi rekord `Filemount` z ustawieniami:
 
-Label: `Public`
-Storage: `Public`
-Folder: `/`
+* `Label: Public`
+* `Storage: Public`
+* `Folder: /`
 
 
 **Automatyczne generowanie brakujących plików i katalogów**
