@@ -63,18 +63,18 @@ Ustawienia magazynów plików
 
 **File Storage**
 
-> Wykonaj poniższe kroki w korzeniu strony (id=0)
-> Niewymienone pola pozostaw domyślnie
+> Wykonaj poniższe kroki w korzeniu strony (id=0).
+> Niewymienone pola pozostaw domyślnie.
 
-Utwórz rekord `Filemount` z ustawieniami:
+Utwórz rekord `File Storage` z ustawieniami:
 
 * `Name: Files root`
 * `Base path: files/`
 * `Is writable?: []`
 
-Utwórz drugi rekord `Filemount` z ustawieniami:
+Utwórz drugi rekord `File Storage` z ustawieniami:
 
-> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie id=2).
+> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie w konfiguracji id=2).
 
 * `Name: Public`
 * `Base path: files/public//`
@@ -83,9 +83,8 @@ Utwórz drugi rekord `Filemount` z ustawieniami:
 
 **Filemount**
 
-> Wykonaj poniższe kroki w korzeniu strony (id=0)
-
-> Niewymienone pola pozostaw domyślnie
+> Wykonaj poniższe kroki w korzeniu strony (id=0).
+> Niewymienone pola pozostaw domyślnie.
 
 Utwórz rekord `Filemount` z ustawieniami:
 
