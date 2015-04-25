@@ -96,7 +96,7 @@ Ustawienia magazynów plików
 * `Folder: /`
 
 
-#### Automatyczne generowanie brakujących plików i katalogów
+### Automatyczne generowanie brakujących plików i katalogów
 
 Na koniec wejdź do modułu `Install` w zakładkę `Folder structure` i naciśnij button `Try to fix file and folder permissions`,
 teraz żółte ostrzeżenia powinny się skorygować.
