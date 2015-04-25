@@ -45,7 +45,7 @@ zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE
 [BE][RTE_imageStorageDir] = files/public/uploads/
 ```
 
-zmiana domyśnego katalogu systemowego dla plików statycznych
+zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej wersji 7.x)
 ```javascript
 [BE][staticFileEditPath] = files/static/
 ```
