@@ -15,7 +15,7 @@ W skład skeletona wchodzą:
 - [x] prekonfigurowane ustawienia TypoScript dla RTE (rtehtmlarea)
 - [x] i więcej wkrótce (do spisania)
 
-**Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.X wzwyż**
+> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.x wzwyż
 
 Instalacja
 =====
@@ -38,19 +38,19 @@ Nowe ustawienia systemowe
 
 > Do ustawienia z poziomu modułu `Install`
 
-* zmiana roboczego katalogu systemowego
+**zmiana roboczego katalogu systemowego**
 
 ```javascript
 [BE][fileadminDir] = files/
 ```
 
-* zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE
+**zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE**
 
 ```javascript
 [BE][RTE_imageStorageDir] = files/public/uploads/
 ```
 
-* zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej wersji 7.x)
+**zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej wersji 7.x)**
 
 ```javascript
 [BE][staticFileEditPath] = files/static/
@@ -61,12 +61,12 @@ Ustawienia magazynów plików
 -----
 `todo: dodać zrzuty ekranu (Filelist, root)`
 
-**File Storage**
-
-> Wykonaj poniższe kroki w korzeniu strony (id=0).
+> Poniższe ustawienia wykonaj w korzeniu strony (id=0).
 > Niewymienone pola pozostaw domyślnie.
 
-Utwórz rekord `File Storage` z ustawieniami:
+###File Storage
+
+**Utwórz rekord `File Storage` z ustawieniami:**
 
 * `Name: Files root`
 * `Base path: files/`
@@ -77,14 +77,11 @@ Utwórz drugi rekord `File Storage` z ustawieniami:
 > ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie w konfiguracji id=2).
 
 * `Name: Public`
-* `Base path: files/public//`
+* `Base path: files/public/`
 * `Is default storage?: [x]`
 
 
 **Filemount**
-
-> Wykonaj poniższe kroki w korzeniu strony (id=0).
-> Niewymienone pola pozostaw domyślnie.
 
 Utwórz rekord `Filemount` z ustawieniami:
 
