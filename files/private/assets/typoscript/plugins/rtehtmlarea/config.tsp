@@ -1,4 +1,4 @@
-# Always actual manual: http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
+# Keep your eyes open on always updated manual: http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
 
 RTE.default {
 
@@ -44,7 +44,7 @@ RTE.default {
         )
     }
 
-    #***** Zachowania buttonów
+    #***** Buttons behaviour
 	buttons {
 
         left.useClass = inline-left
@@ -52,9 +52,7 @@ RTE.default {
         right.useClass = inline-right
         justifyfull.useClass = inline-justify
 
-
 		image {
-
 		    options {
 		        removeItems = magic
 
@@ -95,7 +93,7 @@ RTE.default {
             # Exteranl links
             url {
                 properties {
-                    # target not work at the moment, http://forge.typo3.org/issues/59646
+                    # target works only in v7.x
                     target.default = _blank
                     class.default = external-link
                 }
@@ -104,7 +102,7 @@ RTE.default {
             # File links
             file {
                 properties {
-                    # target not work at the moment, http://forge.typo3.org/issues/59646
+                    # target works only in v7.x
                     target.default = _blank
                     class.default = download
                 }
@@ -138,7 +136,7 @@ RTE.default {
             width = 100
         }
 
-        #***** Obiekty tekstowe
+        #***** Text objects
         textstyle {
             # Show all applicable class selectors available in the style sheet file
             showTagFreeClasses = 1
@@ -153,8 +151,8 @@ RTE.default {
             }
         }
 
-        #***** Obiekty blokowe
-        #***** Nowe klasy dla obiektów blokowych (muszą występować w contentCSS)
+        #***** Block objects
+        #***** New classes for objects (these classes must exist in contentCSS file)
         blockstyle {
             # Show all applicable class selectors available in the style sheet file
             showTagFreeClasses = 1
