@@ -51,6 +51,54 @@ zmiana domyśnego katalogu systemowego dla plików statycznych (tylko poniżej w
 ```
 
 
+Ustawienia magazynów plików
+-----
+
+**File Storage**
+
+Wykonaj poniższe kroki w korzeniu strony (id=0)
+
+1. Utwórz rekord `Filemount` z ustawieniami:
+
+Name: `Files root`
+Base path: `files/`
+
+Is writable?: `[]`
+
+
+1. Zmień nazwę domyślnie utworzonego magazynu plików (File Storage) z `fileadmin` na `files`.
+2. Dodaj drugi rekord dedykowany dla plików publicznych o nazwie `Public`, ze ścieżką relatywną `files/public/`.
+3. Jeśli żaden rekord `File Storage` nie występuje utwórz:
+    a) pierwszy rekord o nazwie `Files root` ze ścieżką relatywną `files/`, w dostępności zaznacz wszystkie opcje.
+    b) drugi rekord o nazwie `Public`, ze ścieżką relatywną `files/public/`, w dostępności zaznacz wszystkie opcje,
+    ustaw też dla tego rekordu opcję `Is default storage`.
+    (id tego rekordu powiązane z konfiguracją htmlArea RTE, patrz `defaultUploadFolder`, domyślne id w konfiguracji to `2`).
+
+
+**Filemount**
+
+Wykonaj poniższe kroki w korzeniu strony (id=0)
+
+1. Utwórz rekord `Filemount` z ustawieniami:
+
+Label: `Files root`
+Storage: `Files root`
+Folder: `/`
+Read-only: `[x]`
+
+2. Utwórz drugi rekord `Filemount` z ustawieniami:
+
+Label: `Public`
+Storage: `Public`
+Folder: `/`
+
+
+**Automatyczne generowanie brakujących plików i katalogów**
+
+Na koniec wejdź do modułu `Install` w zakładkę `Folder structure` i naciśnij button `Try to fix file and folder permissions`,
+teraz żółte ostrzeżenia powinny się skorygować.
+
+
 Załączenie plików TypoScript
 -----
 

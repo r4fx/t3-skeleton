@@ -23,7 +23,6 @@ options {
 	pageTree {
 	    showPageIdWithTitle = 1
 	    showDomainNameWithTitle = 0
-        #backgroundColor.26 = #D0DFEB
 	}
 
     # htmlArea RTE
