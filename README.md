@@ -20,8 +20,7 @@ W skład skeletona wchodzą:
 Instalacja
 =====
 
-Wstęp
------
+###Wstęp
 
 Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
 Nazwa `fileadmin` mogła kojarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
@@ -81,7 +80,7 @@ Utwórz drugi rekord `File Storage` z ustawieniami:
 * `Is default storage?: [x]`
 
 
-**Filemount**
+### Filemount
 
 Utwórz rekord `Filemount` z ustawieniami:
 
