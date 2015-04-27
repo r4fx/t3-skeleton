@@ -1,14 +1,17 @@
-﻿tx_news {
+﻿# Remember to change PIDs corresponding to your installation
+
+tx_news {
     singlePid = 4
 
     #*** Additional news layouts
     templateLayouts {
-        2 = XYZ
+        2 = Foo
+        3 = --div--,Group 1
+        4 = Bar
     }
 
     #*** News default Pid
     module {
-        # include problems
         defaultPid.tx_news_domain_model_news = 4
         redirectToPageOnStart = 4
     }
@@ -16,7 +19,7 @@
 
 
 #===================================================
-# SET DEFAULT VALUES OD FLEXFORM FIELDS
+# SET DEFAULT VALUES FOR FLEXFORM FIELDS
 # http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
 #===================================================
 TCAdefaults {
