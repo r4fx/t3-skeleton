@@ -22,10 +22,10 @@ css{
 # JS libs
 #===================================================
 js{
-    jquery = {$path.js}/jquery-2.1.1.min.js
+    jquery = {$path.js}/vendors/jquery-2.1.3.min.js
     popup = {$path.js}/vendors/magnific-popup/jquery.magnific-popup.min.js
     swiper = {$path.js}/vendors/swiper/idangerous.swiper.min.js
-    app = {$path.js}/app.js
+    app = {$path.js}/main.js
 }
 
 #===================================================
