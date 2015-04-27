@@ -75,7 +75,7 @@ page.headerData {
     }
 }
 
-// Disable default open graph for single view of news plugin (news has own OG tags)
+// Disable default open graph for single view of news plugin (news has own OG tags VH)
 [globalVar = GP:tx_news_pi1|news > 0]
     page.headerData.301 >
 [end]
