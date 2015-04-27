@@ -1,7 +1,7 @@
 TYPO3 skeleton
 =====
 
-TYPO3 skeleton to startowy pakiet dla projektów budowanych na TYPO3.
+TYPO3 skeleton to startowy pakiet dla projektów budowanych na TYPO3 opartych na FLUID i Backend Layout.
 
 W skład skeletona wchodzą:
 
@@ -12,7 +12,7 @@ W skład skeletona wchodzą:
 - [x] podstawowe ustawienia środowiska w plikach TypoScript
 - [x] prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
-- [x] prekonfigurowane ustawienia TypoScript dla RTE (rtehtmlarea)
+- [x] prekonfigurowane ustawienia TypoScript dla htmlArea RTE
 - [x] i więcej wkrótce (do spisania)
 
 > Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.x wzwyż
