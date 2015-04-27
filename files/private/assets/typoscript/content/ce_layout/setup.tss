@@ -1,7 +1,8 @@
-/*
-* EDYTUJ TEZ PLIK tsconfig.tsp
-* DOC REF: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
-*/
+#============================================================
+# Remember to edit file ce_layout/tsconfig.tsp
+# DOC REF: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
+#============================================================
+
 
 #============================================================
 # CONTENT LAYOUT
@@ -35,11 +36,11 @@ tt_content.stdWrap.innerWrap.cObject {
 
     66 >
 
-    #========== BOX
+    # BOX
     30 = TEXT
     30.value = |
 
-    #========== [DEFAULT]
+    # [DEFAULT]
     0 < .default
     0.10.cObject.default.value = <div
     0.20.10 = COA
@@ -51,8 +52,7 @@ tt_content.stdWrap.innerWrap.cObject {
     }
     0.30.cObject.default.value = >|</div>
 
-
-    #========== BOX [TEXT SIZE 24]
+    # BOX [TEXT SIZE 24]
     31 < .default
     31.10.cObject.default.value = <div
     31.20.10 = COA
@@ -64,9 +64,7 @@ tt_content.stdWrap.innerWrap.cObject {
     }
     31.30.cObject.default.value = >|</div>
 
-
-
-    #========== COLOR BOX
+    # COLOR BOX
     40 < .default
     40.10.cObject.default.value = <section
     40.20.10 = COA
@@ -79,5 +77,5 @@ tt_content.stdWrap.innerWrap.cObject {
     40.30.cObject.default.value = ><div class="box">|</div></section>
 }
 
-# Usunięcie tagów typu <a id="c123"></a> dla wersji językowych
+# Remove tags <a id="c123"></a> for localisations
 tt_content.stdWrap.prepend >

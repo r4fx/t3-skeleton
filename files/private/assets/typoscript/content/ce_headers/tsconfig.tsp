@@ -1,9 +1,10 @@
-﻿/*
-*  EDYTUJ TEZ PLIK setup.tss
-*/
+﻿#============================================================
+# Remember to edit file ce_headers/setup.tss
+#============================================================
+
 
 #============================================================
-# NAGLOWKI CONTENTU
+# CONTENT HEADERS
 #============================================================
 TCEFORM.tt_content.header_layout {
     altLabels.0 = Default (H2)
@@ -13,12 +14,11 @@ TCEFORM.tt_content.header_layout {
     altLabels.4 = H4
     altLabels.5 = H5
 
-    # DODATKOWE NAGLOWKI
+    # ADDITIONAL HEADERS
     #========================================================
-    addItems.6 = H2 z borderem dolnym
+    addItems.6 = H2 with border
 
-
-    # Hidden wyswietlany zawsze na koncu dropdowna
+    # HIDDEN ON LAST POSITION IN LIST
     #========================================================
     removeItems = 100
     addItems.99 = Hidden

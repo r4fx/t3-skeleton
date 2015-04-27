@@ -3,14 +3,14 @@
 tx_news {
     singlePid = 4
 
-    #*** Additional news layouts
+    # Additional news layouts
     templateLayouts {
         2 = Foo
         3 = --div--,Group 1
         4 = Bar
     }
 
-    #*** News default Pid
+    # News default Pid
     module {
         defaultPid.tx_news_domain_model_news = 4
         redirectToPageOnStart = 4

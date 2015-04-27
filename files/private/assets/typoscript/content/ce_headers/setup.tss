@@ -1,9 +1,10 @@
-/*
-*  EDYTUJ TEZ PLIK tsconfig.tsp
-*/
+#============================================================
+# Remember to edit file ce_headers/tsconfig.tsp
+#============================================================
+
 
 #============================================================
-# NAGLOWKI CONTENTU
+# CONTENT HEADERS
 #============================================================
 lib.stdheader.stdWrap.dataWrap >
 lib.stdheader.10 {
@@ -13,7 +14,7 @@ lib.stdheader.10 {
     4.dataWrap = <h4>|</h4>
     5.dataWrap = <h5>|</h5>
 
-    # DODATKOWE NAGLOWKI
+    # ADDITIONAL HEADERS
     #========================================================
     6 = TEXT
     6 {
