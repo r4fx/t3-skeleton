@@ -68,8 +68,6 @@ page {
         wrap = <script>$(document).ready(function () {|});</script>
 
         value (
-            {$js.config.magnificPopup.ajax}
-            {$js.config.magnificPopup.image}
             {$js.config.cookieBox}
         )
     }
