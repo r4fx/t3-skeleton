@@ -3,9 +3,8 @@ protocol = http://
     protocol = https://
 [END]
 
-# baseURL should be only used for specific cases
+# baseURL for BE use only
 baseURL = http://t3go.pl/
-
 [globalString = ENV:HTTP_HOST=beta.t3go.pl]
     baseURL = {$protocol}beta.t3go.pl/
 [END]
