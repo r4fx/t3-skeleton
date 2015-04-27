@@ -20,13 +20,13 @@ W skład skeletona wchodzą:
 Instalacja
 =====
 
-###Wstęp
+###Wstęp. Dlaczego `files` zamiast `fileadmin`.
 
-Postanowiliśmy zmienić konwencję przyjętą przez autorów TYPO3 i zmieniliśmy nazwe katalogu roboczego.
+Postanowiliśmy zmienić konwencję standardowo przyjętą przez TYPO3 i zmieniliśmy nazwę katalogu roboczego.
 Nazwa `fileadmin` mogła kojarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
 użytkownków. Adres url do ogólnie dostępnych plików na stronie www z nazwą `fileadmin` nie kojarzył się dobrze.
 
-Według nas nowo przyjęta nazwa `files` jest bardziej przyjazna dla użytkowników i wyszukiwarek.
+Według nas nowo przyjęta nazwa dla katalogu roboczego `files` jest bardziej przyjazna dla użytkowników i wyszukiwarek.
 Dzięki tej zmianie wszystkie linki do plików załączanych przez redaktorów TYPO3 będą miały
 bardziej przyjazną formę.
 
@@ -143,6 +143,11 @@ Załączenie plików TypoScript
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_user/" extensions="tsu">
 ```
+
+
+Backend Layout
+-----
+todo
 
 
 Wtyczki
