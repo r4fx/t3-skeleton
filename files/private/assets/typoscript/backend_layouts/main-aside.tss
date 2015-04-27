@@ -19,6 +19,7 @@ backend_layout {
     }
 }
 
+# Hide BE Layout (Columns) for system folders
 [page|doktype = 254]
     backend_layout >
 [end]
