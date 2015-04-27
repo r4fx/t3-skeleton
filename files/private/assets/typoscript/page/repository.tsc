@@ -1,7 +1,6 @@
 #===================================================
 # PATHS
 #===================================================
-
 path {
     html = files/private/assets/html
     css = files/private/assets/styles/css
