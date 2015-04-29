@@ -3,7 +3,7 @@ page {
     typeNum = 0
 
     #============================================================
-	# STYLES
+    # STYLES
     #============================================================
 	includeCSS {
         swiper = {$css.swiper}
@@ -14,14 +14,14 @@ page {
 	}
 
     #============================================================
-	# SCRIPTS IN HEAD
+    # SCRIPTS IN HEAD
     #============================================================
 	includeJSlibs {
         jquery = {$js.jquery}
 	}
 
     #============================================================
-	# JS LIBS IN FOOTER
+    # JS LIBS IN FOOTER
     #============================================================
 	includeJSFooterlibs {
         popup = {$js.popup}
@@ -31,7 +31,7 @@ page {
 
 
     #============================================================
-	# HEADER DATA
+    # HEADER DATA
     #============================================================
     headerData {
 
@@ -88,16 +88,6 @@ page.101.value (
         }(document));
     </script>
 )
-
-
-# Tiny source
-plugin.tx_tinysource {
-    body {
-        stripTabs = 0
-        stripDoubleSpaces = 0
-    }
-}
-
 
 #============================================================
 # RTE ADDITIONAL CONFIG

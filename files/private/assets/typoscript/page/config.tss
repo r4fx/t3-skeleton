@@ -64,10 +64,19 @@ config {
 }
 
 #============================================================
+# Tiny source
+#============================================================
+plugin.tx_tinysource {
+    body {
+        stripTabs = 0
+        stripDoubleSpaces = 0
+    }
+}
+
+#============================================================
 # DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 #============================================================
 [globalVar = GP:debug=1]
-    plugin.tx_minify.enable = 0
     plugin.tx_tinysource.enable = 0
 
     config {
