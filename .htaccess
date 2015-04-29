@@ -127,7 +127,9 @@ php_value suhosin.request.max_vars 400
 php_value suhosin.post.max_vars 400
 php_value suhosin.get.max_value_length 2000
 php_value max_execution_time 240
-php_value upload_max_filesize 10M
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+#php_value memory_limit 128M
 
 ### End: PHP optimisation ###
 
@@ -142,13 +144,9 @@ php_value upload_max_filesize 10M
 
 
 
-
-
 # ##############################################################################
 # # START CUSTOM CONFIG !                                                      #
 # ##############################################################################
-
-
 
 # ##############################################################################
 # # CROSS-ORIGIN RESOURCE SHARING (CORS)                                       #

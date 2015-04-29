@@ -40,9 +40,9 @@ config {
     compressJs = 1
     concatenateJs = 1
 
-    // Cache-Control header
+    // Cache-Control header (one week)
     sendCacheHeaders = 1
-    additionalHeaders = Cache-Control: max-age=3600
+    additionalHeaders = Cache-Control: max-age=604800
 }
 
 #============================================================
