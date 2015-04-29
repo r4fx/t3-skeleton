@@ -40,7 +40,8 @@ config {
     compressJs = 1
     concatenateJs = 1
 
-    // Cache-Control header (one week)
+    // use cache for one week (google recommendations)
+    cache_period = 604800
     sendCacheHeaders = 1
     additionalHeaders = Cache-Control: max-age=604800
 }
