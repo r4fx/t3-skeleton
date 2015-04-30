@@ -1,27 +1,5 @@
-page {
-
-    #============================================================
-	# META TAGI
-    #============================================================
-	meta {
-        viewport = width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1
-
-        X-UA-Compatible = IE=edge,chrome=1
-        X-UA-Compatible.httpEquivalent = 1
-
-        description = {$meta.description}
-        description.override.field = description
-
-        keywords = {$meta.keywords}
-        keywords.override.field = keywords
-
-        #robots = noindex, nofollow
-    }
-}
-
-
 #============================================================
-# TYTULY STRON
+# PAGE TITLE
 #============================================================
 config.noPageTitle = 1
 [PIDupinRootline = 1]
@@ -29,10 +7,27 @@ config.noPageTitle = 1
 [end]
 
 #============================================================
+# META TAGS
+#============================================================
+page.meta {
+    viewport = width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1
+
+    X-UA-Compatible = IE=edge,chrome=1
+    X-UA-Compatible.httpEquivalent = 1
+
+    description = {$meta.description}
+    description.override.field = description
+
+    keywords = {$meta.keywords}
+    keywords.override.field = keywords
+
+    #robots = noindex, nofollow
+}
+
+#============================================================
 # OPEN GRAPH
 #============================================================
 page.headerData {
-
     301 = COA
     301 {
 
