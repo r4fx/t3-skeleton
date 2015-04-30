@@ -63,6 +63,3 @@ headerData {
     <meta name="application-name" content="T3go">
   )
 }
-
-#===== RSS - strona do RSSa
-xmlnewsfeed_id = 8
