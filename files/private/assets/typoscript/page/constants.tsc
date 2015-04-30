@@ -1,14 +1,3 @@
-protocol = http://
-[globalString = _SERVER|HTTPS=on]
-    protocol = https://
-[END]
-
-# baseURL for BE use only
-baseURL = http://t3go.pl/
-[globalString = ENV:HTTP_HOST=beta.t3go.pl]
-    baseURL = {$protocol}beta.t3go.pl/
-[END]
-
 #===================================================
 # FLUID SETTINGS
 #===================================================
