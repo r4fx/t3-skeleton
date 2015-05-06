@@ -1,5 +1,6 @@
 #============================================================
 # BASE SETTINGS
+# Reference: http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html
 #============================================================
 
 config {
@@ -8,11 +9,14 @@ config {
     absRefPrefix = /
     tx_cooluri_enable = 1
     redirectOldLinksToNew = 1
-    cache_period = 604800
     spamProtectEmailAddresses = ascii
     spamProtectEmailAddresses_atSubst = @
     index_metatags = 0
+    headerComment = {$config.headerComment}
+
+    // Removed from 7 LTS
     prefixLocalAnchors = 0
+
     doctype = html5
     metaCharset = utf-8
     renderCharset = utf-8
@@ -28,14 +32,15 @@ config {
     typolinkCheckRootline = 1
     typolinkEnableLinksAcrossDomains = 1
 
-    headerComment = {$config.headerComment}
-
-    // Performance settings
+    // Performance and cleanup
     disablePrefixComment = 1
-    inlineStyle2TempFile = 1
+
     #removeDefaultCss = 1
+    #removePageCss = 1
+    inlineStyle2TempFile = 1
     compressCss = 1
     concatenateCss = 1
+
     removeDefaultJS = 0
     compressJs = 1
     concatenateJs = 1
