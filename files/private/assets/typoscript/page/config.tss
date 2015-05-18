@@ -90,5 +90,6 @@ plugin.tx_tinysource {
         concatenateCss = 0
         removeDefaultJS = 0
         compressJs = 0
+        concatenateJs = 0
     }
 [global]
