@@ -3,7 +3,7 @@
 RTE.default {
 
     path = files/public/uploads/graphics/
-    contentCSS = files/private/assets/styles/css/rte_be.css
+    contentCSS = files/private/assets/html/exts/rtehtmlarea/rte.css
 
 	enableWordClean = 1
 	removeTrailingBR = 0

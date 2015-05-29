@@ -1,0 +1,15 @@
+.inline-right {
+  text-align: right;
+}
+
+p.inline-left {
+  text-align: left;
+}
+
+.inline-center {
+  text-align: center;
+}
+
+.inline-justify {
+  text-align: justify;
+}
