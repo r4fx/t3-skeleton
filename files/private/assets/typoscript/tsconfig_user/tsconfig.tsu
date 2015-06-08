@@ -67,7 +67,10 @@ tx_directmail {
 #============================================================
 admPanel {
     override {
+        preview {
+            showHiddenPages = 1
+        }
+        
         tsdebug.forceTemplateParsing = 1
-        preview.showHiddenPages = 1
     }
 }

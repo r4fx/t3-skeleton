@@ -1,0 +1,10 @@
+admPanel {
+    enable {
+        preview = 1
+        cache = 0
+        publish = 0
+        edit = 0
+        tsdebug = 0
+        info = 0
+    }
+}
