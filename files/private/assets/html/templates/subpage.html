@@ -1,4 +1,4 @@
-<!-- Use main skeleton layout, selected from Backend Layout field -->
+<!-- Use subpage skeleton layout, file with the same name (subpage) form path: assets/html/layouts/ -->
 <f:layout name="{layout}"/>
 
 <!-- Main section for content -->
@@ -6,18 +6,16 @@
     <section>
         <f:if condition="{data.uid} > 1">
             <f:if condition="{data.hidePageHeader} != 1">
-                <header>
-                    <h1>
-                        <f:if condition="{data.subtitle}">
-                            <f:then>
-                                {data.subtitle}
-                            </f:then>
-                            <f:else>
-                                {data.title}
-                            </f:else>
-                        </f:if>
-                    </h1>
-                </header>
+                <h1>
+                    <f:if condition="{data.subtitle}">
+                        <f:then>
+                            {data.subtitle}
+                        </f:then>
+                        <f:else>
+                            {data.title}
+                        </f:else>
+                    </f:if>
+                </h1>
             </f:if>
         </f:if>
 
