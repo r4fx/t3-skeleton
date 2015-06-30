@@ -85,6 +85,8 @@ plugin.tx_tinysource {
     plugin.tx_tinysource.enable = 0
 
     config {
+        admPanel = 1
+        debug = 1
         no_cache = 1
         compressCss = 0
         concatenateCss = 0
