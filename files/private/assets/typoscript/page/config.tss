@@ -13,13 +13,9 @@ config {
     spamProtectEmailAddresses_atSubst = @
     index_metatags = 0
     headerComment = {$config.headerComment}
-
-    // Removed from 7 LTS
-    prefixLocalAnchors = 0
-
     doctype = html5
-    metaCharset = utf-8
-    renderCharset = utf-8
+
+    #prefixLocalAnchors = 0 // Removed from 7 LTS
 
     meaningfulTempFilePrefix = 100
     lockFilePath = files/public/
