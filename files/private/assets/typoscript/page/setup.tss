@@ -26,6 +26,13 @@ page {
 	includeJSFooterlibs {
         popup = {$js.popup}
         swiper = {$js.swiper}
+        swiper {
+            async = 1
+            if {
+                isInList.field = uid
+                value = {$js.swiper.onlyPids}
+            }
+        }
         app = {$js.app}
     }
 

@@ -15,6 +15,7 @@ css{
     mate = {$path.css}/mate.css
     popup = {$path.js}/vendors/magnific-popup/magnific-popup.css
     swiper = {$path.js}/vendors/swiper/idangerous.swiper.css
+    swiper.onlyPids = 39,6
 }
 
 #===================================================
