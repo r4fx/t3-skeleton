@@ -159,3 +159,13 @@ Przy pracy z szablonami FLUID nieocenionymi wtyczkami mogą okazać się:
 
 W źródlach Skeletona znajduje się konfiguracja wtyczki Content Design na potrzeby ukrywania nagłówka podstrony.
 Po instalacji wtyczki i dołączeniu pliku `/plugins/content_designer/page-fields.tss` w edycji strony zostanie dodana nowa zakładka `Settings`.
+
+
+Developer helpers
+-----
+
+
+**debug**
+
+dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie to co widnieje tu w pliku `config.tss`
+https://github.com/r4fx/t3-skeleton/blob/master/files/private/assets/typoscript/page/config.tss#L78
