@@ -1,4 +1,4 @@
-{namespace n=Tx_News_ViewHelpers}
+{namespace n=GeorgRinger\News\ViewHelpers}
 <f:layout name="General" />
 
 <f:section name="content">
@@ -6,46 +6,29 @@
 		<f:then>
 
             <f:if condition="{settings.templateLayout} == 1">
-
-                <f:then>
-                    <ul>
-                        <f:for each="{news}" as="newsItem" iteration="iterator">
-                            <f:render partial="List/Headers" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
-                        </f:for>
-                    </ul>
-                </f:then>
-
-                <f:else>
-                    <div class="article-list">
-                        <f:if condition="{settings.hidePagination}">
-                            <f:then>
-                                <f:for each="{news}" as="newsItem" iteration="iterator">
-                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
-                                </f:for>
-                            </f:then>
-                            <f:else>
-                                <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
-                                    <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
-                                        <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
-                                    </f:for>
-                                </n:widget.paginate>
-                            </f:else>
-                        </f:if>
-                    </div>
-                    <div class="row inline-right">
-                        <p class="col col__12">
-                            <!--<f:link.page pageUid="14">-->
-                                <!--więcej aktualności-->
-                            <!--</f:link.page>-->
-                        </p>
-                    </div>
-                </f:else>
-
+				<section class="box news-tiles">
+					<div class="row">
+						<f:if condition="{settings.hidePagination}">
+							<f:then>
+								<f:for each="{news}" as="newsItem" iteration="iterator">
+									<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
+								</f:for>
+							</f:then>
+							<f:else>
+								<n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+									<f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+										<f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
+									</f:for>
+								</n:widget.paginate>
+							</f:else>
+						</f:if>
+					</div>
+				</section>
             </f:if>
-		</f:then>
 
+		</f:then>
 		<f:else>
-			<div class="no-news-found">
+			<div class="row col-12 no-news-found">
 				<f:translate key="list_nonewsfound" />
 			</div>
 		</f:else>

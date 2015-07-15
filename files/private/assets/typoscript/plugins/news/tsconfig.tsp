@@ -8,6 +8,7 @@ tx_news {
 
     # Additional news layouts
     templateLayouts {
+        1 = Main
         2 = Foo
         3 = --div--,Group 1
         4 = Bar

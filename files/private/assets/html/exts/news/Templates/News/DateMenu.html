@@ -1,4 +1,4 @@
-{namespace n=Tx_News_ViewHelpers}
+{namespace n=GeorgRinger\News\ViewHelpers}
 <f:layout name="General" />
 <!--
 	=====================
@@ -21,9 +21,8 @@
 									<li class="item">
 								</f:else>
 							</f:if>
-								<f:link.action pageUid="{listPid}" arguments="{overwriteDemand:{year: year, month: month}}"><f:translate key="month.{month}" /> {year}</f:link.action>
-								({count} <f:translate key="{f:if(condition: '{count} == 1', then: 'entry', else: 'entries')}" />)
-							</li>
+							<f:link.action pageUid="{listPid}" arguments="{overwriteDemand:{year: year, month: month}}"><f:translate key="month.{month}" /> {year}</f:link.action>
+							({count} <f:translate key="{f:if(condition: '{count} == 1', then: 'entry', else: 'entries')}" />)
 						</f:for>
 					</ul>
 				</li>
