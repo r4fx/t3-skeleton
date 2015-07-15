@@ -85,6 +85,6 @@ config {
     page.footerData.7100 = TEXT
     page.footerData.7100 {
         field = uid
-        noTrimWrap = |<!--[Skeleton debug: PageID: |]-->|
+        noTrimWrap = |<!--[Skeleton debug][PageID: |]-->|
     }
 [global]
