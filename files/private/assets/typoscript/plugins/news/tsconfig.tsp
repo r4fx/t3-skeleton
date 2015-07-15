@@ -1,6 +1,6 @@
 ﻿#===================================================
 # Remember to change PIDs corresponding to your installation
-# tx_news do not respect configuration from this file, probably bug https://forge.typo3.org/issues/61804
+# !!! tx_news do not respect configuration from this file, probably bug https://forge.typo3.org/issues/61804
 #===================================================
 
 tx_news {
