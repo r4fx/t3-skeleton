@@ -31,17 +31,20 @@ config {
     // Performance and cleanup
     disablePrefixComment = 1
 
+    // CSS
     #removeDefaultCss = 1
     #removePageCss = 1
     inlineStyle2TempFile = 1
     compressCss = 1
     concatenateCss = 1
 
+    // JS
+    moveJsFromHeaderToFooter = 0
     removeDefaultJS = 0
     compressJs = 1
     concatenateJs = 1
 
-    // use cache for one week (google recommendations)
+    // Use cache for one week (google recommendations)
     cache_period = 604800
     sendCacheHeaders = 1
     additionalHeaders = Cache-Control: max-age=604800
