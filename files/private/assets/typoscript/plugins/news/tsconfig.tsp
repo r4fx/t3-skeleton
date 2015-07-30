@@ -11,8 +11,9 @@ tx_news {
     templateLayouts {
         1 = Main
         2 = Foo
-        3 = --div--,Group 1
-        4 = Bar
+        10 = --div--,Date menu
+        11 = Years only menu
+        12 = Years & months menu
     }
 
     module {
