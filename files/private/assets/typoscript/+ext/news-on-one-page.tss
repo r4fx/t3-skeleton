@@ -68,7 +68,5 @@ temp.news_detail {
 [else]
     lib.news = COA
     lib.news.10 < temp.news_date_menu
-
-    lib.news.20.wrap = <div class="news-tiles">|</div>
     lib.news.20 < temp.news_list
 [end]
