@@ -1,4 +1,5 @@
 ﻿#===================================================
+# DOC url: http://docs.typo3.org/typo3cms/extensions/news/AdministratorManual/Configuration/TsConfig/Index.html
 # Remember to change PIDs corresponding to your installation
 # !!! tx_news do not respect configuration from this file, probably bug https://forge.typo3.org/issues/61804
 #===================================================
@@ -14,10 +15,13 @@ tx_news {
         4 = Bar
     }
 
-    # News default Pid
     module {
-        defaultPid.tx_news_domain_model_news = 4
-        redirectToPageOnStart = 4
+        defaultPid.tx_news_domain_model_news = 34
+        redirectToPageOnStart = 34
+        allowedPage = 34
+        preselect {
+            sortingField = datetime DESC
+        }
     }
 }
 
