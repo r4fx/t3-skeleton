@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cooluri>
- 
+
     <cache>
-        <usecache>1</usecache><!-- READONLY -->
+        <usecache>1</usecache>
+        <!-- READONLY -->
 
         <params2cool>
             <!-- how often (in days) should be links updated 
@@ -15,7 +16,7 @@
             (those that are redirected to existing) should be kept active -->
             <oldlinksvalidfor>90</oldlinksvalidfor>
         </cool2params>
-    
+
         <pagenotfound>
             <status>HTTP/1.0 404 Not Found</status>
             <behavior type="userfunc">tx_cooluri->pageNotFound</behavior>
@@ -98,13 +99,15 @@
         <!-- first non-empty value will be used -->
         <title>tx_realurl_pathsegment, alias, nav_title, title</title>
 
-        <saveto>id</saveto><!-- READONLY -->
-        <default>0</default><!-- READONLY -->
+        <saveto>id</saveto>
+        <!-- READONLY -->
+        <default>0</default>
+        <!-- READONLY -->
 
         <userfunc>tx_cooluri->getPageTitle</userfunc>
         <t3conv>1</t3conv>
     </pagepath>
- 
+
 
     <!-- ================================================================= -->
 
@@ -128,7 +131,7 @@
         <part>
             <parameter>tx_news_pi1[news]</parameter>
             <lookindb>
-                <to>SELECT CONCAT( title , '-', uid ) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <to>SELECT CONCAT( title , '-', uid) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
                 <translatetoif>
                     <match>^[0-9]+$</match>
                 </translatetoif>
@@ -151,6 +154,19 @@
                 <t3conv>1</t3conv>
             </lookindb>
         </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][year]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][month]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][day]</parameter>
+        </part>
+
         <!-- END: news -->
 
 
@@ -175,6 +191,7 @@
             <parameter>no_cache</parameter>
         </part>
 
+
         <!-- news -->
         <part>
             <parameter>tx_news_pi1[controller]</parameter>
@@ -184,10 +201,12 @@
             <parameter>tx_news_pi1[action]</parameter>
         </part>
 
-        <part key="page/(.*)" regexp="1">
-            <parameter>tx_news_pi1[@widget_0][currentPage]</parameter>
+        <part key="iCal">
+            <parameter>type</parameter>
+            <value>9819</value>
         </part>
         <!-- END: news -->
+
 
         <!-- ke_search -->
         <part>
@@ -207,7 +226,6 @@
         </part>
 
         <!-- END: ke_search -->
-
 
 
         <!-- COMMON PATTERNS -->
@@ -237,5 +255,5 @@
 
     <!-- READONLY START -->
     <cooluris>1</cooluris>
-  
+
 </cooluri>
