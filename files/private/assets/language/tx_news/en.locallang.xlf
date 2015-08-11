@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="pl" target-language="en" datatype="plaintext" original="messages" product-name="content">
+        <header/>
+        <body>
+
+            <trans-unit id="more-link" xml:space="preserve">
+                <source>Czytaj dalej</source>
+                <target>Read more</target>
+            </trans-unit>
+
+            <trans-unit id="read-also" xml:space="preserve">
+                <source>Przeczytaj także</source>
+                <target>Read also</target>
+            </trans-unit>
+
+            <trans-unit id="category-list-header" xml:space="preserve">
+                <source>Przeglądaj wg kategorii</source>
+                <target>Browse by category</target>
+            </trans-unit>
+
+            <trans-unit id="date_menu-all-years" xml:space="preserve">
+                <source>Wszystkie lata</source>
+                <tarrget>All years</tarrget>
+            </trans-unit>
+
+            <trans-unit id="social-share" xml:space="preserve">
+                <source>Udostępnij</source>
+                <target>Share</target>
+            </trans-unit>
+
+            <trans-unit id="print" xml:space="preserve">
+                <source>Wydrukuj</source>
+                <target>Print</target>
+            </trans-unit>
+
+            <trans-unit id="gallery" xml:space="preserve">
+                <source>Galeria</source>
+                <target>Gallery</target>
+            </trans-unit>
+
+            <trans-unit id="related-files" xml:space="preserve">
+                <source>Pobierz pliki</source>
+                <target>Download files</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>
