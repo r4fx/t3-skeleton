@@ -22,4 +22,7 @@ lib.stdheader.10 {
         insertData = 1
         fontTag = <h2 class="bordered">|</h2>
     }
+
+    // Default header
+    key.ifEmpty = 1
 }
