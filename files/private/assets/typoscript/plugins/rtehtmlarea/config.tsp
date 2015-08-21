@@ -46,7 +46,6 @@ RTE.default {
 
     #***** Buttons behaviour
 	buttons {
-
         left.useClass = inline-left
         center.useClass = inline-center
         right.useClass = inline-right
