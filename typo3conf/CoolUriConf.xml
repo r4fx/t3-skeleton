@@ -8,7 +8,7 @@
         <params2cool>
             <!-- how often (in days) should be links updated 
             (Typo3 cache needs to be cleared) -->
-            <checkforchangeevery>1</checkforchangeevery>
+            <checkforchangeevery>0</checkforchangeevery>
         </params2cool>
 
         <cool2params>
