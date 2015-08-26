@@ -4,36 +4,25 @@
 
 RTE.default {
 
+	disableLayoutFieldsetInTableOperations = 0
+	disableAlignmentFieldsetInTableOperations = 0
+    disableSpacingFieldsetInTableOperations = 0
 
-    disableLayoutFieldsetInTableOperations = 0
-    	disableAlignmentFieldsetInTableOperations =
-    0
-	disableSpacingFieldsetInTableOperations =
+    buttons {
 
-    0
+		#***** New classess for block objects (must be included in contentCSS)
+        blockstyle {
+            tags {
 
-	buttons {
-
-		#***** New classess for block objects (must be included in
-        contentCSS)
-
-            blockstyle {
-
-                tags {
-
-
-                    table {
-					allowedClasses := addToList(float-right,
-
-                float-left)
-				}
-
+                table {
+                    allowedClasses := addToList(float-right, float-left)
+                }
+				
 				td {
-					allowedClasses := addToList(inline-left,
-            inline-right)
+                    allowedClasses := addToList(inline-left, inline-right)
 				}
-			}
-		}
+            }
+        }
 
 		table {
 			removeFieldsets = borders, description, language
@@ -42,13 +31,13 @@ RTE.default {
 				headers {
 					defaultValue = none
 				}
-
+				
 				width {
 					defaultValue =
 				}
 			}
-		}
-
+        }
+		
 		tableproperties {
 			removeFieldsets = borders, description, language
 			properties {
@@ -57,14 +46,14 @@ RTE.default {
 				}
 			}
 		}
-
+		
 		rowproperties {
 			removeFieldsets = border, alignment
-			properties {
-				removed = width
-			}
+            properties {
+                removed = width
+            }
 		}
-
+		
 		columnproperties {
 			properties {
 				widthUnit {
@@ -72,7 +61,7 @@ RTE.default {
 				}
 			}
 		}
-
+		
 		cellproperties {
 			properties {
 				widthUnit {
@@ -80,5 +69,5 @@ RTE.default {
 				}
 			}
 		}
-	}
+    }
 }
