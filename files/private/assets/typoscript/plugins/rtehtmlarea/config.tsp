@@ -187,7 +187,7 @@ RTE.default {
 	    }
 
 	    editelement {
-	        removeFieldsets = language
+	        removeFieldsets = language, events
 	    }
 
 	    #***** HOT KEYS
