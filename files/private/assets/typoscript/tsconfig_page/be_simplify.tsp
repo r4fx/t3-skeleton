@@ -7,7 +7,7 @@ TCEFORM {
     # TT_CONTENT
     #===================================================
     tt_content {
-        CType.removeItems = search,bullets
+        CType.removeItems = search,bullets,multimedia
 
         sys_language_uid.disabled = 1
         layout.disabled = 0
