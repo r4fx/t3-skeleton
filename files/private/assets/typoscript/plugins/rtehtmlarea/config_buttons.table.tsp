@@ -1,29 +1,39 @@
-# OPCJONALNE USTAWIENIA DLA TABELEK
-# DOŁĄCZ TYLKO JEŚLI POTRZEBUJESZ SPECJALNYCH USTAWIEŃ DLA KOLUMN, WIERSZY I KOMÓREK
+# OPTIONAL SETTINGS FOR TABLES
 #
 # Always actual manual: http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
 
 RTE.default {
 
-	disableLayoutFieldsetInTableOperations = 0
-	disableAlignmentFieldsetInTableOperations = 0
-    disableSpacingFieldsetInTableOperations = 0
 
-    buttons {
+    disableLayoutFieldsetInTableOperations = 0
+    	disableAlignmentFieldsetInTableOperations =
+    0
+	disableSpacingFieldsetInTableOperations =
 
-		#***** Nowe klasy dla obiektów blokowych (muszą występować w contentCSS)
-        blockstyle {
-            tags {
+    0
 
-                table {
-                    allowedClasses := addToList(float-right, float-left)
-                }
-				
-				td {
-                    allowedClasses := addToList(align-left, align-right)
+	buttons {
+
+		#***** New classess for block objects (must be included in
+        contentCSS)
+
+            blockstyle {
+
+                tags {
+
+
+                    table {
+					allowedClasses := addToList(float-right,
+
+                float-left)
 				}
-            }
-        }
+
+				td {
+					allowedClasses := addToList(inline-left,
+            inline-right)
+				}
+			}
+		}
 
 		table {
 			removeFieldsets = borders, description, language
@@ -32,13 +42,13 @@ RTE.default {
 				headers {
 					defaultValue = none
 				}
-				
+
 				width {
-					defaultValue = 100
+					defaultValue =
 				}
 			}
-        }
-		
+		}
+
 		tableproperties {
 			removeFieldsets = borders, description, language
 			properties {
@@ -47,14 +57,14 @@ RTE.default {
 				}
 			}
 		}
-		
+
 		rowproperties {
 			removeFieldsets = border, alignment
-            properties {
-                removed = width
-            }
+			properties {
+				removed = width
+			}
 		}
-		
+
 		columnproperties {
 			properties {
 				widthUnit {
@@ -62,7 +72,7 @@ RTE.default {
 				}
 			}
 		}
-		
+
 		cellproperties {
 			properties {
 				widthUnit {
@@ -70,5 +80,5 @@ RTE.default {
 				}
 			}
 		}
-    }
+	}
 }
