@@ -32,6 +32,6 @@ tx_news {
 # http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
 #===================================================
 TCAdefaults {
-    # Hide news on start editing
     tx_news_domain_model_news.hidden = 1
+    sys_file_reference.showinpreview = 1
 }
