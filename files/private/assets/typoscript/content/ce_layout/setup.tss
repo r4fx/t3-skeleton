@@ -36,11 +36,11 @@ tt_content.stdWrap.innerWrap.cObject {
 
     66 >
 
-    # BOX
+    # Default
     30 = TEXT
     30.value = |
 
-    # [DEFAULT]
+    # Box
     0 < .default
     0.10.cObject.default.value = <div
     0.20.10 = COA
@@ -52,19 +52,8 @@ tt_content.stdWrap.innerWrap.cObject {
     }
     0.30.cObject.default.value = >|</div>
 
-    # BOX [TEXT SIZE 24]
-    31 < .default
-    31.10.cObject.default.value = <div
-    31.20.10 = COA
-    31.20.10 {
-        10 = TEXT
-        10.value = box text-size--24
-        20 = TEXT
-        20 < temp.element_layout
-    }
-    31.30.cObject.default.value = >|</div>
 
-    # COLOR BOX
+    # Color box
     40 < .default
     40.10.cObject.default.value = <section
     40.20.10 = COA

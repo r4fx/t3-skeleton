@@ -16,8 +16,7 @@ TCEFORM.tt_content.section_frame{
 
     addItems {
         30 = [Default - no wrap]
-        31 = BOX [TEXT SIZE 24]
-        40 = COLOR BOX
+        40 = Color box
     }
 }
 
