@@ -22,18 +22,21 @@ config {
 }
 
 #===================================================
-# USTAWIENIA CONTENTU
+# CONTENT ELEMENTS SETTINGS
 #===================================================
-
-styles.content.links.extTarget =
 styles.content.imgtext {
-    maxW =
-    maxWInText =
-    linkWrap.width =
-    linkWrap.height =
+    maxW = 845
+    maxWInText = 845
+    linkWrap.width = 800m
+    linkWrap.height = 600m
     linkWrap.lightboxEnabled = 1
     linkWrap.lightboxCssClass = popup
     linkWrap.lightboxRelAttribute = {field:uid}
+    colSpace = 20
+    rowSpace = 20
+    textMargin = 20
+    borderColor = #D9D9D9
+    borderThick = 1
 }
 
 #===================================================
