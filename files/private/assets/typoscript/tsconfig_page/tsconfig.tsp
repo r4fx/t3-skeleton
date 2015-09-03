@@ -14,13 +14,12 @@ TCEMAIN.table {
 
 
 #============================================================
-# USTAWIENIA MODUŁÓW
+# MODULES SETTINGS
 # http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/Index.html
 #============================================================
-
 mod {
 
-    # USTAWIENIA MODUŁU WEB -> PAGE
+    # WEB -> PAGE
     web_layout {
         menu.function {
             // Disable QuickEdit
@@ -30,13 +29,13 @@ mod {
         disableSearchBox = 1
     }
 
-    # USTAWIENIA MODUŁU WEB -> VIEW
+    # WEB -> VIEW
     web_view.previewFrameWidths {
         300.label = myPreview
         300.height = 500
     }
 
-    # USTAWIENIA MODUŁU WEB -> LIST
+    # WEB -> LIST
     web_list {
         alternateBgColors = 1
     }
@@ -46,7 +45,6 @@ mod {
         #defaultLanguageLabel = polish
     }
 }
-
 
 
 #===================================================
@@ -64,25 +62,6 @@ mod.wizards.newContentElement.wizardItems.special {
             bodytext = &lt;div>PRISM!</div>
         }
     }
-}
 
-mod.wizards.newContentElement.wizardItems.special.show := addToList(prism)
-
-
-#===================================================
-# SET DEFAULT CONFIG FOR FLEXFORM FIELDS
-# http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/TCEform/Index.html
-#===================================================
-TCEFORM {
-    tt_content {
-        pi_flexform.mygeshi_pi1.sDEF {
-            title.disabled = 1
-            code {
-                config {
-                    cols = 200
-                    rows = 10
-                }
-            }
-        }
-    }
+    show := addToList(prism)
 }
