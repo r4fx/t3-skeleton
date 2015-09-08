@@ -5,7 +5,6 @@ RTE.default {
 
 	disableLayoutFieldsetInTableOperations = 0
 	disableAlignmentFieldsetInTableOperations = 0
-    disableSpacingFieldsetInTableOperations = 0
 
     buttons {
 
