@@ -1,0 +1,26 @@
+<!-- Use subpage skeleton layout, file with the same name (subpage.html) from path: assets/html/layouts/ -->
+<f:layout name="{layout}"/>
+
+<!-- Main section for content -->
+<f:section name="content">
+    <section>
+        <f:if condition="{data.uid} > 1">
+            <f:if condition="{data.hidePageHeader} != 1">
+                <h1>
+                    <f:if condition="{data.subtitle}">
+                        <f:then>
+                            {data.subtitle}
+                        </f:then>
+                        <f:else>
+                            {data.title}
+                        </f:else>
+                    </f:if>
+                </h1>
+            </f:if>
+        </f:if>
+
+        <div>
+            <f:format.raw>{content-main}</f:format.raw>
+        </div>
+    </section>
+</f:section>

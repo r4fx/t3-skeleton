@@ -16,6 +16,10 @@ page.10 {
 
             2 = TEXT
             2.value = {$path.html}/templates/subpage.html
+
+
+            3 = TEXT
+            3.value = {$path.html}/templates/subpage-one-col.html
         }
     }
 
@@ -27,6 +31,7 @@ page.10 {
 
     variables {
         // Dynamic FE layout change based on BE layout
+        // each position reffer to BE Layout record ID from system folder
         layout = CASE
         layout {
             key.data = page:backend_layout // levelfield:-2, backend_layout_next_level, slide
@@ -38,6 +43,8 @@ page.10 {
 
             2 = TEXT
             2.value = subpage
+
+            3 < .2
         }
 
         content-main < styles.content.get
