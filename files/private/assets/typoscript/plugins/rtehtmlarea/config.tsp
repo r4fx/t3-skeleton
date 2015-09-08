@@ -86,13 +86,12 @@ RTE.default {
                     #allowedClasses := addToList()
                     allowedClasses := removeFromList(external-link-new-window, internal-link-new-window, internal-link)
                 }
-                #target.default = _blank
             }
 
             # Exteranl links
             url {
                 properties {
-                    # target works only in v7.x
+                    # target works from TYPO3 v.7
                     target.default = _blank
                     class.default = external-link
                 }
@@ -101,7 +100,7 @@ RTE.default {
             # File links
             file {
                 properties {
-                    # target works only in v7.x
+                    # target works from TYPO3 v.7
                     target.default = _blank
                     class.default = download
                 }
