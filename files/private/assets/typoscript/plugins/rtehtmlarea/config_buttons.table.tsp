@@ -13,8 +13,8 @@ RTE.default {
             tags {
 
                 table {
-                    allowedClasses := addToList(float-right, float-left)
-                }
+					allowedClasses := addToList(table--wide, table--rwd-cols)
+				}
 				
 				td {
                     allowedClasses := addToList(inline-left, inline-right)
