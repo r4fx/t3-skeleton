@@ -203,7 +203,7 @@ RTE.default {
 	disableLayoutFieldsetInTableOperations = 1
 	disableBordersFieldsetInTableOperations = 1
     disableDescriptionFieldsetInTableOperations = 1
-    disableStyleFieldsetInTableOperations = 1
+    disableStyleFieldsetInTableOperations = 0
 
     #***** userElements
 	userElements {
