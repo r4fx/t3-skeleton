@@ -83,8 +83,8 @@ RTE.default {
 
             properties {
                 class {
-                    #allowedClasses := addToList()
                     allowedClasses := removeFromList(external-link-new-window, internal-link-new-window, internal-link)
+                    allowedClasses := addToList(btn)
                 }
             }
 
