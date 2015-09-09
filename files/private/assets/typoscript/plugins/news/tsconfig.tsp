@@ -3,11 +3,6 @@
 # Remember to change PIDs corresponding to your installation
 #===================================================
 
-
-# !!! tx_news do not respect configuration from this file, probably bug https://forge.typo3.org/issues/61804
-# !!! add this config in Page TS Config at Root page
-
-
 tx_news {
     singlePid = 28
 
@@ -37,7 +32,6 @@ tx_news {
         }
     }
 }
-
 
 #===================================================
 # SET DEFAULT VALUES FOR FLEXFORM FIELDS
