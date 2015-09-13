@@ -3,6 +3,8 @@
 # DOC REF: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
 #============================================================
 
+# Remove tags <a id="c123"></a> for localisations
+tt_content.stdWrap.prepend >
 
 #============================================================
 # CONTENT LAYOUT
@@ -65,6 +67,3 @@ tt_content.stdWrap.innerWrap.cObject {
     }
     40.30.cObject.default.value = ><div class="box">|</div></section>
 }
-
-# Remove tags <a id="c123"></a> for localisations
-tt_content.stdWrap.prepend >
