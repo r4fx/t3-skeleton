@@ -39,20 +39,20 @@ tt_content.stdWrap.innerWrap.cObject {
     66 >
 
     # Default
-    30 = TEXT
-    30.value = |
+    0 = TEXT
+    0.value = |
 
     # Box
-    0 < .default
-    0.10.cObject.default.value = <div
-    0.20.10 = COA
-    0.20.10 {
+    30 < .default
+    30.10.cObject.default.value = <div
+    30.20.10 = COA
+    30.20.10 {
         10 = TEXT
         10.value = box
         20 = TEXT
         20 < temp.element_layout
     }
-    0.30.cObject.default.value = >|</div>
+    30.30.cObject.default.value = >|</div>
 
 
     # Color box
