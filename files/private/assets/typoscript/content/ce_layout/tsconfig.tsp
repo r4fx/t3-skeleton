@@ -1,40 +1,36 @@
 #============================================================
+# Manual: https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/TCEform/Index.html
 # Remember to edit file ce_layout/setup.tss
 #============================================================
 
 
 #============================================================
-# CONTENT FRAMES
+# CONTENT WRAPERS
 #============================================================
-TCEFORM.tt_content.section_frame{
-    removeItems = 1,5,6,10,11,12,20,21,66
+TCEFORM.tt_content.section_frame {
+    disableNoMatchingValueElement = 1
 
-    altLabels {
-        0 = [Default - no wrap]
-        #1 = LLL:EXT:ext_key/locallang_tca.xml:tt_content.section_frame.altLabels.20
-    }
+    keepItems = 0
+    altLabels.0 =
 
     addItems {
-        30 = Box
-        40 = Color box
+        1 = Box
+        2 = Color box
     }
 }
 
 #============================================================
 # CONTENT LAYOUT
 #============================================================
-TCEFORM.tt_content.layout{
-    altLabels {
-        0 = ---
-        #1 = Variant 1
-    }
+TCEFORM.tt_content.layout {
+    disableNoMatchingValueElement = 1
+
+    keepItems = 0
+    altLabels.0 =
 
     addItems {
-        10 = center
-        11 = left
-        12 = right
-        13 = mini hr
+        1 = Inline center
+        2 = Inline left
+        3 = Inline right
     }
-
-    removeItems = 1,2,3
 }
