@@ -18,14 +18,13 @@ tt_content.stdWrap.innerWrap.cObject {
     // Box
     1 = COA
     1 {
-        10 = TEXT
-        10.value = <div
+        wrap = <div|</div>
 
-        20 = COA
-        20 {
+        10 = COA
+        10 {
             stdWrap {
+                noTrimWrap = | class="|">|
                 trim = 1
-                noTrimWrap = | class="|"|
                 required = 1
             }
 
@@ -38,23 +37,20 @@ tt_content.stdWrap.innerWrap.cObject {
             20 =< lib.element_layout
         }
 
-        30 = TEXT
-        30.value = >|</div>
+        20 =< tt_content.stdWrap.innerWrap.cObject.0
     }
 
     // Color box
     2 = COA
     2 {
-        wrap = <section>|</section>
+        stdWrap.wrap2 = <section>|</section>
+        wrap = <div|</div>
 
-        10 = TEXT
-        10.value = <div
-
-        20 = COA
-        20 {
+        10 = COA
+        10 {
             stdWrap {
+                noTrimWrap = | class="|">|
                 trim = 1
-                noTrimWrap = | class="|"|
                 required = 1
             }
 
@@ -67,8 +63,7 @@ tt_content.stdWrap.innerWrap.cObject {
             20 =< lib.element_layout
         }
 
-        30 = TEXT
-        30.value = >|</div>
+        20 =< tt_content.stdWrap.innerWrap.cObject.0
     }
 }
 
