@@ -60,6 +60,7 @@ tt_content.stdWrap.innerWrap.cObject {
 
             // Second class
             20 = TEXT
+
             20 =< lib.element_layout
         }
 
@@ -77,12 +78,12 @@ lib.element_layout {
     0 = TEXT
     0.noTrimWrap = | | |
 
-    1 < .0
+    1 =< .0
     1.value = inline-center
 
-    2 < .0
+    2 =< .0
     2.value = inline-left
 
-    3 < .0
+    3 =< .0
     3.value = inline-right
 }
