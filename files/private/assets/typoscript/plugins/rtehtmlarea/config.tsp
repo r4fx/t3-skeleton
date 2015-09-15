@@ -12,6 +12,7 @@ RTE.default {
 	removeTagsAndContents = link, meta, script, style, title
     defaultContentLanguage = pl
 
+    RTEWidthOverride = 75%
     showStatusBar =  1
     keepButtonGroupTogether = 0
 
