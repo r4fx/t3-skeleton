@@ -1,6 +1,6 @@
 #============================================================
 # Remember to edit file ce_layout/tsconfig.tsp
-# DOC REF: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
+# ORYGINAL SOURCE: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
 #============================================================
 
 # Remove tags <a id="c123"></a> for localisations
@@ -10,7 +10,6 @@ tt_content.stdWrap.prepend >
 # CONTENT FRAMES
 #============================================================
 tt_content.stdWrap.innerWrap.cObject {
-
     // Default
     0 = TEXT
     0.value = |

@@ -5,7 +5,7 @@
 
 
 #============================================================
-# CONTENT WRAPERS
+# CONTENT WRAPPERS
 #============================================================
 TCEFORM.tt_content.section_frame {
     disableNoMatchingValueElement = 1
