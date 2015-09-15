@@ -56,9 +56,9 @@ RTE.default {
 		    options {
 		        removeItems = magic
 
-		        magic.maxWidth = 800
+		        magic.maxWidth = 1024
 		        magic.maxHeight = 1000
-		        plain.maxWidth = 800
+		        plain.maxWidth = 1024
 		        plain.maxHeight = 1000
 		    }
 

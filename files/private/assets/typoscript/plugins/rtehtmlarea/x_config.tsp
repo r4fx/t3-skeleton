@@ -10,13 +10,6 @@ RTE.default {
 
     buttons {
         image {
-            options {
-                magic.maxWidth = 800
-                magic.maxHeight = 1000
-                plain.maxWidth = 800
-                plain.maxHeight = 1000
-            }
-
             properties {
                 class {
                     #default =
