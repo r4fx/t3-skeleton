@@ -201,6 +201,10 @@
             <parameter>tx_news_pi1[action]</parameter>
         </part>
 
+        <part key="p/(.*)" regexp="1">
+            <parameter>tx_news_pi1[@widget_0][currentPage]</parameter>
+        </part>
+
         <part key="iCal">
             <parameter>type</parameter>
             <value>9819</value>
