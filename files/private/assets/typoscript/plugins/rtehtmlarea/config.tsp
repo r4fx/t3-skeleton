@@ -66,9 +66,9 @@ RTE.default {
 		    properties {
 		        removeItems = float
 
-		        #***** Class to be assigned by default to an image when it is inserted in the RTE.
 		        class {
-		            #default =
+                    #***** Class to be assigned by default to an image when it is inserted in the RTE.
+                    #default =
 		            allowedClasses = float-left, float-right
 		        }
 		    }
