@@ -1,8 +1,8 @@
 #
 # CUSTOM RTE CONFIG
 #
-# Always actual manual: http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
-#
+# Keep your eyes open on always updated manual:
+# http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
 
 RTE.default {
 
@@ -18,27 +18,26 @@ RTE.default {
             }
         }
 
-        #***** Nowe obiekty dla formatowania,
-        # dodawane pozycje musze byc malymi znakami
+        # New elements in Format blocks, must be lowercase
         formatblock {
             addItems = h4lead, externalurl
 
             items{
                 h4lead {
-                    label = Nagłówek H4 Lead
+                    label = Header lead H4
                     addClass = leadHeader
 					tagName = h4
                 }
 
                 externalurl {
-                    label = Styl dla linku
+                    label = Link style
                     addClass = externalUrl
 					tagName = p
                 }
             }
         }
 
-        #***** Nowe klasy dostępne dla linkow
+        #***** New classess for links
         link {
             properties {
                 class {
@@ -47,7 +46,7 @@ RTE.default {
             }
         }
 
-        #***** Nowe klasy dla obiektów tekstowych (muszą występować w contentCSS)
+        #***** New classess for text objects (they must be present in contentCSS)
         textstyle {
             tags {
                 span {
@@ -56,7 +55,7 @@ RTE.default {
             }
         }
 
-        #***** Nowe klasy dla obiektów blokowych (muszą występować w contentCSS)
+        #***** New classess for block objects (they must be present in contentCSS)
         blockstyle {
             tags {
                 div {
@@ -75,16 +74,16 @@ RTE.default {
 #***** DB PROCESES
 RTE.default.proc {
 
-    #***** Dopuszczane klasy
+    #***** Allowed classess
     allowedClasses := addToList(sizeBigger, externalUrl)
 }
 
 
-#***** Obsługa klas z rte.css
+#***** Fun with classess from rte.css
 RTE.classes {
 	sizeBigger {
 		#name = LLL:EXT:rtehtmlarea/htmlarea/locallang_tooltips.xml:justifyleft
-		name = Większy tekst
+		name = Bigger text
 	}
 }
 
@@ -123,14 +122,14 @@ RTE.colors {
 RTE.default {
     userElements {
         # Category with various elements
-        10 = Zdefiniowane elementy
+        10 = Defined elements
         10 {
-            2 = Pozioma linia
-            2.description = Wstawia bezpieczną poziomą linię
+            2 = Horizontal line
+            2.description = Safely horizontal line
             2.content = <div><hr></div>
 
             3 = Content ID
-            3.description = Zostanie wyswietlona zawartosc contentu o wskazanym Id
+            3.description = Insert content by Id
             3.mode = wrap
             3.content = <t3content>|</t3content>
 
@@ -145,11 +144,11 @@ RTE.default {
             5.submitToScript = typo3/rte_cleaner.php
         }
 
-        # Category with images from the fileadmin/istate/ folder
+        # Category with images from the files/public/istate/ folder
         20 = Logo
         20.load = images_from_folder
         20.merge = 1
-        20.path = fileadmin/istate/
+        20.path = files/public/istate/
         # here the logo from "Various elements" is included as well
         20.1 < .10.1
     }

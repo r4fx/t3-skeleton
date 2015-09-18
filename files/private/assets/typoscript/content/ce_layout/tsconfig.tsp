@@ -1,7 +1,5 @@
-#============================================================
 # Manual: https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/TCEform/Index.html
 # Remember to edit file ce_layout/setup.tss
-#============================================================
 
 
 #============================================================
