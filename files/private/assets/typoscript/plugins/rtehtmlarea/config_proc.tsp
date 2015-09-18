@@ -81,8 +81,8 @@ RTE.default.proc {
             ## CLEAN ATTRIBUTES (style) ON THE FOLLOWING TAGS (span)
             span.fixAttrib.style.unset = 1
 
-            ## Allow style attribute fos span
-            span.fixAttrib.style.unset >
+			## REVERT -> Allow style attribute for span
+			span.fixAttrib.style.unset >
 
 			hr.allowedAttribs = class
 			b.allowedAttribs = id, title, dir, lang, xml:lang, class
