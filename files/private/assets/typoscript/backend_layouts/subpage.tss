@@ -1,4 +1,4 @@
-#<INCLUDE_TYPOSCRIPT:source="FILE:files/private/assets/typoscript/backend_layouts/main-aside.ts">
+#<INCLUDE_TYPOSCRIPT:source="FILE:files/private/assets/typoscript/backend_layouts/subpage.ts">
 
 backend_layout {
     colCount = 2
@@ -10,6 +10,7 @@ backend_layout {
                     name = Main content
                     colPos = 0
                 }
+
                 2 {
                     name = Aside
                     colPos = 1
