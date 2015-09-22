@@ -1,4 +1,4 @@
-#<INCLUDE_TYPOSCRIPT:source="FILE:files/private/assets/typoscript/backend_layouts/subpage.ts">
+#<INCLUDE_TYPOSCRIPT:source="FILE:files/private/assets/typoscript/backend_layouts/subpage.tss">
 
 backend_layout {
     colCount = 2
