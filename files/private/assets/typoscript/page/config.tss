@@ -28,8 +28,8 @@ config {
     disablePrefixComment = 1
 
     // CSS
-    #removeDefaultCss = 0
-    #removePageCss = 1
+    removeDefaultCss = 0
+    removePageCss = 0
     inlineStyle2TempFile = 1
     compressCss = 1
     concatenateCss = 1
