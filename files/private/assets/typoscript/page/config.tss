@@ -14,9 +14,6 @@ config {
     index_metatags = 0
     headerComment = {$config.headerComment}
     doctype = html5
-
-    #prefixLocalAnchors = 0 // Removed from 7 LTS
-
     meaningfulTempFilePrefix = 100
     lockFilePath = files/public/
 
