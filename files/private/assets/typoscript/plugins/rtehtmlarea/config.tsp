@@ -230,4 +230,3 @@ RTE.classes >
 RTE.default.FE < RTE.default
 RTE.default.FE.FE >
 RTE.default.FE.userElements >
-RTE.default.FE.userLinks >

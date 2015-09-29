@@ -14,7 +14,6 @@ config {
     index_metatags = 0
     headerComment = {$config.headerComment}
     doctype = html5
-    meaningfulTempFilePrefix = 100
     lockFilePath = files/public/
 
     pageTitleFirst = 1
