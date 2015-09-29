@@ -1,9 +1,14 @@
-#============================================================
-# RTE FIXES
-#============================================================
+lib.parseFunc_RTE {
+    externalBlocks {
+        # FIX STYLES FOR BLOCKQUOTE TAG
+        blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
 
-# FIX STYLES FOR BLOCKQUOTE TAG
-lib.parseFunc_RTE.externalBlocks.blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
-
-# FIX TABLE CLASS FOR RTE
-lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list >
+        # FIX TABLE CLASS FOR RTE
+        table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+            list >
+            default = contenttable
+            always = 1
+            set = contenttable contenttable--rte
+        }
+    }
+}
