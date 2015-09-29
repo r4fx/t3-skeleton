@@ -126,13 +126,3 @@ lib.parseFunc_RTE {
         }
     }
 }
-
-#============================================================
-# RTE FIXES
-#============================================================
-
-# FIX STYLES FOR BLOCKQUOTE TAG
-lib.parseFunc_RTE.externalBlocks.blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
-
-# FIX TABLE CLASS FOR RTE
-lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list >
