@@ -1,14 +1,12 @@
 page.10 = FLUIDTEMPLATE
 page.10 {
-    format = html
-
-    // Template files for page content, dynamic changed based on BE layout
-    // Each position ID refers to Backend Layout record ID from storage folder
     file {
         stdWrap.cObject = CASE
         stdWrap.cObject {
-            key.data = levelfield:-1, backend_layout_next_level, slide
-            key.override.field = backend_layout
+            // Template files for page content, change dynamically based on BE layout
+            // Each position refers to Backend Layout records ID from storage folder
+
+            key.data = pagelayout
 
             default = TEXT
             default.value = {$path.html}/templates/subpage.html
@@ -19,18 +17,15 @@ page.10 {
             2 = TEXT
             2.value = {$path.html}/templates/subpage.html
 
-
             3 = TEXT
             3.value = {$path.html}/templates/subpage-one-col.html
         }
     }
 
-    // Folder that contains Fluid layouts
     layoutRootPath = {$path.html}/layouts/
-
-    // Folder that contains Fluid partials
     partialRootPath = {$path.html}/partials/
 
+    // Variables used in Templates files
     variables {
         content-main < styles.content.get
         content-main {
