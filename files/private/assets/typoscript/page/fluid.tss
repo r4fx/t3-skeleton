@@ -2,7 +2,8 @@ page.10 = FLUIDTEMPLATE
 page.10 {
     format = html
 
-    // Template files with sections for content, dynamic changed based on BE layout
+    // Template files for page content, dynamic changed based on BE layout
+    // Each position ID refers to Backend Layout record ID from storage folder
     file {
         stdWrap.cObject = CASE
         stdWrap.cObject {
@@ -10,9 +11,10 @@ page.10 {
             key.override.field = backend_layout
 
             default = TEXT
-            default.value = {$path.html}/templates/main.html
+            default.value = {$path.html}/templates/subpage.html
 
-            1 < .default
+            1 = TEXT
+            1.value = {$path.html}/templates/main.html
 
             2 = TEXT
             2.value = {$path.html}/templates/subpage.html
@@ -23,29 +25,13 @@ page.10 {
         }
     }
 
-    // Folder that contains skeleton Fluid layouts
+    // Folder that contains Fluid layouts
     layoutRootPath = {$path.html}/layouts/
 
     // Folder that contains Fluid partials
     partialRootPath = {$path.html}/partials/
 
     variables {
-        // Dynamic FE layout change based on BE layout
-        // each position reffer to BE Layout record ID from system folder
-        layout = CASE
-        layout {
-            key.data = page:backend_layout // levelfield:-2, backend_layout_next_level, slide
-
-            default = TEXT
-            default.value = main
-
-            1 < .default
-
-            2 = TEXT
-            2.value = subpage
-
-            3 < .2
-        }
 
         content-main < styles.content.get
         content-main {
