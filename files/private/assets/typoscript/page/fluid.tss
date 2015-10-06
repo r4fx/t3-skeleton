@@ -32,7 +32,6 @@ page.10 {
     partialRootPath = {$path.html}/partials/
 
     variables {
-
         content-main < styles.content.get
         content-main {
             select.where = colPos = 0
