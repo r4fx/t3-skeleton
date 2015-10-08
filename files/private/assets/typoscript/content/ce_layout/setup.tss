@@ -24,7 +24,7 @@ tt_content.stdWrap.innerWrap.cObject {
             stdWrap {
                 noTrimWrap = | class="|">|
                 trim = 1
-                required = 1
+                #required = 1
             }
 
             // First class
@@ -50,7 +50,7 @@ tt_content.stdWrap.innerWrap.cObject {
             stdWrap {
                 noTrimWrap = | class="|">|
                 trim = 1
-                required = 1
+                #required = 1
             }
 
             // First class
