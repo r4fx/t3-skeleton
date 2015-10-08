@@ -15,37 +15,36 @@ mod.web_list {
 # OPTIONS
 #============================================================
 options {
+	# Check your ID of File Storage at Root page (in Skeleton complete path should be "files/public/uploads/graphics")
+	# by default this is created by system and is called "fileadmin"
+	defaultUploadFolder = 2:/uploads/graphics/
+	popupWindowSize = 900x900
+	uploadFieldsInTopOfEB = 0
+	createFoldersInEB = 1
+	defaultFileUploads = 1
+
 	showHistory = 1
 	clipboardNumberPads = 2
 
-    hideModules = help
-
 	pageTree {
-	    showPageIdWithTitle = 1
-	    showDomainNameWithTitle = 0
+		uploadFieldsInLinkBrowser = 1
+		hideCreateFolder = 1
+		showPageIdWithTitle = 1
+		showDomainNameWithTitle = 0
 		backgroundColor.2 = rgba(122, 0, 255, 0.1)
-
 	}
 
-    # htmlArea RTE
-    #**********************************
-    uploadFieldsInTopOfEB = 1
-    createFoldersInEB = 1
+	HTMLAreaPspellMode = bad-spellers
+	enablePersonalDicts = 1
 
-    # Check your ID of File Storage at Root page (in Skeleton complete path should be "files/public/uploads/graphics")
-    # by default this is created by system and is called "fileadmin"
-    defaultUploadFolder = 2:/uploads/graphics/
-
-    HTMLAreaPspellMode = bad-spellers
-    enablePersonalDicts = 1
+	hideModules = help
 }
 
 setup {
     default {
 	    edit_wideDocument = 1
-		enableFlashUploader = 1
 		resizeTextareas_Flexible = 0
-		resizeTextareas_MaxHeight = 500
+		#resizeTextareas_MaxHeight = 500 //bug in 7lts
 		edit_docModuleUpload = 1
 		titleLen = 150
 		thumbnailsByDefault = 1
