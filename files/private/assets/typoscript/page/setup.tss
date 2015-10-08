@@ -6,11 +6,8 @@ page {
     # STYLES
     #============================================================
 	includeCSS {
-        swiper = {$css.swiper}
+        slick = {$css.slick}
         mate = {$css.mate}
-
-        #tablet = {$css.tablet}
-  		#tablet.media = screen and (max-width: 768px)
 	}
 
     #============================================================
@@ -25,8 +22,8 @@ page {
     #============================================================
 	includeJSFooterlibs {
         popup = {$js.popup}
-        swiper = {$js.swiper}
-        swiper {
+        slick = {$js.slick}
+        slick {
             async = 1
             if {
                 isInList.field = uid
@@ -41,7 +38,6 @@ page {
     # HEADER DATA
     #============================================================
     headerData {
-
         7 = TEXT
         7.value (
             {$headerData.touchIcon}
@@ -95,34 +91,3 @@ page.101.value (
         }(document));
     </script>
 )
-
-#============================================================
-# RTE ADDITIONAL CONFIG
-#============================================================
-lib.parseFunc_RTE {
-    // Extend default list of allowed tags
-    allowTags := addToList(cite,code,iframe,object,param,embed,t3content)
-
-    // Do not wrap these tags
-    nonTypoTagStdWrap.encapsLines {
-        encapsTagList := addToList(cite,code,p,div,iframe,t3content)
-        remapTag.DIV >
-    }
-
-    // New tags
-    tags {
-        t3content = CONTENT
-        t3content {
-            table = tt_content
-            select {
-                pidInList = 12
-                where = uid=###CONTENT_ID###
-                markers {
-                    CONTENT_ID.current = 1
-                }
-            }
-
-            wrap = <div class="t3Tag">|</div>
-        }
-    }
-}
