@@ -31,13 +31,14 @@ styles.content.imgtext {
     linkWrap.height = 600m
     linkWrap.lightboxEnabled = 1
     linkWrap.lightboxCssClass = popup
-    linkWrap.lightboxRelAttribute = {field:uid}
+    linkWrap.lightboxRelAttribute = gallery[{field:uid}]
     colSpace = 20
     rowSpace = 20
     textMargin = 20
     borderColor = #D9D9D9
     borderThick = 1
 }
+
 
 #===================================================
 # HEADER DATA
