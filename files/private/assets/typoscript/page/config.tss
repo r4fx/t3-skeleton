@@ -50,24 +50,37 @@ config {
 # LANG SETTINGS
 #============================================================
 config {
-	linkVars = L(int)
-	language = pl
-	sys_language_uid = 0
-	locale_all = pl_PL.UTF-8
-	htmlTag_langKey = pl
-	sys_language_overlay = hideNonTranslated
-	sys_language_mode = content_fallback
-	sys_language_softMergeIfNotBlank = tt_content:image
-	#sys_language_softExclude = tt_content:imageorient
-	htmlTag_setParams := appendString( lang="pl")
-	plugin.tx_indexedsearch._DEFAULT_PI_VARS.lang = 0
+    linkVars = L(int)
+    sys_language_overlay = hideNonTranslated
+    sys_language_mode = content_fallback
+    sys_language_softMergeIfNotBlank = tt_content:image
+    #sys_language_softExclude = tt_content:imageorient
 }
+
+# POLISH (default)
+config {
+    sys_language_uid = 0
+    language = pl
+    locale_all = pl_PL.utf-8
+    htmlTag_setParams := appendString( lang="pl")
+}
+
+# ENGLISH
+[globalVar = GP:L=1]
+    config {
+        sys_language_uid = 1
+        language = en
+        locale_all = en_EN.utf-8
+        htmlTag_langKey = en
+        htmlTag_setParams := appendString( lang="en")
+    }
+[end]
 
 #============================================================
 # DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 #============================================================
 [globalVar = GP:debug=1]
-    plugin.tx_tinysource.enable = 0
+    #plugin.tx_tinysource.enable = 0
 
     config {
         admPanel = 1
