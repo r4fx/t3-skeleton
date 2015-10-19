@@ -31,7 +31,6 @@ lib.parseFunc_RTE {
         t3content {
             table = tt_content
             select {
-                pidInList = 12
                 where = uid=###CONTENT_ID###
                 markers {
                     CONTENT_ID.current = 1
