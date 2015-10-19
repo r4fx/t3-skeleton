@@ -11,7 +11,7 @@ lib.parseFunc_RTE {
         table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
             list >
             default = contenttable
-            always = 1
+            always = 0
             set = contenttable contenttable--rte
         }
     }
