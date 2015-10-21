@@ -1,9 +1,9 @@
-# Keep your eyes open on always updated manual:
-# http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
+// Keep your eyes open on always updated manual:
+// http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
 
 RTE.default {
 
-    path = files/public/uploads/graphics/
+    path = files/public/uploads/
     contentCSS = files/private/assets/typoscript/plugins/rtehtmlarea/rte.css
 
     enableWordClean = 1
@@ -17,11 +17,11 @@ RTE.default {
     showStatusBar =  1
     keepButtonGroupTogether = 0
 
-    #***** Toolbar options
+    // Toolbar options
 	showButtons = *
 	hideButtons = fontstyle, emoticon, language, showlanguagemarks, lefttoright, righttoleft, textindicator, acronym, big, small, blockstyle, emphasis, insertedtext, definition, showhelp, deletedtext, fontsize, copy, cut, paste, monospaced,citation, code, user
 
-	#***** The keywords space, bar and linebreak may be used to insert a space, a separator or a line break
+	// The keywords space, bar and linebreak may be used to insert a space, a separator or a line break
     toolbarOrder (
         formatblock, space, textstyle, bar, left, center, right, justifyfull, space, orderedlist, unorderedlist, definitionlist, definitionitem, bar, indent, outdent, insertparagraphbefore, insertparagraphafter, linebreak,
         table, toggleborders, bar, tableproperties, tablerestyle, bar, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, bar, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge, linebreak,
@@ -47,7 +47,7 @@ RTE.default {
         )
     }
 
-    #***** Buttons behaviour
+    // Buttons behaviour
 	buttons {
         left.useClass = inline-left
         center.useClass = inline-center
@@ -68,7 +68,7 @@ RTE.default {
                 removeItems = float, paddingTop, paddingRight, paddingBottom, paddingLeft
 
                 class {
-                    #***** Class to be assigned by default to an image when it is inserted in the RTE.
+                    // Class to be assigned by default to an image when it is inserted in the RTE.
                     #default =
 		            allowedClasses = float-left, float-right
 		        }
@@ -91,19 +91,19 @@ RTE.default {
                 }
             }
 
-            # Exteranl links
+            // Exteranl links
             url {
                 properties {
-                    # target works from TYPO3 v.7
+                    // target works from TYPO3 v.7
                     target.default = _blank
                     class.default = external-link
                 }
             }
 
-            # File links
+            // File links
             file {
                 properties {
-                    # target works from TYPO3 v.7
+                    // target works from TYPO3 v.7
                     target.default = _blank
                     class.default = download
                 }
@@ -119,7 +119,7 @@ RTE.default {
         }
 
         formattext {
-            #***** If not set, the default order will be alphabetical
+            // If not set, the default order will be alphabetical
             #orderItems =
             #removeItems =
         }
@@ -129,7 +129,7 @@ RTE.default {
             #removeItems =
         }
 
-        #***** Hidden from toolbar
+        // Hidden from toolbar
         fontsize {
             removeItems = *
             addItems = Small, Normal, Large
@@ -137,9 +137,9 @@ RTE.default {
             width = 100
         }
 
-        #***** Text objects
+        // Text objects
         textstyle {
-            # Show all applicable class selectors available in the style sheet file
+            // Show all applicable class selectors available in the style sheet file
             showTagFreeClasses = 1
 
             width = 150
@@ -152,8 +152,8 @@ RTE.default {
             }
         }
 
-        #***** Block objects
-        #***** New classes for objects (these classes must exist in contentCSS file)
+        // Block objects
+        // New classes for objects (these classes must exist in contentCSS file)
         blockstyle {
             # Show all applicable class selectors available in the style sheet file
             showTagFreeClasses = 1
@@ -196,14 +196,14 @@ RTE.default {
 	        removeFieldsets = language, events
 	    }
 
-	    #***** HOT KEYS
+	    // HOT KEYS
         strong.hotKey = b
         italic.hotKey = i
         strikethrough.hotKey = s
         underline.hotkey = u
 	}
 
-    #***** Remove the following fieldsets from the table operations dialogs
+    // Remove the following fieldsets from the table operations dialogs
 	disableAlignmentFieldsetInTableOperations = 1
 	disableSpacingFieldsetInTableOperations = 1
 	disableColorFieldsetInTableOperations = 1
@@ -212,13 +212,13 @@ RTE.default {
     disableDescriptionFieldsetInTableOperations = 1
     disableStyleFieldsetInTableOperations = 0
 
-    #***** userElements
+    // userElements
 	userElements {
 
 	}
 }
 
-#***** Property for "buttons.link"
+// Property for "buttons.link"
 RTE.classesAnchor {
     externalLink.titleText >
     internalLink.titleText >
@@ -231,7 +231,7 @@ RTE.classesAnchor {
 RTE.classes >
 
 
-#***** FE RTE configuration
+// FE RTE configuration
 RTE.default.FE < RTE.default
 RTE.default.FE.FE >
 RTE.default.FE.userElements >
