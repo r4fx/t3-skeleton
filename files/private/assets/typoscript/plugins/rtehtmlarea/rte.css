@@ -28,6 +28,9 @@
   width: 100%;
 }
 
-.table--rwd-cols {
+.table--rwd-cols {}
 
+table thead td,
+table th {
+  background-color: #ccc;
 }
