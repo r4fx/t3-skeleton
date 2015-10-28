@@ -15,11 +15,11 @@ lib.mainNav = HMENU
 lib.mainNav {
     special = list
     special.value = 3,4,5,6
-    wrap = <ul>|</ul>
 
     1 = TMENU
     1 {
-        wrap = |
+        wrap = <ul>|</ul>
+
         NO {
             allWrap = <li>|</li>
         }
@@ -53,13 +53,11 @@ lib.subNav {
     }
 }
 
-
 //===================================================
 // SUBPAHE HEADER
 //===================================================
 lib.header = TEXT
 lib.header.data = page:subtitle // page:title
-
 
 //===================================================
 // YEAR OF COPYRIGHT
