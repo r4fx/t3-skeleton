@@ -1,10 +1,20 @@
-#===================================================
-# MAIN NAVIGATION
-#===================================================
+//===================================================
+// LOGO WITH LINK (WORKS WITH MULTILANGUE SITE)
+//===================================================
+lib.logo = TEXT
+lib.logo {
+    value = <img class="logotype" src="{$path.images}/logotype.svg" width="160" height="18" />
+    insertData = 1
+    typolink.parameter = 1
+}
+
+//===================================================
+// MAIN NAVIGATION
+//===================================================
 lib.mainNav = HMENU
 lib.mainNav {
     special = list
-    special.value = 14,10,6,5,16,15,4
+    special.value = 3,4,5,6
     wrap = <ul>|</ul>
 
     1 = TMENU
@@ -16,14 +26,14 @@ lib.mainNav {
 
         ACT = 1
         ACT {
-            allWrap = <li class="act">|</li>
+            allWrap = <li class="active">|</li>
         }
     }
 }
 
-#===================================================
-# SUBPAGE NAVIGATION
-#===================================================
+//===================================================
+// SUBPAGE NAVIGATION
+/===================================================
 lib.subNav = HMENU
 lib.subNav {
     entryLevel = 1
@@ -38,22 +48,22 @@ lib.subNav {
 
         ACT = 1
         ACT {
-            allWrap = <li class="act">|</li>
+            allWrap = <li class="active">|</li>
         }
     }
 }
 
 
-#===================================================
-# NAGLOWEK/TYTUL PODSTRONY
-#===================================================
+//===================================================
+// SUBPAHE HEADER
+//===================================================
 lib.header = TEXT
 lib.header.data = page:subtitle // page:title
 
 
-#===================================================
-# AUTOMATYCZNY ROK PRZY COPYRIGHT
-#===================================================
+//===================================================
+// YEAR OF COPYRIGHT
+//===================================================
 lib.copyright = TEXT
 lib.copyright {
     data = date:U
