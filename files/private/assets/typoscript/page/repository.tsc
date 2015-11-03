@@ -10,16 +10,16 @@ path {
 css{
     mate = {$path.css}/mate.css
     popup = {$path.js}/vendors/magnific-popup/magnific-popup.css
-    swiper = {$path.js}/vendors/swiper/idangerous.swiper.css
+    slick = {$path.js}/vendors/slick/slick.css
 }
 
 // JS LIBS
 js{
-    jquery = {$path.js}/vendors/jquery-2.1.3.min.js
+    jquery = {$path.js}/vendors/jquery-2.1.4.min.js
     popup = {$path.js}/vendors/magnific-popup/jquery.magnific-popup.min.js
-    swiper = {$path.js}/vendors/swiper/idangerous.swiper.min.js
-    swiper.onlyPids = 39,6
-    app = {$path.js}/main.js
+    slick = {$path.js}/vendors/slick/slick.min.js
+    #slick.onlyPids = 39,6
+    main = {$path.js}/main.js
 }
 
 // JS CONFIG
