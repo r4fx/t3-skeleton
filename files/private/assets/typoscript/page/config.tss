@@ -44,9 +44,7 @@ config {
     additionalHeaders = Cache-Control: max-age=604800
 }
 
-#============================================================
-# LANG SETTINGS
-#============================================================
+// LANG SETTINGS
 config {
     linkVars = L(int)
     sys_language_overlay = hideNonTranslated
@@ -55,7 +53,7 @@ config {
     #sys_language_softExclude = tt_content:imageorient
 }
 
-# POLISH (default)
+// POLISH (default)
 config {
     sys_language_uid = 0
     language = pl
@@ -63,7 +61,7 @@ config {
     htmlTag_setParams := appendString( lang="pl")
 }
 
-# ENGLISH
+// ENGLISH
 [globalVar = GP:L=1]
     config {
         sys_language_uid = 1
@@ -74,9 +72,7 @@ config {
     }
 [end]
 
-#============================================================
-# DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
-#============================================================
+// DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 [globalVar = GP:debug=1]
     #plugin.tx_tinysource.enable = 0
 
