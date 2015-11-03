@@ -1,29 +1,20 @@
-#===================================================
-# FLUID SETTINGS
-#===================================================
+// FLUID SETTINGS
 settings {
-    # cat = FLUID Settings/xxx/010; type=string; label= Show/hide page header: 1 - show (default), 0 - hide
     showHeader = 1
 }
 
-#===================================================
-# META TAGS VALUES
-#===================================================
+// META TAGS VALUES
 meta {
     description =
     keywords =
 }
 
-#===================================================
-# PAGE CONFIG
-#===================================================
+// PAGE CONFIG
 config {
 	headerComment = ======= Created by frontside [fside.pl] ======= 2015 =======
 }
 
-#===================================================
-# CONTENT ELEMENTS SETTINGS
-#===================================================
+// CONTENT ELEMENTS SETTINGS
 styles.content.imgtext {
     maxW = 845
     maxWInText = 845
@@ -39,10 +30,7 @@ styles.content.imgtext {
     borderThick = 1
 }
 
-
-#===================================================
-# HEADER DATA
-#===================================================
+// HEADER DATA
 headerData {
   touchIcon (
     <link rel="shortcut icon" href="{$path.images}/favicons/favicon.ico">

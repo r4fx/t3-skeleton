@@ -1,14 +1,11 @@
-#============================================================
-# Remember to edit file ce_layout/tsconfig.tsp
-# ORYGINAL SOURCE: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
-#============================================================
+// Remember to edit file ce_layout/tsconfig.tsp
+// ORYGINAL SOURCE: https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/css_styled_content/static/setup.txt
+// **********************************************************************
 
-# Remove tags <a id="c123"></a> for localisations
+// Remove tags <a id="c123"></a> for localisations
 tt_content.stdWrap.prepend >
 
-#============================================================
-# CONTENT FRAMES
-#============================================================
+// CONTENT FRAMES
 tt_content.stdWrap.innerWrap.cObject {
     // Default
     0 = TEXT
@@ -67,9 +64,7 @@ tt_content.stdWrap.innerWrap.cObject {
     }
 }
 
-#============================================================
-# CONTENT LAYOUT
-#============================================================
+// CONTENT LAYOUT
 lib.element_layout = CASE
 lib.element_layout {
     key.field = layout

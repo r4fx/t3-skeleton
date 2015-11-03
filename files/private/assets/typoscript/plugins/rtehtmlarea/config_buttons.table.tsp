@@ -1,8 +1,8 @@
-//
 // OPTIONAL SETTINGS FOR TABLES
 //
 // Keep your eyes open on always updated manual:
 // http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
+// **********************************************************************
 
 RTE.default {
 

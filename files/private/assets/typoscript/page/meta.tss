@@ -1,14 +1,10 @@
-#============================================================
-# PAGE TITLE
-#============================================================
+// PAGE TITLE
 config.noPageTitle = 1
 [PIDupinRootline = 1]
     config.noPageTitle = 0
 [end]
 
-#============================================================
-# META TAGS
-#============================================================
+// META TAGS
 page.meta {
     viewport = width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1
 
@@ -24,9 +20,7 @@ page.meta {
     #robots = noindex, nofollow
 }
 
-#============================================================
-# OPEN GRAPH
-#============================================================
+// OPEN GRAPH
 page.headerData {
     301 = COA
     301 {

@@ -1,18 +1,12 @@
-#
-# THIS IS A AN EXAMPLE OF OPTIONS FOR BE USER/GROUP
-#
+// THIS IS A AN EXAMPLE OF OPTIONS FOR BE USER/GROUP
+// **********************************************************************
 
 taskcenter {
-	# Disable "Import/Export":
+	// Disable "Import/Export":
 	impexp.tx_impexp_task = 0
 }
 
-#===== ustawienia dla pluginu "hidelisticons"
-mod.web_list.extend {
-     hideControlButtons = cut, copy, hide, delete, edit, create, info, history
-}
-
-#===== context menu
+// CONTEXT MENU
 options {
 	pageTree.disableIconLinkToContextmenu = 1	
 	folderTree.disableIconLinkToContextmenu = 1
@@ -36,16 +30,16 @@ setup.default {
 mod.web_list{
 	enableClipBoard = deactivated
 
-	# Extended view
+	// Extended view
 	enableDisplayBigControlPanel = deactivated
 
-    # Localization view
+    // Localization view
 	enableLocalizationView = deactivated
 
 	noCreateRecordsLink = 1
 
     listOnlyInSingleTableView = 0
-    #hideTables = evo_fly_biura
+    #hideTables = table_name
 }
 
 options {

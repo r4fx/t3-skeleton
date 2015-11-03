@@ -11,10 +11,10 @@ lib.logo {
 //===================================================
 // MAIN NAVIGATION
 //===================================================
-lib.mainNav = HMENU
-lib.mainNav {
+lib.main-nav = HMENU
+lib.main-nav {
     special = list
-    special.value = 3,4,5,6
+    special.value = {$settings.nav.main-nav}
 
     1 = TMENU
     1 {
@@ -34,8 +34,8 @@ lib.mainNav {
 //===================================================
 // SUBPAGE NAVIGATION
 /===================================================
-lib.subNav = HMENU
-lib.subNav {
+lib.sub-nav = HMENU
+lib.sub-nav {
     entryLevel = 1
 
     1 = TMENU

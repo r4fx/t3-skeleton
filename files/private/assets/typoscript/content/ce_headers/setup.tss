@@ -1,11 +1,7 @@
-#============================================================
-# Remember to edit file ce_headers/tsconfig.tsp
-#============================================================
+// Remember to edit file ce_headers/tsconfig.tsp
+// **********************************************************************
 
-
-#============================================================
-# CONTENT HEADERS
-#============================================================
+// CONTENT HEADERS
 lib.stdheader.stdWrap.dataWrap >
 lib.stdheader.10 {
     1.dataWrap = <h2>|</h2>
@@ -14,8 +10,7 @@ lib.stdheader.10 {
     4.dataWrap = <h4>|</h4>
     5.dataWrap = <h5>|</h5>
 
-    # ADDITIONAL HEADERS
-    #========================================================
+    // ADDITIONAL HEADERS
     6 = TEXT
     6 {
         current = 1

@@ -1,7 +1,6 @@
-#============================================================
-# BASE SETTINGS
-# Reference: http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html
-#============================================================
+// BASE SETTINGS
+// Reference: http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html
+// **********************************************************************
 
 config {
     admPanel = 0

@@ -1,10 +1,8 @@
-# Manual: https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/TCEform/Index.html
-# Remember to edit file ce_layout/setup.tss
+// Manual: https://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/TCEform/Index.html
+// Remember to edit file ce_layout/setup.tss
+// **********************************************************************
 
-
-#============================================================
-# CONTENT WRAPPERS
-#============================================================
+// CONTENT WRAPPERS
 TCEFORM.tt_content.section_frame {
     disableNoMatchingValueElement = 1
 
@@ -17,9 +15,7 @@ TCEFORM.tt_content.section_frame {
     }
 }
 
-#============================================================
-# CONTENT LAYOUT
-#============================================================
+// CONTENT LAYOUT
 TCEFORM.tt_content.layout {
     disableNoMatchingValueElement = 1
 

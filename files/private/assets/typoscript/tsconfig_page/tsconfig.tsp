@@ -1,6 +1,4 @@
-#============================================================
-# INTERFACE AND DEFAULT ACTIONS
-#============================================================
+// INTERFACE AND DEFAULT ACTIONS
 TCEMAIN.table {
 	pages{
 		disableHideAtCopy = 0
@@ -12,14 +10,11 @@ TCEMAIN.table {
 	}
 }
 
-
-#============================================================
-# MODULES SETTINGS
-# http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/Index.html
-#============================================================
+// MODULES SETTINGS
+// http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/Index.html
 mod {
 
-    # WEB -> PAGE
+    // WEB -> PAGE
     web_layout {
         menu.function {
             // Disable QuickEdit
@@ -29,13 +24,13 @@ mod {
         disableSearchBox = 1
     }
 
-    # WEB -> VIEW
+    // WEB -> VIEW
     web_view.previewFrameWidths {
         300.label = myPreview
         300.height = 500
     }
 
-    # WEB -> LIST
+    // WEB -> LIST
     web_list {
         alternateBgColors = 1
     }
@@ -46,10 +41,8 @@ mod {
     }
 }
 
-
-#===================================================
-# NEW CONTENT ELEMENT WIZARD
-#===================================================
+// NEW CONTENT ELEMENT WIZARD
+/*
 mod.wizards.newContentElement.wizardItems.special {
     elements.prism {
         icon = gfx/c_wiz/html.gif
@@ -65,3 +58,4 @@ mod.wizards.newContentElement.wizardItems.special {
 
     show := addToList(prism)
 }
+*/

@@ -2,6 +2,7 @@
 //
 // Keep your eyes open on always updated manual:
 // http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
+// **********************************************************************
 
 RTE.default {
 
@@ -63,12 +64,10 @@ RTE.default {
 	}
 }
 
-
 // DB PROCESES
 RTE.default.proc {
     allowedClasses := addToList(externalUrl)
 }
-
 
 // Fun with classess from rte.css
 RTE.classes {
@@ -82,7 +81,6 @@ RTE.classes {
 RTE.classesAnchor {
 
 }
-
 
 // COLORS
 RTE.default {

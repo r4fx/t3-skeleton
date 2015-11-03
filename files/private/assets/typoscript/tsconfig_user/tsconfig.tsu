@@ -1,23 +1,18 @@
-#
-# PREDEFINED CONFIGURATION
-#
+// PREDEFINED CONFIGURATION
+// **********************************************************************
 
-#============================================================
-# INTERFACE AND DEFAULT ACTIONS
-#============================================================
+// INTERFACE AND DEFAULT ACTIONS
 mod.web_list {
 	itemsLimitSingleTable = 50
 	itemsLimitPerTable = 10
 	hideTables = static_template, static_countries, static_country_zones, static_currencies, static_languages, static_territories, static_taxes, static_markets
 }
 
-#============================================================
-# OPTIONS
-#============================================================
+// OPTIONS
 options {
-	# Check your ID of File Storage at Root page (in Skeleton complete path should be "files/public/uploads/graphics")
-	# by default this is created by system and is called "fileadmin"
-	defaultUploadFolder = 2:/uploads/graphics/
+	// Check your ID of File Storage at Root page (in Skeleton complete path should be "files/public/uploads/graphics")
+	// by default this is created by system and is called "fileadmin"
+	defaultUploadFolder = 1:/uploads/graphics/
 	popupWindowSize = 900x900
 	uploadFieldsInTopOfEB = 0
 	createFoldersInEB = 1
@@ -54,9 +49,8 @@ setup {
 	}
 }
 
-#============================================================
-# Admin panel
-#============================================================
+
+// Admin panel
 admPanel {
     override {
         preview {

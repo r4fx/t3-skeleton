@@ -1,8 +1,8 @@
 // Keep your eyes open on always updated manual:
 // http://docs.typo3.org/typo3cms/extensions/rtehtmlarea/
+// **********************************************************************
 
 RTE.default {
-
     path = files/public/uploads/
     contentCSS = files/private/assets/typoscript/plugins/rtehtmlarea/rte.css
 
@@ -103,7 +103,6 @@ RTE.default {
             // File links
             file {
                 properties {
-                    // target works from TYPO3 v.7
                     target.default = _blank
                     class.default = download
                 }

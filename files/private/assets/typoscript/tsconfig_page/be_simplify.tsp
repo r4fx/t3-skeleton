@@ -1,6 +1,6 @@
-#============================================================
-# DISABLE UNUSED FLEXFORM FIELDS
-#============================================================
+// DISABLE UNUSED FLEXFORM FIELDS
+// **********************************************************************
+
 TCEFORM {
     tt_content {
         CType.removeItems = bullets,multimedia

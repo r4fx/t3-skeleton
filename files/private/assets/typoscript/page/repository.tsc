@@ -1,6 +1,4 @@
-#===================================================
-# PATHS
-#===================================================
+// PATHS
 path {
     html = files/private/assets/html
     css = files/private/assets/styles/css
@@ -8,18 +6,14 @@ path {
     images = files/private/assets/images
 }
 
-#===================================================
-# CSS
-#===================================================
+// CSS
 css{
     mate = {$path.css}/mate.css
     popup = {$path.js}/vendors/magnific-popup/magnific-popup.css
     swiper = {$path.js}/vendors/swiper/idangerous.swiper.css
 }
 
-#===================================================
-# JS libs
-#===================================================
+// JS LIBS
 js{
     jquery = {$path.js}/vendors/jquery-2.1.3.min.js
     popup = {$path.js}/vendors/magnific-popup/jquery.magnific-popup.min.js
@@ -28,13 +22,10 @@ js{
     app = {$path.js}/main.js
 }
 
-#===================================================
-# JS config
-#===================================================
+// JS CONFIG
 js.config{
 
-    # Cookie box
-    #===================================================
+    // Cookie box
     cookieBox (
         $.cookieBox({
             privacyPolicy: true,
