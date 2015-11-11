@@ -189,7 +189,7 @@ php_value post_max_size 20M
 # Allow access from all domains for web fonts
 
 <IfModule mod_headers.c>
-    <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
+    <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff|woff2)$">
         Header set Access-Control-Allow-Origin "*"
     </FilesMatch>
 </IfModule>
@@ -222,6 +222,7 @@ php_value post_max_size 20M
 
   # Web fonts
     AddType application/font-woff                       woff
+    AddType application/font-woff                       woff2
     AddType application/vnd.ms-fontobject               eot
 
     # Browsers usually ignore the font MIME types and sniff the content,
