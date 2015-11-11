@@ -69,13 +69,7 @@ Ustawienia magazynów plików
 
 **Utwórz rekord `File Storage` z ustawieniami:**
 
-* `Name: Files root`
-* `Base path: files/`
-* `Is writable?: []`
-
-**Utwórz drugi rekord `File Storage` z ustawieniami:**
-
-> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` (domyślnie w konfiguracji id=2).
+> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` w konfiguracji RTE.
 
 * `Name: Public`
 * `Base path: files/public/`
@@ -85,13 +79,6 @@ Ustawienia magazynów plików
 ### Filemount
 
 **Utwórz rekord `Filemount` z ustawieniami:**
-
-* `Label: Files root`
-* `Storage: Files root`
-* `Folder: /`
-* `Read-only: [x]`
-
-**Utwórz drugi rekord `Filemount` z ustawieniami:**
 
 * `Label: Public`
 * `Storage: Public`
@@ -119,33 +106,33 @@ Poniższe linie kodu umieść w stronie głównej serwisu.
 **Page Setup**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/page/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/content/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/+ext/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tss">
 ```
 
 **Page Constants**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/page/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/+ext/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsc">
 ```
 
 **Page TSConfig**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_page/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/content/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/news/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/plugins/rtehtmlarea/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_page/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/news/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/rtehtmlarea/" extensions="tsp">
 ```
 
 **User/User group TSConfig**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/private/assets/typoscript/tsconfig_user/" extensions="tsu">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_user/" extensions="tsu">
 ```
 
 
@@ -171,4 +158,4 @@ Developer helpers
 
 **debug**
 
-dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/files/private/assets/typoscript/page/config.tss#L78)
+dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/files/assets/typoscript/page/config.tss#L78)

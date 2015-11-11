@@ -1,0 +1,38 @@
+// PATHS
+path {
+    html = files/assets/html
+    css = files/assets/styles/css
+    js = files/assets/js
+    images = files/assets/images
+}
+
+// CSS
+css{
+    mate = {$path.css}/mate.css
+    popup = {$path.js}/vendors/magnific-popup/magnific-popup.css
+    slick = {$path.js}/vendors/slick/slick.css
+}
+
+// JS LIBS
+js{
+    jquery = {$path.js}/vendors/jquery-2.1.4.min.js
+    popup = {$path.js}/vendors/magnific-popup/jquery.magnific-popup.min.js
+    slick = {$path.js}/vendors/slick/slick.min.js
+    #slick.onlyPids = 39,6
+    main = {$path.js}/main.js
+}
+
+// JS CONFIG
+js.config{
+
+    // Cookie box
+    cookieBox (
+        $.cookieBox({
+            privacyPolicy: true,
+            cookiesPageURL: '/polityka-plikow-cookies/',
+            textParagraph_1: '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach statystycznych.</p>',
+            textParagraph_2: '',
+            animation: true
+        });
+    )
+}

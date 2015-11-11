@@ -1,0 +1,21 @@
+#<INCLUDE_TYPOSCRIPT:source="FILE:files/assets/typoscript/backend_layouts/mainpage.tss">
+
+backend_layout {
+    colCount = 1
+    rowCount = 1
+    rows {
+        1 {
+            columns {
+                1 {
+                    name = Main content
+                    colPos = 0
+                }
+            }
+        }
+    }
+}
+
+// HIDE BE LAYOUT (COLUMNS) FOR SYSTEM FOLDERS
+[page|doktype = 254]
+    backend_layout >
+[end]
