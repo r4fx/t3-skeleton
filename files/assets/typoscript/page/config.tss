@@ -75,7 +75,7 @@ config {
     #plugin.tx_tinysource.enable = 0
 
     config {
-        admPanel = 1
+        admPanel = 0
         debug = 1
         no_cache = 1
         compressCss = 0
@@ -91,4 +91,8 @@ config {
         field = uid
         noTrimWrap = |<!--[Skeleton debug][PageID: |]-->|
     }
+[global]
+
+[globalVar = GP:debug=2]
+    config.admPanel = 1
 [global]
