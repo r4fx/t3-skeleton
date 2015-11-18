@@ -3,8 +3,6 @@
 // **********************************************************************
 
 config {
-    admPanel = 0
-    debug = 0
     absRefPrefix = /
     tx_cooluri_enable = 1
     redirectOldLinksToNew = 1
@@ -29,14 +27,14 @@ config {
     removeDefaultCss = 0
     removePageCss = 0
     inlineStyle2TempFile = 1
-    compressCss = 1
-    concatenateCss = 1
+    compressCss = 0
+    concatenateCss = 0
 
     // JS
     moveJsFromHeaderToFooter = 0
     removeDefaultJS = 0
-    compressJs = 1
-    concatenateJs = 1
+    compressJs = 0
+    concatenateJs = 0
 
     // Use cache for one week (google recommendations)
     cache_period = 604800
