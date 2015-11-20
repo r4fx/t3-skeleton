@@ -14,6 +14,7 @@ temp.newsSettings {
 
     settings =< plugin.tx_news.settings
     settings {
+        excludeAlreadyDisplayedNews = 1
         categoryConjunction = OR
         startingpoint = 34
         backPid = 28
