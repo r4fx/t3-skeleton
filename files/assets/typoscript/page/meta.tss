@@ -37,12 +37,22 @@ page.headerData {
 
         20 = TEXT
         20 {
-            dataWrap = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_URL}">
+            wrap = |
+            dataWrap = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_HOST}|">
+            typolink {
+                parameter.data = page:uid
+                returnLast = url
+            }
         }
 
         25 = TEXT
         25 {
-            value = <meta property="og:image" content="{$path.images}/logo.png">
+            wrap = |
+            dataWrap = <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}|{$path.images}/logo.png">
+            typolink {
+                parameter.data = page:uid
+                returnLast = url
+            }
         }
 
         30 = TEXT
