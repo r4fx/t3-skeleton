@@ -20,7 +20,7 @@ backend_layout {
     }
 }
 
-// HIDE BE LAYOUT (COLUMNS) FOR SYSTEM FOLDERS
-[page|doktype = 254]
+// HIDE BE LAYOUT (COLUMNS) FOR SYSTEM FOLDERS AND SHORTCUTS
+[page|doktype = 254] || [page|doktype = 4]
     backend_layout >
 [end]
