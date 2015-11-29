@@ -13,8 +13,16 @@
         <n:metaTag property="og:description" content="{newsItem.description}"/>
     </f:then>
     <f:else>
-        <n:metaTag name="description" content="{newsItem.teaser}"/>
-        <n:metaTag property="og:description" content="{newsItem.teaser}"/>
+        <f:if condition="{newsItem.teaser}">
+            <f:then>
+                <n:metaTag name="description" content="{newsItem.teaser -> f:format.stripTags()}"/>
+                <n:metaTag property="og:description" content="{newsItem.teaser -> f:format.stripTags()}"/>
+            </f:then>
+            <f:else>
+		<n:metaTag name="description" content='<f:format.crop maxCharacters="300">{newsItem.bodytext -> f:format.stripTags()}</f:format.crop>'/>
+		<n:metaTag property="og:description" content='<f:format.crop maxCharacters="300">{newsItem.bodytext -> f:format.stripTags()}</f:format.crop>'/>
+            </f:else>
+        </f:if>
     </f:else>
 </f:if>
 
