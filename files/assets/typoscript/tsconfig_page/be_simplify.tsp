@@ -6,7 +6,7 @@ TCEFORM {
         colPos.disabled = 0
         spaceBefore.disabled = 1
         spaceAfter.disabled = 1
-        header_position.disabled = 1
+        header_position.disabled = 0
         header_link.disabled = 0
         date.disabled = 1
     }

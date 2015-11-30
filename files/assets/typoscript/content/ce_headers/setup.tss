@@ -2,22 +2,46 @@
 // **********************************************************************
 
 // CONTENT HEADERS
-lib.stdheader.stdWrap.dataWrap >
-lib.stdheader.10 {
-    1.dataWrap = <h2>|</h2>
-    2.dataWrap = <h1>|</h1>
-    3.dataWrap = <h3>|</h3>
-    4.dataWrap = <h4>|</h4>
-    5.dataWrap = <h5>|</h5>
+lib.stdheader {
+    stdWrap.dataWrap >
 
-    // ADDITIONAL HEADERS
-    6 = TEXT
-    6 {
-        current = 1
-        insertData = 1
-        fontTag = <h2 class="bordered">|</h2>
+    3 = LOAD_REGISTER
+    3 {
+        headerClass {
+            cObject = COA
+            cObject {
+                10 = TEXT
+                10 {
+                    field = header_position
+                    required = 1
+                    noTrimWrap = |inline-| |
+                }
+
+                stdWrap {
+                    trim = 1
+                    noTrimWrap = | class="|"|
+                    required = 1
+                }
+            }
+        }
     }
 
-    // Default header
-    key.ifEmpty = 1
+    10 {
+        1.dataWrap = <h2{register:headerClass}>|</h2>
+        2.dataWrap = <h1{register:headerClass}>|</h1>
+        3.dataWrap = <h3{register:headerClass}>|</h3>
+        4.dataWrap = <h4{register:headerClass}>|</h4>
+        5.dataWrap = <h5{register:headerClass}>|</h5>
+
+        // ADDITIONAL HEADERS
+        6 = TEXT
+        6 {
+            current = 1
+            insertData = 1
+            fontTag = <h2 class="bordered">|</h2>
+        }
+
+        // Default header
+        key.ifEmpty = 1
+    }
 }
