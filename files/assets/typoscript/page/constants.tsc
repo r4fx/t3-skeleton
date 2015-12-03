@@ -1,14 +1,3 @@
-// FLUID SETTINGS
-settings {
-    showHeader = 1
-}
-
-// META TAGS VALUES
-meta {
-    description =
-    keywords =
-}
-
 // PAGE CONFIG
 config {
 	headerComment = ======= Created by frontside [fside.pl] ======= 2015 =======

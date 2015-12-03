@@ -11,10 +11,10 @@ page.meta {
     X-UA-Compatible = IE=edge,chrome=1
     X-UA-Compatible.httpEquivalent = 1
 
-    description = {$meta.description}
+    description =
     description.override.field = description
 
-    keywords = {$meta.keywords}
+    keywords =
     keywords.override.field = keywords
 
     #robots = noindex, nofollow
