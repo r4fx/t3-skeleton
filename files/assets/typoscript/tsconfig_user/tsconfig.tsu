@@ -11,8 +11,8 @@ mod.web_list {
 
 // OPTIONS
 options {
-	// Check your ID of File Storage at Root page (in Skeleton complete path should be "files/public/uploads/graphics")
-	// by default this is created by system and is called "fileadmin"
+	// Check your ID of File Storage at Root page,
+	// in Skeleton complete path should be "files/public/uploads/"
 	defaultUploadFolder = 1:/uploads/
 	popupWindowSize = 900x900
 	uploadFieldsInTopOfEB = 0
