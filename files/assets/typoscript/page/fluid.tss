@@ -4,7 +4,7 @@ page.10 {
         stdWrap.cObject = CASE
         stdWrap.cObject {
             // Template files for page content, change dynamically based on BE layout
-            // Each position refers to Backend Layout records ID from storage folder
+            // Each position refers to Backend Layout record ID from storage folder
 
             // New settings for TYPO3 7.6 LTS +
             key.data = pagelayout

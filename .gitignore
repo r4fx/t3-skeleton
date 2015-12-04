@@ -10,11 +10,12 @@
 # Ignore content of root directory, subdirectories and their contents.
 # Allow to process the direct contents of dir,
 # giving other patterns a chance to “un-exclude” some bit of the content (!dir/sub/)
+
 #/*
 /
 
 # Ignore css folder (styles should be generated from the server side if SCSS is in use)
-files/assets/styles/css
+# files/assets/styles/css
 
 #---------------------------------------------------------
 # Don't ignore those files & paths
