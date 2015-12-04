@@ -9,7 +9,7 @@ page {
 	}
 
     // SCRIPTS IN HEAD
-    includeJSLibs {
+    includeJSlibs {
 
 	}
 
