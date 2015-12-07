@@ -57,6 +57,12 @@ Nowe ustawienia systemowe
 [BE][staticFileEditPath] = files/static/
 ```
 
+**Dodanie katalogu `files` do obsługi przez absRefPrefix**
+
+```javascript
+[FE][additionalAbsRefPrefixDirectories] = files/
+```
+
 
 Ustawienia magazynów plików
 -----
