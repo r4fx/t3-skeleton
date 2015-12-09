@@ -86,8 +86,8 @@ RTE.default {
 
             properties {
                 class {
-                    allowedClasses := removeFromList(external-link-new-window, internal-link-new-window, internal-link)
-                    allowedClasses := addToList(btn)
+                    allowedClasses := removeFromList(download, external-link-new-window, internal-link-new-window, internal-link)
+                    allowedClasses := addToList(btn, file)
                 }
             }
 
@@ -104,7 +104,7 @@ RTE.default {
             file {
                 properties {
                     target.default = _blank
-                    class.default = download
+                    class.default = file
                 }
             }
 		}
@@ -221,8 +221,8 @@ RTE.default {
 RTE.classesAnchor {
     externalLink.titleText >
     internalLink.titleText >
-    download {
-        titleText >
+    file {
+        titleText = Add file icon
     }
     mail.titleText >
 }

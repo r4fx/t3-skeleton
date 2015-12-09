@@ -51,7 +51,7 @@ RTE.default.proc {
 
     // List all class selectors that are allowed on the way to the database
     allowedClasses (
-        external, download, mail, modal,
+        external, file, mail, modal,
         inline-left, inline-center, inline-right, inline-justify,
         frame1, frame2, important, detail, indent
     )
