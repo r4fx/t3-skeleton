@@ -1,7 +1,6 @@
 // PAGE TITLE
-config.noPageTitle = 1
-[PIDupinRootline = 1]
-    config.noPageTitle = 0
+[globalVar = TSFE:id = 1]
+    config.noPageTitle = 1
 [end]
 
 // META TAGS
