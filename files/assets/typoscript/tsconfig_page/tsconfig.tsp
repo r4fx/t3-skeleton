@@ -33,6 +33,7 @@ mod {
     // WEB -> LIST
     web_list {
         alternateBgColors = 1
+        hideTranslations = *
     }
 
     SHARED {
