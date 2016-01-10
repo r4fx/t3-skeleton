@@ -91,7 +91,7 @@ Ustawienia magazynów plików
 ### Automatyczne generowanie brakujących plików i katalogów
 
 Na koniec wejdź do modułu `Install` w zakładkę `Folder structure` i naciśnij button `Try to fix file and folder permissions`,
-teraz żółte ostrzeżenia powinny się skorygować.
+teraz żółte ostrzeżenia powinny zostać skorygowane.
 
 
 Załączenie plików TypoScript
