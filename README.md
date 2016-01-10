@@ -79,6 +79,8 @@ Ustawienia magazynów plików
 
 ### Filemount
 
+> Filemount używane jest w konfiguracji upprawnień dostępów użytkownikom BE do plików i katalogów.
+
 **Utwórz rekord `Filemount` z ustawieniami:**
 
 * `Label: Public`
