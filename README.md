@@ -37,7 +37,8 @@ Ustawienie to jest absolutnie dopuszczalne w TYPO3, każdy może dowolnie przeko
 Nowe ustawienia systemowe
 -----
 
-> Do ustawienia z poziomu modułu `Install`
+> Ustawienia dostępne z poziomu modułu `Install`  
+> Skeleton dostarcza poniższe ustawiennia domyślnie z pliku `typo3conf/AdditionalConfiguration.php`
 
 **zmiana roboczego katalogu systemowego**
 
