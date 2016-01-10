@@ -109,16 +109,16 @@ Poniższe linie kodu umieść w stronie głównej serwisu.
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
 ```
 
 **Page Constants**
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
 ```
 
 **Page TSConfig**
@@ -126,8 +126,7 @@ Poniższe linie kodu umieść w stronie głównej serwisu.
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_page/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/news/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/rtehtmlarea/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsp">
 ```
 
 **User/User group TSConfig**
