@@ -70,7 +70,7 @@ Ustawienia magazynów plików
 
 **Utwórz rekord `File Storage` z ustawieniami:**
 
-> ID tego rekordu powiązane jest z konfiguracją htmlArea RTE, patrz `defaultUploadFolder` w konfiguracji RTE.
+> ID tego rekordu powiązane jest z konfiguracją domyślnego katalogu dla wgrywanych plików, patrz `defaultUploadFolder` w konfiguracji `/tsconfig_user/tsconfig.tsu`.
 
 * `Name: Public`
 * `Base path: files/public/`
