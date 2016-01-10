@@ -51,12 +51,6 @@ Nowe ustawienia systemowe
 [BE][RTE_imageStorageDir] = files/public/uploads/
 ```
 
-**zmiana domyśnego katalogu systemowego dla plików statycznych (usnięte od wersji 7 LTS)**
-
-```javascript
-[BE][staticFileEditPath] = files/static/
-```
-
 **Dodanie katalogu `files` do obsługi przez `config.absRefPrefix`**
 
 ```javascript
