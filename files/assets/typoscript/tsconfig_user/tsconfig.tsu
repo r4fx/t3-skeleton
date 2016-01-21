@@ -61,3 +61,8 @@ admPanel {
         tsdebug.forceTemplateParsing = 1
     }
 }
+
+// Admin users permissions
+[adminUser = 1]
+	options.clearCache.system = 1
+[end]
