@@ -142,7 +142,10 @@
         <part>
             <parameter>tx_news_pi1[overwriteDemand][categories]</parameter>
             <lookindb>
-                <to>SELECT title FROM sys_category WHERE uid=$1</to>
+                <to>SELECT CONCAT('cat-', title) FROM sys_category WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <translatetoif>
+                    <match>^[0-9]+$</match>
+                </translatetoif>
                 <t3conv>1</t3conv>
             </lookindb>
         </part>
@@ -166,16 +169,8 @@
         <part>
             <parameter>tx_news_pi1[overwriteDemand][day]</parameter>
         </part>
-
         <!-- END: news -->
 
-
-        <!-- COMMON PATTERNS -->
-
-        <!-- this will just add this parameter value to URL -->
-        <part>
-            <parameter>paramA</parameter>
-        </part>
     </uriparts>
 
 
@@ -208,6 +203,11 @@
         <part key="iCal">
             <parameter>type</parameter>
             <value>9819</value>
+        </part>
+
+        <part key="arch">
+            <parameter>tx_news_pi1[overwriteDemand][archiveRestriction]</parameter>
+            <value>archived</value>
         </part>
         <!-- END: news -->
 
