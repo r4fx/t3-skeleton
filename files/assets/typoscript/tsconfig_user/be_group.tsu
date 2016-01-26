@@ -1,3 +1,7 @@
+// Manual:
+// https://docs.typo3.org/typo3cms/TSconfigReference/
+// **********************************************************************
+
 admPanel {
     enable {
         preview = 1

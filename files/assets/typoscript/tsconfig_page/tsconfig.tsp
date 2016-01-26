@@ -1,3 +1,7 @@
+// Manual:
+// https://docs.typo3.org/typo3cms/TSconfigReference/
+// **********************************************************************
+
 // INTERFACE AND DEFAULT ACTIONS
 TCEMAIN.table {
 	pages{
@@ -10,8 +14,6 @@ TCEMAIN.table {
 	}
 }
 
-// MODULES SETTINGS
-// http://docs.typo3.org/typo3cms/TSconfigReference/PageTsconfig/Mod/Index.html
 mod {
 
     // WEB -> PAGE
