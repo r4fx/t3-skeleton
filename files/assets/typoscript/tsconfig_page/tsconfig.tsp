@@ -21,6 +21,7 @@ mod {
             0 = 0
         }
 
+        defLangBinding = 1
         disableSearchBox = 1
     }
 
