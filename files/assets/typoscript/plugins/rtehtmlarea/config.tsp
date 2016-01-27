@@ -184,7 +184,7 @@ RTE.default {
 
         spellcheck {
             enablePersonalDictionaries = 1
-            dictionaries.items = pl, en
+            dictionaries.restrictToItems = pl, en
         }
 
 	    inserttag {
