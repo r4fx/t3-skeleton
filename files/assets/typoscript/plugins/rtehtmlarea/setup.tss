@@ -21,7 +21,6 @@ lib.parseFunc_RTE {
     // Do not wrap these tags
     nonTypoTagStdWrap.encapsLines {
         encapsTagList := addToList(cite,code,p,div,iframe,t3content)
-        remapTag.DIV >
     }
 
     // New tags

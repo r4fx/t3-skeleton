@@ -12,16 +12,12 @@ RTE.default.proc {
     // br tags in the content are assumed to be intentional.
 	dontConvBRtoParagraph = 1
 
-    // PRESERVE DIV SECTIONS - DO NOT REMAP TO P
-	preserveDIVSections = 1
-
 	plainImageMode = lockRatioWhenSmaller
 
     // TAGS ALLOWED
     // Added to the default internal list from "css_styled_content"
     // But, for the sake of clarity, we use a complete list in alphabetic order.
     // center, font, link, meta, o:p, strike, sdfield, style, title and u will be removed on entry (see below).
-    // b and i will be remapped on exit (see below).
 	allowTags (
 		a, abbr, acronym, address, b, bdo, big, blockquote, br, caption, center, cite, code, col, colgroup, dd, del, dfn, dl, div, dt, em, font,
 		h1, h2, h3, h4, h5, h6, hr, i, img, ins, kbd, label, li, link, meta, ol, p, pre, q, samp, sdfield, small,
@@ -42,12 +38,6 @@ RTE.default.proc {
     // This is a list of additional attributes to keep
 	keepPDIVattribs = id, title, dir, lang, xml:lang, style
 
-    // REMAP BOLD AND ITALIC TO STRONG AND EMPHASIS AND VICE VERSA
-	transformBoldAndItalicTags = 1
-
-    // ALLOW TO WRITE ABOUT HTML
-	dontUndoHSC_db = 1
-	dontHSC_rte = 1
 
     // List all class selectors that are allowed on the way to the database
     allowedClasses (
@@ -137,10 +127,6 @@ RTE.default.proc {
 
 	exitHTMLparser_db = 1
 	exitHTMLparser_db {
-
-        // Remap bold and italic
-        tags.b.remap = strong
-        tags.i.remap = em
 
         // KEEP ALL TAGS
         // Unwanted tags were removed on entry.
