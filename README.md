@@ -143,15 +143,11 @@ Backend Layout
 todo
 
 
-Wtyczki
+Wtyczki usprawniające pracę i dajace dodatkowe możliwości
 -----
-Przy pracy z szablonami FLUID nieocenionymi wtyczkami mogą okazać się:
 
-* Content Designer - http://typo3.org/extensions/repository/view/content_designer
+* DCE - https://typo3.org/extensions/repository/view/dce
 * VHS: Fluid ViewHelpers - http://typo3.org/extensions/repository/view/vhs
-
-W źródlach Skeletona znajduje się przykładowa konfiguracja wtyczki Content Designer na potrzeby ukrywania nagłówka podstrony.
-Po instalacji wtyczki w edycji strony zostanie dodana nowa zakładka `Settings`.
 
 
 Developer helpers
