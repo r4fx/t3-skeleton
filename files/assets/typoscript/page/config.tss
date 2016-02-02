@@ -47,7 +47,6 @@ config {
     linkVars = L(int)
     sys_language_overlay = hideNonTranslated
     sys_language_mode = content_fallback
-    #sys_language_mode = content_fallback ; 1,0
     sys_language_softMergeIfNotBlank = tt_content:image
     #sys_language_softExclude = tt_content:imageorient
 }
@@ -57,7 +56,7 @@ config {
     sys_language_uid = 0
     language = pl
     locale_all = pl_PL.utf-8
-    htmlTag_setParams := appendString( lang="pl")
+    htmlTag_setParams = lang="pl"
 }
 
 // ENGLISH
@@ -66,8 +65,7 @@ config {
         sys_language_uid = 1
         language = en
         locale_all = en_EN.utf-8
-        htmlTag_langKey = en
-        htmlTag_setParams := appendString( lang="en")
+        htmlTag_setParams = lang="en"
     }
 [end]
 

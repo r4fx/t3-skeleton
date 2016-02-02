@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-05-23T22:02:23Z">
+        <header/>
+        <body>
+            <trans-unit id="cookieBox.paragraph_1" xml:space="preserve">
+                <source>Our website uses cookies. By using our website, you consent to our use of cookies. For more information, see our</source>
+            </trans-unit>
+
+            <trans-unit id="cookieBox.paragraph_2.url" xml:space="preserve">
+                <source>Privacy Policy</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
