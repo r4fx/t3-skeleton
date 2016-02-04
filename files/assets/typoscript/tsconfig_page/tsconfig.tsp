@@ -1,3 +1,5 @@
+// !!! This file is included automatically from location: "typo3conf/AdditionalConfiguration.php"
+//
 // Manual:
 // https://docs.typo3.org/typo3cms/TSconfigReference/
 // **********************************************************************
