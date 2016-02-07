@@ -1,7 +1,7 @@
 <?php
 
 # Backend Settings
-$GLOBALS['TYPO3_CONF_VARS']['BE']['fileadminDir'] = 'files/';
+$GLOBALS['TYPO3_CONF_VARS']['BE']['fileadminDir'] = 'files/public/';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['RTE_imageStorageDir'] = 'files/public/uploads/';
 
 # Default BE User settings
