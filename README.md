@@ -43,7 +43,7 @@ Nowe ustawienia systemowe
 **zmiana roboczego katalogu systemowego**
 
 ```javascript
-[BE][fileadminDir] = files/public/
+[BE][fileadminDir] = files/
 ```
 
 **zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE**
