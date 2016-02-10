@@ -43,7 +43,10 @@ RTE.default {
         )
 
         hideButtons (
-            undo, redo, findreplace, spellcheck, inserttag, line
+            undo, redo, findreplace, spellcheck, inserttag, user, line,
+            cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge,
+            tableproperties, tablerestyle, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit,
+            columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, cellproperties
         )
     }
 
