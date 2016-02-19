@@ -48,7 +48,8 @@ setup {
         rteWidth = 95%
         rteHeight = 400
         rteResize = 1
-	}
+    }
+    override.edit_docModuleUpload = 1
 }
 
 
