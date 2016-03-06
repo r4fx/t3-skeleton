@@ -20,52 +20,31 @@ page.meta {
 }
 
 // OPEN GRAPH
-page.headerData {
-    301 = COA
-    301 {
+page.headerData.301 = COA
+page.headerData.301 {
+    10 = TEXT
+    10 {
+        insertData = 1
+        value (
+        <meta property="og:title" content="{DB:sys_template:1:sitetitle}">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}/{$path.images}/logo.png">
+        <meta property="og:site_name" content="{DB:sys_template:1:sitetitle}">
+        <meta property="fb:page_id" content="148253535239842" />
+        <meta property="og:description" content="T3go">
+        )
+    }
 
-        10 = TEXT
-        10 {
-            dataWrap = <meta property="og:title" content="{DB:sys_template:1:sitetitle}">
-        }
-
-        15 = TEXT
-        15 {
-            value = <meta property="og:type" content="website">
-        }
-
-        20 = TEXT
-        20 {
-            wrap = |
-            dataWrap = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_HOST}|">
-            typolink {
-                parameter.data = page:uid
-                returnLast = url
-            }
-        }
-
-        25 = TEXT
-        25 {
-            dataWrap = <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}/{$path.images}/logo.png">
-        }
-
-        30 = TEXT
-        30 {
-            dataWrap = <meta property="og:site_name" content="{DB:sys_template:1:sitetitle}">
-        }
-
-        40 = TEXT
-        40 {
-            // Find your fb profile id -> http://findmyfacebookid.com/
-            value = <meta property="fb:page_id" content="148253535239842">
-        }
-
-        45 = TEXT
-        45 {
-            value = <meta property="og:description" content="T3go">
-        }
+    // For security reason because of getIndpEnv:TYPO3_REQUEST_URL
+    20 = TEXT
+    20 {
+        #value = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_URL}">
+        dataWrap = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_HOST}|">
+        typolink.parameter.data = page:uid
+        typolink.returnLast = url
     }
 }
+
 
 // Disable default open graph for single view of news plugin (news has own OG tags VH)
 [globalVar = GP:tx_news_pi1|news > 0]
