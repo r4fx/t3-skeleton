@@ -104,7 +104,7 @@ Załączenie plików TypoScript
 > - **.tsp** - Page TSConfig
 > - **.tsu** - User TSConfig
 
-Poniższe linie kodu umieść w stronie głównej serwisu.
+#### Poniższe linie kodu umieść w stronie głównej serwisu.
 
 **Page Setup**
 
@@ -130,6 +130,8 @@ Poniższe linie kodu umieść w stronie głównej serwisu.
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsp">
 ```
+
+####Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
 
 **User/User group TSConfig**
 
