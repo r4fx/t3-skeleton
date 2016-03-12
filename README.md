@@ -135,6 +135,10 @@ Załączenie plików TypoScript
 
 **User/User group TSConfig**
 
+> WAŻNE:
+> plik `files/assets/typoscript/tsconfig_user/tsconfig.tsu` jest dołączany automatycznie dla wszystkich użytkowników BE
+> poprzez plik `typo3conf/AdditionalConfiguration.php`
+
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_user/" extensions="tsu">
 ```
@@ -142,7 +146,7 @@ Załączenie plików TypoScript
 
 Backend Layout
 -----
-todo
+`todo`
 
 
 Wtyczki usprawniające pracę i dajace dodatkowe możliwości
