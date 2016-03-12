@@ -135,7 +135,8 @@ Załączenie plików TypoScript
 
 **User/User group TSConfig**
 
-> WAŻNE:
+> **WAŻNE:**
+>
 > plik `files/assets/typoscript/tsconfig_user/tsconfig.tsu` jest dołączany automatycznie dla wszystkich użytkowników BE
 > poprzez plik `typo3conf/AdditionalConfiguration.php`
 
