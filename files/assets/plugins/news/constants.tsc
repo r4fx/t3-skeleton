@@ -1,9 +1,9 @@
 plugin.tx_news {
 
     view {
-        templateRootPath = files/assets/html/exts/news/Templates/
-        partialRootPath = files/assets/html/exts/news/Partials/
-        layoutRootPath = files/assets/html/exts/news/Layouts/
+        templateRootPath = files/assets/plugins/news/Templates/
+        partialRootPath = files/assets/plugins/news/Partials/
+        layoutRootPath = files/assets/plugins/news/Layouts/
     }
 
     settings {
@@ -28,7 +28,7 @@ plugin.tx_news {
     rss.channel {
         title =
         description =
-        link = {$baseURL}
+        link =
         language = pl_PL
         copyright =
         category =

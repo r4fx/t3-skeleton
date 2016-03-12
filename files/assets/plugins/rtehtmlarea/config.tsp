@@ -4,7 +4,7 @@
 
 RTE.default {
     path = files/public/uploads/
-    contentCSS = files/assets/typoscript/plugins/rtehtmlarea/rte.css
+    contentCSS = files/assets/plugins/rtehtmlarea/rte.css
 
     enableWordClean = 1
 	removeTrailingBR = 0

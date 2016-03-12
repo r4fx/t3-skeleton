@@ -1,9 +1,3 @@
-// lib helpers ;)
-// ID news
-lib.newsUid = TEXT
-lib.newsUid.data = GP:tx_news_pi1|news
-
-// News settings
 plugin.tx_news {
 
   settings {

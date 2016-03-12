@@ -51,8 +51,7 @@ setup {
 	}
 }
 
-
-// Admin panel
+// ADMIN PANEL
 admPanel {
     override {
         preview {
@@ -63,7 +62,7 @@ admPanel {
     }
 }
 
-// Admin users permissions
+// ADMIN USERS PERMISSIONS
 [adminUser = 1]
 	options.clearCache.system = 1
 [end]
