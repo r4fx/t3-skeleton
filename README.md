@@ -34,7 +34,7 @@ Ustawienie to jest absolutnie dopuszczalne w TYPO3, każdy może dowolnie przeko
 
 
 
-Nowe ustawienia systemowe
+Ustawienia systemowe
 -----
 
 > Ustawienia dostępne z poziomu modułu `Install`  
@@ -109,26 +109,26 @@ Załączenie plików TypoScript
 **Page Setup**
 
 ```javascript
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
 ```
 
 **Page Constants**
 
 ```javascript
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
 ```
 
 **Page TSConfig**
 
 ```javascript
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_page/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/plugins/" extensions="tsp">
 ```
 
 ####Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
