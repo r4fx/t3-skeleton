@@ -109,10 +109,10 @@ Załączenie plików TypoScript
 **Page Setup**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tss">
 ```
 
 **Page Constants**
