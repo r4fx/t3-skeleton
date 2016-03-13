@@ -1,9 +1,12 @@
-// PAGE CONFIG
-config {
+// PAGE SETTINGS
+// **********************************************************************
+settings {
 	headerComment = ======= Created by frontside [fside.pl] ======= 2016 =======
+    googleAnaliticsUA =
 }
 
 // CONTENT ELEMENTS SETTINGS
+// **********************************************************************
 styles.content.imgtext {
     maxW = 845
     maxWInText = 845
@@ -20,6 +23,7 @@ styles.content.imgtext {
 }
 
 // HEADER DATA
+// **********************************************************************
 headerData {
   touchIcon (
     <link rel="shortcut icon" href="{$path.images}/favicons/favicon.ico">

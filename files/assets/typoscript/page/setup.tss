@@ -34,28 +34,33 @@ page {
 // HEADER DATA
 // **********************************************************************
 page.headerData {
+
     // MOBILE TOUCH ICONS
     7 = TEXT
     7.value (
-            {$headerData.touchIcon}
+        {$headerData.touchIcon}
     )
-
-    // GOOGLE ANALITICS
-    /*
-    1000 = TEXT
-    1000.value (
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-xxxxxxx-xx');
-    ga('send', 'pageview');
-    </script>
-    )
-    */
 }
+
+
+
+
+// GOOGLE ANALITICS
+// **********************************************************************
+[globalString = LIT:{$settings.googleAnaliticsUA} = /.+/]
+    page.1000 = TEXT
+    page.1000.value (
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', '{$settings.googleAnaliticsUA}');
+            ga('send', 'pageview');
+        </script>
+    )
+[end]
 
 // FACEBOOK CODE
 // **********************************************************************

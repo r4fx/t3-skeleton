@@ -8,7 +8,7 @@ config {
     redirectOldLinksToNew = 1
     spamProtectEmailAddresses = ascii
     spamProtectEmailAddresses_atSubst = @
-    headerComment = {$config.headerComment}
+    headerComment = {settings.headerComment}
     doctype = html5
     lockFilePath = files/public/
 
