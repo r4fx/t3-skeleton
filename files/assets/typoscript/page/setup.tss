@@ -30,7 +30,6 @@ page {
     }
 }
 
-
 // HEADER DATA
 // **********************************************************************
 page.headerData {
@@ -41,9 +40,6 @@ page.headerData {
         {$headerData.touchIcon}
     )
 }
-
-
-
 
 // GOOGLE ANALITICS
 // **********************************************************************
@@ -62,7 +58,7 @@ page.headerData {
     )
 [end]
 
-// FACEBOOK CODE
+// FACEBOOK ROOT CODE
 // **********************************************************************
 /*
 page.101 = TEXT
