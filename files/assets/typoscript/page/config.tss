@@ -71,8 +71,6 @@ config {
 
 // DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 [globalVar = GP:debug=1]
-    #plugin.tx_tinysource.enable = 0
-
     config {
         admPanel = 0
         debug = 1
@@ -90,6 +88,10 @@ config {
         field = uid
         noTrimWrap = |<!--[Skeleton debug][PageID: |]-->|
     }
+
+    // Plugins
+    plugin.tx_vhs.settings.debug = 0
+    plugin.tx_vhs.settings.asset.debug = 0
 [global]
 
 [globalVar = GP:debug=2]

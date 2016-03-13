@@ -18,24 +18,8 @@ css{
 
 // JS LIBS
 js{
-    jquery = {$path.js.vendors}/jquery-2.1.4.min.js
+    jquery = {$path.js.vendors}/jquery-2.2.0.min.js
     popup = {$path.js.vendors}/magnific-popup/jquery.magnific-popup.min.js
     slick = {$path.js.vendors}/slick/slick.min.js
-    #slick.onlyPids = 39,6
     main = {$path.js.app}/main.js
-}
-
-// JS CONFIG
-js.config{
-
-    // Cookie box
-    cookieBox (
-        $.cookieBox({
-            privacyPolicy: true,
-            cookiesPageURL: '/polityka-plikow-cookies/',
-            textParagraph_1: '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach statystycznych.</p>',
-            textParagraph_2: '',
-            animation: true
-        });
-    )
 }

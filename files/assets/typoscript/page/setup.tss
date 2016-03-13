@@ -4,8 +4,12 @@ page {
 
     // STYLES
 	includeCSS {
+        // included from fluid files/assets/html/partials/assets.html
+
+        /*
         slick = {$css.slick}
         mate = {$css.mate}
+        */
 	}
 
     // SCRIPTS IN HEAD
@@ -13,57 +17,48 @@ page {
 
 	}
 
-    // JS LIBS IN FOOTER
-	includeJSFooterlibs {
+    // SCRIPTS IN FOOTER
+    includeJSFooterlibs {
+        // included from fluid file files/assets/html/partials/assets.html
+
+        /*
         jquery = {$js.jquery}
         popup = {$js.popup}
         slick = {$js.slick}
-        slick {
-            async = 1
-            if {
-                isInList.field = uid
-                value = {$js.swiper.onlyPids}
-            }
-        }
         main = {$js.main}
-    }
-
-    // HEADER DATA
-    headerData {
-        7 = TEXT
-        7.value (
-            {$headerData.touchIcon}
-        )
-
-        // GOOGLE ANALITICS
-        /*
-        1000 = TEXT
-        1000.value (
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-xxxxxxx-xx');
-          ga('send', 'pageview');
-        </script>
-        )
         */
-    }
-
-    // FOOTER DATA
-    footerData.777 = TEXT
-    footerData.777 {
-        wrap = <script>$(document).ready(function () {|});</script>
-
-        value (
-            {$js.config.cookieBox}
-        )
     }
 }
 
+
+// HEADER DATA
+// **********************************************************************
+page.headerData {
+    // MOBILE TOUCH ICONS
+    7 = TEXT
+    7.value (
+            {$headerData.touchIcon}
+    )
+
+    // GOOGLE ANALITICS
+    /*
+    1000 = TEXT
+    1000.value (
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-xxxxxxx-xx');
+    ga('send', 'pageview');
+    </script>
+    )
+    */
+}
+
 // FACEBOOK CODE
+// **********************************************************************
 /*
 page.101 = TEXT
 page.101.value (
