@@ -40,6 +40,9 @@ config {
     cache_period = 604800
     sendCacheHeaders = 1
     additionalHeaders = Cache-Control: max-age=604800
+    
+    // Debug
+    contentObjectExceptionHandler = 1
 }
 
 // LANG SETTINGS
