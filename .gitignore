@@ -14,9 +14,6 @@
 #/*
 /
 
-# Ignore css folder (styles should be generated from the server side if SCSS is in use)
-# files/assets/styles/css
-
 #---------------------------------------------------------
 # Don't ignore those files & paths
 #---------------------------------------------------------
