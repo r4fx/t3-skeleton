@@ -72,7 +72,7 @@ config {
 // DEVELOPER SETTINGS (just add to URL: &debug=1 or ?debug=1)
 [globalVar = GP:debug=1]
     config {
-        contentObjectExceptionHandler = 1
+        contentObjectExceptionHandler = 0
         admPanel = 0
         debug = 1
         no_cache = 1
