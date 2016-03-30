@@ -15,6 +15,9 @@ config {
     pageTitleFirst = 1
     pageTitleSeparator = -
     pageTitleSeparator.noTrimWrap = | | |
+    
+    // Display errors
+    contentObjectExceptionHandler = 0
 
     // Multidomain setup
     typolinkCheckRootline = 1
