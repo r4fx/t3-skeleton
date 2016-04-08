@@ -2,18 +2,18 @@
 
 **Tag notation:**
 
-`<f:translate key="LLL:files/private/assets/l10n/locallang.xlf:cookieBox.paragraph_1"/>`
+`<f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph_1"/>`
 
 **Inline notation:**
 
-`{f:translate(key:'LLL:files/private/assets/l10n/locallang.xlf:cookieBox.paragraph_2.url')}`
+`{f:translate(key:'LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph_2.url')}`
 
 **In TypoScript:**
 
 ```jvascript
 page.1000 = TEXT
 page.1000 {
-    data = LLL:files/private/assets/l10n/locallang.xlf:cookieBox.paragraph_1
+    data = LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph_1
     wrap = <h2>|</h2>
 }
 ```

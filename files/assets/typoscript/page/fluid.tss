@@ -47,7 +47,7 @@ page.10 {
     settings {
         path {
             html = files/assets/html
-            css = files/assets/styles/css
+            css = /files/assets/styles/css
             js {
                 main = files/assets/js
                 vendors = files/assets/js/vendors
