@@ -7,7 +7,7 @@ settings {
 
 // CONTENT ELEMENTS SETTINGS
 // **********************************************************************
-styles.content.imgtext {
+styles.content.textmedia {
     maxW = 845
     maxWInText = 845
     linkWrap.width = 800m
