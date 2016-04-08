@@ -5,23 +5,6 @@ settings {
     googleAnaliticsUA =
 }
 
-// CONTENT ELEMENTS SETTINGS
-// **********************************************************************
-styles.content.textmedia {
-    maxW = 845
-    maxWInText = 845
-    linkWrap.width = 800m
-    linkWrap.height = 600m
-    linkWrap.lightboxEnabled = 1
-    linkWrap.lightboxCssClass = popup
-    linkWrap.lightboxRelAttribute = gallery[{field:uid}]
-    colSpace = 20
-    rowSpace = 20
-    textMargin = 20
-    borderColor = #D9D9D9
-    borderThick = 1
-}
-
 // HEADER DATA
 // **********************************************************************
 headerData {

@@ -1,7 +1,6 @@
-﻿// Remember to edit file ce_headers/setup.tss
+﻿// CONTENT HEADERS
 // **********************************************************************
 
-// CONTENT HEADERS
 TCEFORM.tt_content.header_layout {
     altLabels.0 = Default (H2)
     altLabels.1 = H2
@@ -10,10 +9,6 @@ TCEFORM.tt_content.header_layout {
     altLabels.4 = H4
     altLabels.5 = H5
 
-    // ADDITIONAL HEADERS
-    addItems.6 = H2 with border
-
-    // SET "HIDDEN" TO LAST POSITION ON LIST
-    removeItems = 100
-    addItems.99 = Hidden
+    // ADDITIONAL ITEMS
+    addItems.6 = Special H2
 }

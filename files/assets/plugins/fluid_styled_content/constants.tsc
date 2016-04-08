@@ -1,0 +1,33 @@
+styles.templates {
+	templateRootPath = files/assets/plugins/fluid_styled_content/Templates/
+	partialRootPath = files/assets/plugins/fluid_styled_content/Partials/
+	layoutRootPath = files/assets/plugins/fluid_styled_content/Layouts/
+}
+
+styles.content {
+	defaultHeaderType = 2
+	shortcut.tables = tt_content,tt_address,tt_news,tx_news_domain_model_news
+
+	// List of allowed HTML tags when rendering RTE content
+	allowTags = a, abbr, acronym, address, article, aside, b, bdo, big, blockquote, br, caption, center, cite, code, col, colgroup, dd, del, dfn, dl, div, dt, em, font, footer, header, h1, h2, h3, h4, h5, h6, hr, i, img, ins, kbd, label, li, link, meta, nav, ol, p, pre, q, samp, sdfield, section, small, span, strike, strong, style, sub, sup, table, thead, tbody, tfoot, td, th, tr, title, tt, u, ul, var
+
+	textmedia {
+		maxW = 1024
+		maxWInText = 512
+
+		columnSpacing = 20
+		rowSpacing = 20
+		textMargin = 20
+
+		borderColor = #D9D9D9
+		borderWidth = 1
+		borderPadding = 0
+
+		linkWrap.width = 800m
+		linkWrap.height = 600m
+		linkWrap.newWindow = 0
+		linkWrap.lightboxEnabled = 1
+		linkWrap.lightboxCssClass = popup
+		linkWrap.lightboxRelAttribute = gallery[{field:uid}]
+	}
+}
