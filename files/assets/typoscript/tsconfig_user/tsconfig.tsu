@@ -41,7 +41,6 @@ setup {
     default {
 	    edit_wideDocument = 1
 		resizeTextareas_Flexible = 0
-		#resizeTextareas_MaxHeight = 500 //bug in 7lts
 		edit_docModuleUpload = 1
 		titleLen = 150
 		thumbnailsByDefault = 1
@@ -65,5 +64,5 @@ admPanel {
 
 // ADMIN USERS PERMISSIONS
 [adminUser = 1]
-	options.clearCache.system = 1
+	//
 [end]

@@ -6,8 +6,6 @@
 
 options {
     clearCache {
-        // "cooluri" needs ext:cooluriclearcache
         pages = 1
-        cooluri = 1
     }
 }
