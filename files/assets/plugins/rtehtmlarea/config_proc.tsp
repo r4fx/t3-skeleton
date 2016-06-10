@@ -38,6 +38,7 @@ RTE.default.proc {
     // This is a list of additional attributes to keep
 	keepPDIVattribs = id, title, dir, lang, xml:lang, style
 
+	transformBoldAndItalicTags = 0
 
     // List all class selectors that are allowed on the way to the database
     allowedClasses (
