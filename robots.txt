@@ -21,7 +21,6 @@ Disallow: /uploads/
 
 Disallow: /cgi-bin/
 Disallow: /xhprof/
-Disallow: /xview/
 
 Disallow: *no_cache*
 Disallow: *debug*
