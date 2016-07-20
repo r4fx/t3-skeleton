@@ -13,7 +13,9 @@ styles.content {
 
 	textmedia {
 		maxW = 1024
-		maxWInText = 512
+		maxWInText = 1500
+		width = 1500
+		height = 600
 
 		columnSpacing = 20
 		rowSpacing = 20
@@ -23,11 +25,13 @@ styles.content {
 		borderWidth = 1
 		borderPadding = 0
 
-		linkWrap.width = 800m
-		linkWrap.height = 600m
-		linkWrap.newWindow = 0
-		linkWrap.lightboxEnabled = 1
-		linkWrap.lightboxCssClass = popup
-		linkWrap.lightboxRelAttribute = gallery[{field:uid}]
+		linkWrap {
+			width = 1200m
+			height = 900m
+			newWindow = 0
+			lightboxEnabled = 1
+			lightboxCssClass = popup
+			lightboxRelAttribute = gallery[{field:uid}]
+		}
 	}
 }
