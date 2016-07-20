@@ -10,6 +10,10 @@
             <trans-unit id="cookieBox.paragraph.url" xml:space="preserve">
                 <source>Privacy Policy</source>
             </trans-unit>
+
+            <trans-unit id="header_layout.default" xml:space="preserve">
+                <source>Default (H2)</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

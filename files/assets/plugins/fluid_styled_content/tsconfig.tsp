@@ -2,7 +2,7 @@
 // **********************************************************************
 
 TCEFORM.tt_content.header_layout {
-    altLabels.0 = Default (H2)
+    altLabels.0 = LLL:files/assets/l10n/locallang.xlf:header_layout.default
     altLabels.1 = H2
     altLabels.2 = H3
     altLabels.3 = H4
