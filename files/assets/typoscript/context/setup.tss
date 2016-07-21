@@ -1,0 +1,21 @@
+// Uncomment and set domain addresses for contexts in main .htaccess file,
+// search lines with word "TYPO3_CONTEXT"
+//============================================================
+
+[applicationContext = Development]
+    config {
+        compressCss = 0
+        concatenateCss = 0
+        compressJs = 0
+        concatenateJs = 0
+    }
+[global]
+
+[applicationContext = Production]
+    config {
+        compressCss = 1
+        concatenateCss = 1
+        compressJs = 1
+        concatenateJs = 1
+    }
+[global]
