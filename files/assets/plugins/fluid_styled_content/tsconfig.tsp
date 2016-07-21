@@ -1,5 +1,6 @@
-﻿// CONTENT HEADERS
-// **********************************************************************
+﻿//============================================================
+// CONTENT HEADERS
+//============================================================
 
 TCEFORM.tt_content.header_layout {
     // Default header tag, see at {$styles.content.defaultHeaderType}
@@ -13,4 +14,20 @@ TCEFORM.tt_content.header_layout {
 
     // Additional items
     addItems.6 = Special H2
+}
+
+//============================================================
+// CONTENT LAYOUT
+//============================================================
+
+TCEFORM.tt_content.layout {
+    disableNoMatchingValueElement = 1
+
+    keepItems = 0
+    altLabels.0 = ---
+
+    addItems {
+        1 = Box container
+        2 = Box centered
+    }
 }

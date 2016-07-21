@@ -1,7 +1,7 @@
-﻿#===================================================
-# DOC url: http://docs.typo3.org/typo3cms/extensions/news/AdministratorManual/Configuration/TsConfig/Index.html
-# Remember to change PIDs corresponding to your installation
-#===================================================
+﻿//============================================================
+// DOC url: http://docs.typo3.org/typo3cms/extensions/news/AdministratorManual/Configuration/TsConfig/Index.html
+// Remember to change PIDs corresponding to your installation
+//============================================================
 
 tx_news {
     singlePid = 28
@@ -33,20 +33,22 @@ tx_news {
     }
 }
 
-#===================================================
-# SET DEFAULT VALUES FOR FLEXFORM FIELDS
-# http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
-#===================================================
+//============================================================
+// SET DEFAULT VALUES FOR FLEXFORM FIELDS
+// http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
+//============================================================
+
 TCAdefaults {
     tx_news_domain_model_news.hidden = 1
     sys_file_reference.showinpreview = 1
 }
 
 
-#===================================================
-# HIDE/RECONFIG FIELDS
-# http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
-#===================================================
+//============================================================
+// HIDE/RECONFIG FIELDS
+// http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
+//============================================================
+
 TCEFORM.tx_news_domain_model_news {
     type {
         disabled = 1
