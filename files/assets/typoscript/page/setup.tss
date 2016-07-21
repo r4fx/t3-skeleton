@@ -5,28 +5,11 @@ page {
     // STYLES
 	includeCSS {
         // included from fluid files/assets/html/partials/assets.html
-
-        /*
-        slick = {$css.slick}
-        mate = {$css.mate}
-        */
-	}
-
-    // SCRIPTS IN HEAD
-    includeJSlibs {
-
 	}
 
     // SCRIPTS IN FOOTER
     includeJSFooterlibs {
         // included from fluid file files/assets/html/partials/assets.html
-
-        /*
-        jquery = {$js.jquery}
-        popup = {$js.popup}
-        slick = {$js.slick}
-        main = {$js.main}
-        */
     }
 }
 
