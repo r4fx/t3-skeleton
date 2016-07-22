@@ -47,16 +47,12 @@ page.10 {
     settings {
         path {
             html = files/assets/html
-            css = /files/assets/styles/css
-            js {
-                main = files/assets/js
-                vendors = files/assets/js/vendors
-            }
-
-
+            css = files/assets/styles/css
+            js = files/assets/js
+            vendors = files/assets/vendors
             images = files/assets/images
         }
 
-        copyrightYearFrom = 2011
+        copyrightYearFrom = 2016
     }
 }
