@@ -1,11 +1,36 @@
-// BORDERS
-// ============================================================
-$borderWidth:       1px;
-$borderPadding:     0;
-$borderColor:       #CCC;
+// ************************************************************
+// YOUR FRAMEWORK VARIABLES
+// ************************************************************
+
+//@import "settings";
 
 // MARGINS
 // ============================================================
-$columnSpacing:     25px;
-$rowSpacing:        25px;
-$textMargin:        25px;
+$grid__col--gutter:       25px !default;
+$grid__row--gutter:       25px !default;
+$margin--typography:      15px !default;
+
+// BORDERS
+// ============================================================
+$border__width--base:     1px !default;
+$border__color--first:    #CCC !default;
+
+
+
+
+// ************************************************************
+// TYPO3 FLUID STYLED CONTENT NAMES VARIABLES MAPPING.
+// USED IN typo3_fsc.scss
+// ************************************************************
+
+// MARGINS
+// ============================================================
+$columnSpacing:           $grid__col--gutter;
+$rowSpacing:              $grid__row--gutter;
+$textMargin:              $margin--typography;
+
+// BORDERS
+// ============================================================
+$borderWidth:             $border__width--base;
+$borderColor:             $border__color--first;
+$borderPadding:           0 !default;
