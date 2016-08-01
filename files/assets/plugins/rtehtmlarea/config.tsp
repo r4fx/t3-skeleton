@@ -57,6 +57,11 @@ RTE.default {
         right.useClass = inline-right
         justifyfull.useClass = inline-justify
 
+        pastetoggle {
+            setActiveOnRteOpen = 1
+            hidden = 0
+        }
+
 		image {
 		    options {
 		        removeItems = magic
