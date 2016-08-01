@@ -17,6 +17,7 @@ styles.content {
 		width = 1500
 		height = 600
 
+		// Get this values from your css settings (Mate, Bootstrap or other FE framework)
 		columnSpacing = 20
 		rowSpacing = 20
 		textMargin = 20
