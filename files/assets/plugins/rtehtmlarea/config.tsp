@@ -7,10 +7,10 @@ RTE.default {
     contentCSS = files/assets/plugins/rtehtmlarea/rte.css
 
     enableWordClean = 1
-	removeTrailingBR = 0
-	removeComments = 1
-	removeTags = center, font, o:p, sdfield
-	removeTagsAndContents = link, meta, script, style, title
+    removeTrailingBR = 0
+    removeComments = 1
+    removeTags = center, font, o:p, sdfield
+    removeTagsAndContents = link, meta, script, style, title
     defaultContentLanguage = pl
 
     RTEWidthOverride = 75%
@@ -18,10 +18,10 @@ RTE.default {
     keepButtonGroupTogether = 0
 
     // Toolbar options
-	showButtons = *
-	hideButtons = fontstyle, emoticon, language, showlanguagemarks, lefttoright, righttoleft, textindicator, acronym, big, small, blockstyle, emphasis, insertedtext, definition, showhelp, deletedtext, fontsize, copy, cut, paste, monospaced,citation, code, user
+    showButtons = *
+    hideButtons = fontstyle, emoticon, language, showlanguagemarks, lefttoright, righttoleft, textindicator, acronym, big, small, blockstyle, emphasis, insertedtext, definition, showhelp, deletedtext, fontsize, copy, cut, paste, monospaced,citation, code, user
 
-	// The keywords space, bar and linebreak may be used to insert a space, a separator or a line break
+    // The keywords space, bar and linebreak may be used to insert a space, a separator or a line break
     toolbarOrder (
         formatblock, space, textstyle, bar, left, center, right, justifyfull, space, orderedlist, unorderedlist, definitionlist, definitionitem, bar, indent, outdent, insertparagraphbefore, insertparagraphafter, linebreak,
         table, toggleborders, bar, tableproperties, tablerestyle, bar, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, bar, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge, linebreak,
@@ -29,7 +29,7 @@ RTE.default {
         bar, line, insertcharacter, inserttag, editelement, bar, chMode, linebreak
     )
 
-	hideTableOperationsInToolbar = 0
+    hideTableOperationsInToolbar = 0
 
     contextMenu {
         disable = 0
@@ -51,7 +51,7 @@ RTE.default {
     }
 
     // Buttons behaviour
-	buttons {
+    buttons {
         left.useClass = inline-left
         center.useClass = inline-center
         right.useClass = inline-right
@@ -62,31 +62,36 @@ RTE.default {
             hidden = 0
         }
 
-		image {
-		    options {
-		        removeItems = magic
+        pastebehaviour {
+            pasteStructure.keepTags = br,p,ul,ol,li
+            pasteFormat.keepTags = br,p,ul,ol,li
+        }
 
-		        magic.maxWidth = 1024
-		        magic.maxHeight = 1000
-		        plain.maxWidth = 1024
-		        plain.maxHeight = 1000
-		    }
+        image {
+            options {
+                removeItems = magic
 
-		    properties {
+                magic.maxWidth = 1024
+                magic.maxHeight = 1000
+                plain.maxWidth = 1024
+                plain.maxHeight = 1000
+            }
+
+            properties {
                 removeItems = float, paddingTop, paddingRight, paddingBottom, paddingLeft
 
                 class {
                     // Class to be assigned by default to an image when it is inserted in the RTE.
                     #default =
-		            allowedClasses = float-left, float-right
-		        }
-		    }
-		}
+                    allowedClasses = float-left, float-right
+                }
+            }
+        }
 
-		link {
-		    relAttribute.enabled = 1
-		    pageIdSelector.enabled = 1
-		    queryParametersSelector.enabled = 0
+        link {
+            relAttribute.enabled = 1
+            pageIdSelector.enabled = 1
+            queryParametersSelector.enabled = 0
 
             options {
                 removeItems =
@@ -115,7 +120,7 @@ RTE.default {
                     class.default = file
                 }
             }
-		}
+        }
 
         formatblock {
             orderItems = p, h1, h2, h3, h4, h5, h6, pre, address, blockquote, div
@@ -184,45 +189,45 @@ RTE.default {
             }
         }
 
-	    toggleborders {
-	        keepInToolbar = 1
-	        setOnTableCreation = 1
-	        setOnRTEOpen = 1
-	    }
+        toggleborders {
+            keepInToolbar = 1
+            setOnTableCreation = 1
+            setOnRTEOpen = 1
+        }
 
         spellcheck {
             enablePersonalDictionaries = 1
             dictionaries.restrictToItems = pl, en
         }
 
-	    inserttag {
-	        denyTags = font, u, strike, table
-	    }
+        inserttag {
+            denyTags = font, u, strike, table
+        }
 
-	    editelement {
-	        removeFieldsets = language, events
-	    }
+        editelement {
+            removeFieldsets = language, events
+        }
 
-	    // HOT KEYS
+        // HOT KEYS
         strong.hotKey = b
         italic.hotKey = i
         strikethrough.hotKey = s
         underline.hotkey = u
-	}
+    }
 
     // Remove the following fieldsets from the table operations dialogs
-	disableAlignmentFieldsetInTableOperations = 1
-	disableSpacingFieldsetInTableOperations = 1
-	disableColorFieldsetInTableOperations = 1
-	disableLayoutFieldsetInTableOperations = 1
-	disableBordersFieldsetInTableOperations = 1
+    disableAlignmentFieldsetInTableOperations = 1
+    disableSpacingFieldsetInTableOperations = 1
+    disableColorFieldsetInTableOperations = 1
+    disableLayoutFieldsetInTableOperations = 1
+    disableBordersFieldsetInTableOperations = 1
     disableDescriptionFieldsetInTableOperations = 1
     disableStyleFieldsetInTableOperations = 0
 
     // userElements
-	userElements {
+    userElements {
 
-	}
+    }
 }
 
 // Property for "buttons.link"
