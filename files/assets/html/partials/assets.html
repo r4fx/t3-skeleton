@@ -6,21 +6,18 @@
     * https://worksonmymachine.org/blog/asset-handling-with-fluidtypo3
 </f:comment>
 
-<v:asset.style path="{settings.path.js.vendors}/slick/slick.css" />
-<v:asset.style path="{settings.path.js.vendors}/slick/slick-theme.css" />
-<v:asset.style path="{settings.path.js.vendors}/cookiebox/cookiebox.css" />
-<v:asset.style path="/{settings.path.css}/mate.css" standalone="1" external="1"/>
+<v:asset.style path="/{settings.path.css}/typo3_fsc.css" standalone="1" external="1"/>
 
 <v:asset.script path="{settings.path.js.vendors}/jquery-2.2.4.min.js" name="jquery" standalone="1" movable="0"/>
-<v:asset.script path="{settings.path.js.vendors}/slick/slick.min.js" name="slick" dependencies="jquery" />
-<v:asset.script path="{settings.path.js.vendors}/cookiebox/cookiebox.js" name="cookiebox" />
 <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
 
-<v:asset.script name="inlinejs" fluid="1">
-    var cookieBox = new cookieBox({
-        privacyPolicy: true,
-        //selfPosition: true,
-        cookiesPageURL: '<f:uri.page pageUid="9" />',
-        textParagraph: '<p><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph.url"/></a></p>'
-    });
-</v:asset.script>
+<f:comment>
+    <v:asset.script name="inlinejs" fluid="1">
+        var cookieBox = new cookieBox({
+            privacyPolicy: true,
+            //selfPosition: true,
+            cookiesPageURL: '<f:uri.page pageUid="9" />',
+            textParagraph: '<p><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph.url"/></a></p>'
+        });
+    </v:asset.script>
+<f:comment>
