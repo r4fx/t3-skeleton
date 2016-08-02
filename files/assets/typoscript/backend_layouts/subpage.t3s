@@ -3,7 +3,7 @@
 
 backend_layout {
 
-    // TIP: use large number for colCount to extend main container in BE
+    // TIP: use large number for colCount to extend main container in BE (remember to set colspan in Main container)
     colCount = 4
     rowCount = 1
 
@@ -11,8 +11,9 @@ backend_layout {
         1 {
             columns {
                 1 {
-                    name = Main content
+                    name = Main container
                     colPos = 0
+                    colspan = 3
                 }
 
                 2 {
