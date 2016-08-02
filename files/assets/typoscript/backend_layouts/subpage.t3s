@@ -2,8 +2,11 @@
 // <INCLUDE_TYPOSCRIPT:source="FILE:files/assets/typoscript/backend_layouts/subpage.t3s">
 
 backend_layout {
-    colCount = 2
+
+    // TIP: use large number for colCount to extend main container in BE
+    colCount = 4
     rowCount = 1
+
     rows {
         1 {
             columns {
