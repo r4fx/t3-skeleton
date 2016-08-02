@@ -1,5 +1,20 @@
-.ce-below .ce-gallery {
-  margin-top: 25px;
+.ce-textpic {
   margin-bottom: 25px; }
+  .ce-textpic:last-child {
+    margin-bottom: 0; }
+  .ce-textpic .ce-bodytext > .ce-header:first-child {
+    margin-top: 0; }
+  .ce-textpic li {
+    margin-bottom: 15px; }
+    .ce-textpic li:last-child {
+      margin-bottom: 0; }
+  .ce-textpic p:last-child {
+    margin-bottom: 0; }
+
+.ce-above .ce-gallery {
+  margin-bottom: 25px; }
+
+.ce-below .ce-gallery {
+  margin-top: 25px; }
 
 /*# sourceMappingURL=typo3_fsc.css.map */

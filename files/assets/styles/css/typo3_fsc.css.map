@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAGE,qBAAY;EACV,UAAU,ECwBY,IAAkB;EDvBxC,aAAa,ECuBS,IAAkB",
+"mappings": "AAEA,WAAW;EACT,aAAa,ECyBW,IAAkB;EDvB1C,sBAAY;IACV,aAAa,EAAE,CAAC;EAKd,iDAAa;IACX,UAAU,EAAE,CAAC;EAKnB,cAAE;IACA,aAAa,ECWS,IAAmB;IDTzC,yBAAY;MACV,aAAa,EAAE,CAAC;EAKlB,wBAAY;IACV,aAAa,EAAE,CAAC;;AAgBpB,qBAAY;EACV,aAAa,EChBS,IAAkB;;ADqB1C,qBAAY;EACV,UAAU,ECtBY,IAAkB",
 "sources": ["../scss/typo3_fsc.scss","../scss/_settings_typo3_fsc.scss"],
 "names": [],
 "file": "typo3_fsc.css"

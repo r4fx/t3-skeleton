@@ -1,8 +1,53 @@
 @import "settings_typo3_fsc";
 
+.ce-textpic{
+  margin-bottom: $rowSpacing;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  .ce-bodytext{
+    > .ce-header{
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+
+  li{
+    margin-bottom: $textMargin;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  p{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.ce-center {
+  .ce-outer {
+
+  }
+
+  .ce-inner{
+
+  }
+}
+
+.ce-above {
+  .ce-gallery {
+    margin-bottom: $rowSpacing;
+  }
+}
+
 .ce-below {
   .ce-gallery {
     margin-top: $rowSpacing;
-    margin-bottom: $rowSpacing;
   }
 }
