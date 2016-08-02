@@ -4,24 +4,24 @@ tt_content.gridelements_pi1.10 =< lib.stdheader
 // Grid variants
 tt_content.gridelements_pi1.20.10.setup {
 
-    // alias/id of grid elements layout
-
-    2_col < lib.gridelements.defaultGridSetup
-    2_col {
+    default < lib.gridelements.defaultGridSetup
+    default {
         cObject = FLUIDTEMPLATE
-        cObject {
-            file = files/assets/plugins/gridelements/html/2-columns.html
-        }
+        cObject.file =
+    }
+
+    // Use alias (2_col, 3_col etc) of grid elements layout record
+
+    2_col < .default
+    2_col {
+        cObject.file = files/assets/plugins/gridelements/html/2-columns.html
 
         #wrap = <div class="grid"><div class="grid__header">{field:header}</div>|</div>
         #wrap.insertData = 1
     }
 
-    3_col < lib.gridelements.defaultGridSetup
+    3_col < .default
     3_col {
-        cObject = FLUIDTEMPLATE
-        cObject {
-            file = files/assets/plugins/gridelements/html/3-columns.html
-        }
+        cObject.file = files/assets/plugins/gridelements/html/3-columns.html
     }
 }
