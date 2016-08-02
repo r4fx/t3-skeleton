@@ -4,11 +4,11 @@ TCEFORM {
     tt_content {
         sys_language_uid.disabled = 1
         colPos.disabled = 0
-        spaceBefore.disabled = 1
-        spaceAfter.disabled = 1
-        header_position.disabled = 0
         header_link.disabled = 0
         date.disabled = 1
+        rowDescription.disabled = 1
+        tx_gridelements_container.disabled = 1
+        tx_gridelements_columns.disabled = 1
     }
 }
 
@@ -16,6 +16,6 @@ TCEFORM {
 // **********************************************************************
 TCEFORM {
     tt_content {
-        CType.removeItems = bullets,multimedia
+        CType.removeItems = bullets
     }
 }
