@@ -7,8 +7,8 @@ TCEFORM {
         header_link.disabled = 0
         date.disabled = 1
         rowDescription.disabled = 1
-        tx_gridelements_container.disabled = 1
-        tx_gridelements_columns.disabled = 1
+        tx_gridelements_container.disabled = 0
+        tx_gridelements_columns.disabled = 0
     }
 }
 
