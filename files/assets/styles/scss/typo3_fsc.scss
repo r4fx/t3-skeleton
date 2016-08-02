@@ -1,5 +1,37 @@
 @import "settings_typo3_fsc";
 
+@function grid-calc($colNumber, $grid__columns) {
+  @return percentage($colNumber / $grid__columns);
+}
+
+@mixin grid-cols {
+  @for $i from 1 through $grid__columns {
+    &[data-ce-columns="#{$i}"]{
+      .ce-column{
+        width: 100% / $i;
+      }
+    }
+  }
+}
+
+%grid-cols-common {
+  margin: 0;
+  padding-left: $grid__col--gutter/2;
+  padding-right: $grid__col--gutter/2;
+}
+
+.ce-row {
+  margin-left: -$grid__col--gutter;
+  margin-right: -$grid__col--gutter;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
 .ce-textpic{
   margin-bottom: $rowSpacing;
 
@@ -32,11 +64,15 @@
 
 .ce-center {
   .ce-outer {
-
+    position: static;
+    float: none;
+    right: auto;
   }
 
   .ce-inner{
-
+    position: static;
+    float: none;
+    right: auto;
   }
 }
 
@@ -50,4 +86,17 @@
   .ce-gallery {
     margin-top: $rowSpacing;
   }
+}
+
+.ce-gallery {
+  .ce-row{
+    margin-left: -$grid__col--gutter/2;
+    margin-right: -$grid__col--gutter/2;
+  }
+
+  .ce-column{
+    @extend %grid-cols-common;
+  }
+
+  @include grid-cols;
 }

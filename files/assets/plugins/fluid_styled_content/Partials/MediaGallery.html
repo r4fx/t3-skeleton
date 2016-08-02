@@ -29,29 +29,29 @@
 								<f:case default="TRUE">
 									<f:render section="imageType" arguments="{_all}" />
 								</f:case>
-							 </f:switch>
+							</f:switch>
 
 							<f:if condition="{column.media.description}">
 								<f:then>
-										<figcaption>
-											{column.media.description}
-										</figcaption>
+									<figcaption>
+										{column.media.description}
+									</figcaption>
 									</figure>
 								</f:then>
 								<f:else>
-									</div>
-								</f:else>
-							</f:if>
 						</div>
+						</f:else>
 					</f:if>
-				</f:for>
 			</div>
-		</f:for>
-		<f:if condition="{gallery.position.horizontal} == 'center'">
-				</div>
-			</div>
-		</f:if>
+</f:if>
+</f:for>
+</div>
+</f:for>
+<f:if condition="{gallery.position.horizontal} == 'center'">
 	</div>
+	</div>
+</f:if>
+</div>
 </f:if>
 
 <f:section name="imageType">
@@ -81,16 +81,34 @@
 </f:section>
 
 <f:section name="videoType">
-	<f:render section="media" arguments="{_all}" />
+	<div class="video--rwd">
+		<f:render section="mediaVideo" arguments="{_all}" />
+	</div>
 </f:section>
 
 <f:section name="media">
 	<f:media
-		file="{column.media}"
-		width="{column.dimensions.width}"
-		height="{column.dimensions.height}"
-		alt="{column.media.alternative}"
-		title="{column.media.title}"
+			file="{column.media}"
+			alt="{column.media.alternative}"
+			title="{column.media.title}"
+
+			width="{data.imagewidth}c"
+			height="{data.imageheight}c"
+
+			data="{dimensionWidth:'{column.dimensions.width}', dimensionHeight:'{column.dimensions.height}'}"
+	/>
+</f:section>
+
+<f:section name="mediaVideo">
+	<f:media
+			file="{column.media}"
+			alt="{column.media.alternative}"
+			title="{column.media.title}"
+
+			width="{data.imagewidth}c"
+			height="{data.imageheight}c"
+
+			data="{dimensionWidth:'{column.dimensions.width}', dimensionHeight:'{column.dimensions.height}'}"
 	/>
 </f:section>
 </html>
