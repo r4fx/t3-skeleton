@@ -1,0 +1,22 @@
+// In CE Backend Layout record insert:
+// <INCLUDE_TYPOSCRIPT:source="FILE:files/assets/plugins/gridelements/2-columns.t3s">
+
+backend_layout {
+    colCount = 2
+    rowCount = 1
+    rows {
+        1 {
+            columns {
+                1 {
+                    name = Column 1
+                    colPos = 1
+                }
+
+                2 {
+                    name = Column 2
+                    colPos = 2
+                }
+            }
+        }
+    }
+}
