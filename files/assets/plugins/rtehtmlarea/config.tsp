@@ -19,11 +19,11 @@ RTE.default {
 
     // Toolbar options
     showButtons = *
-    hideButtons = fontstyle, emoticon, language, showlanguagemarks, lefttoright, righttoleft, textindicator, acronym, big, small, blockstyle, emphasis, insertedtext, definition, showhelp, deletedtext, fontsize, copy, cut, paste, monospaced,citation, code, user
+    hideButtons = emoticon, language, showlanguagemarks, lefttoright, righttoleft, textindicator, acronym, big, small, emphasis, insertedtext, definition, showhelp, deletedtext, copy, cut, paste, monospaced,citation, code, user
 
     // The keywords space, bar and linebreak may be used to insert a space, a separator or a line break
     toolbarOrder (
-        formatblock, space, textstyle, bar, left, center, right, justifyfull, space, orderedlist, unorderedlist, definitionlist, definitionitem, bar, indent, outdent, insertparagraphbefore, insertparagraphafter, linebreak,
+        formatblock, space, blockstyle, fontsize, bar, left, center, right, justifyfull, space, orderedlist, unorderedlist, definitionlist, definitionitem, bar, indent, outdent, insertparagraphbefore, insertparagraphafter, linebreak,
         table, toggleborders, bar, tableproperties, tablerestyle, bar, rowproperties, rowinsertabove, rowinsertunder, rowdelete, rowsplit, bar, columnproperties, columninsertbefore, columninsertafter, columndelete, columnsplit, bar, cellproperties, cellinsertbefore, cellinsertafter, celldelete, cellsplit, cellmerge, linebreak,
         undo, redo, space, pastetoggle, pastebehaviour, bar, findreplace, spellcheck, removeformat, bar, image, link, unlink, bar, strong, italic, underline, strikethrough, subscript, superscript, blockquote, quotation, span, textcolor, bgcolor,
         bar, line, insertcharacter, inserttag, editelement, bar, chMode, linebreak
@@ -32,7 +32,7 @@ RTE.default {
     hideTableOperationsInToolbar = 0
 
     contextMenu {
-        disable = 0
+        disabled = 1
         maxHeight = 400
 
         showButtons (
