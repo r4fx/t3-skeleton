@@ -1,38 +1,38 @@
 .inline-right {
-  text-align: right;
+    text-align: right;
 }
 
 .inline-left {
-  text-align: left;
+    text-align: left;
 }
 
 .inline-center {
-  text-align: center;
+    text-align: center;
 }
 
 .inline-justify {
-  text-align: justify;
+    text-align: justify;
 }
 
 .float-left {
-  float: left;
-  margin: 10px 10px 10px 0;
+    float: left;
+    margin: 10px 10px 10px 0;
 }
 
 .float-right {
-  float: right;
-  margin: 10px 0 10px 10px;
+    float: right;
+    margin: 10px 0 10px 10px;
 }
 
 .table--wide {
-  width: 100%;
+    width: 100%;
 }
 
 .table--rwd-cols {}
 
 table thead td,
 table th {
-  background-color: #ccc;
+    background-color: #ccc;
 }
 
 /* TEXT STYLES for "buttons.textstyle" */
@@ -40,6 +40,7 @@ table th {
 span.font-size--large,
 p.font-size--large,
 i.font-size--large,
-b.font-size--large{
-  font-size: 2rem;
+i.font-size--large,
+a.font-size--large{
+    font-size: 1rem;
 }

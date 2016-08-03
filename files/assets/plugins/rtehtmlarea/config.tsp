@@ -165,6 +165,7 @@ RTE.default {
                 p < .span
                 b < .span
                 i < .span
+                a < .span
             }
         }
 
