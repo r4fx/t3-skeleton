@@ -152,15 +152,19 @@ RTE.default {
         // Text objects
         textstyle {
             // Show all applicable class selectors available in the style sheet file
-            showTagFreeClasses = 1
+            showTagFreeClasses = 0
 
             width = 150
             listWidth = 200
 
             tags {
                 span {
-                    allowedClasses := addToList()
+                    allowedClasses := addToList(font-size--large)
                 }
+
+                p < .span
+                b < .span
+                i < .span
             }
         }
 

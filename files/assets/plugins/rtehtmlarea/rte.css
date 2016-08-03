@@ -34,3 +34,12 @@ table thead td,
 table th {
   background-color: #ccc;
 }
+
+/* TEXT STYLES for "buttons.textstyle" */
+
+span.font-size--large,
+p.font-size--large,
+i.font-size--large,
+b.font-size--large{
+  font-size: 2rem;
+}
