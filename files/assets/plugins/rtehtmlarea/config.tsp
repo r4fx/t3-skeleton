@@ -201,7 +201,7 @@ RTE.default {
         }
 
         spellcheck {
-            enablePersonalDictionaries = 1
+            enablePersonalDictionaries = 0
             dictionaries.restrictToItems = pl, en
         }
 
