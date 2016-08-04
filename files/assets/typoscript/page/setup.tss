@@ -1,16 +1,6 @@
 page = PAGE
 page {
     typeNum = 0
-
-    // STYLES
-	includeCSS {
-        // included from fluid files/assets/html/partials/assets.html
-	}
-
-    // SCRIPTS IN FOOTER
-    includeJSFooterlibs {
-        // included from fluid file files/assets/html/partials/assets.html
-    }
 }
 
 // HEADER DATA

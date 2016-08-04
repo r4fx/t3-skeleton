@@ -5,6 +5,13 @@ settings {
     googleAnaliticsUA =
 }
 
+// ASSETS
+// **********************************************************************
+path {
+    html = files/assets/html
+    images = files/assets/images
+}
+
 // HEADER DATA
 // **********************************************************************
 headerData {
