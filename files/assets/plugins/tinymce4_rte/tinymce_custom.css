@@ -1,38 +1,3 @@
-* {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    background: 50% 50% no-repeat;
-    text-decoration: none;
-    color: inherit;
-    box-sizing: border-box;
-    font-weight: 400
-}
-
-:focus {
-    outline: 0
-}
-
-b, b *, strong, strong * {
-    font-weight: 700
-}
-
-ol, ul {
-    list-style: none
-}
-
-button, input, input:not([type]), input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], input[type=button], input[type=reset], input[type=submit], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], pre, select, textarea {
-    font: inherit
-}
-
-.codepen body {
-    margin: 10px 0 0
-}
-
-.codepen body textarea {
-    display: none
-}
-
 .mce-container textarea {
     display: initial !important
 }

@@ -12,6 +12,37 @@ RTE.default {
                 plain.maxHeight = 1200
             }
         }
+
+
+        link {
+            relAttribute.enabled = 1
+            pageIdSelector.enabled = 1
+            queryParametersSelector.enabled = 0
+
+            options {
+                removeItems = folder
+            }
+
+            properties {
+                class {
+                    allowedClasses := addToList(btn)
+                }
+            }
+
+            # Exteranl links
+            url {
+                properties {
+                    target.default = _blank
+                }
+            }
+
+            # File links
+            file {
+                properties {
+                    target.default = _blank
+                }
+            }
+        }
     }
 }
 
@@ -19,13 +50,4 @@ RTE.default.proc {
     allowTagsOutside := addToList(iframe,code,cite)
     allowTags := addToList(iframe)
     transformBoldAndItalicTags = 0
-
-    /*
-    // List all class selectors that are allowed on the way to the database
-    allowedClasses (
-    external, file, mail, modal,
-    inline-left, inline-center, inline-right, inline-justify,
-    frame1, frame2, important, detail, indent
-    )
-    */
 }
