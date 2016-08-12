@@ -1,0 +1,25 @@
+// RTE ADDITIONAL CONFIG
+// **********************************************************************
+
+lib.parseFunc_RTE {
+    externalBlocks {
+        // FIX STYLES FOR BLOCKQUOTE TAG
+        #blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
+
+        // FIX TABLE CLASS FOR RTE
+        table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+            list >
+            #default = contenttable
+            #always = 0
+            #set = contenttable contenttable--rte
+        }
+    }
+
+    // Extend default list of allowed tags
+    #allowTags := addToList(cite,code,iframe)
+
+    // Do not wrap these tags
+    nonTypoTagStdWrap.encapsLines {
+        #encapsTagList := addToList(cite,code,p,div,iframe)
+    }
+}
