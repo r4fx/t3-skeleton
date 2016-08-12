@@ -15,7 +15,7 @@ options {
 	// Check your ID of File Storage at Root page,
 	// in Skeleton complete path should be "files/public/uploads/"
 	defaultUploadFolder = 1:/uploads/
-	popupWindowSize = 900x900
+	popupWindowSize = 800x600
 	uploadFieldsInTopOfEB = 0
 	createFoldersInEB = 1
 	defaultFileUploads = 1
@@ -31,9 +31,6 @@ options {
 		#backgroundColor.2 = rgba(122, 0, 255, 0.1)
 	}
 
-	HTMLAreaPspellMode = bad-spellers
-	enablePersonalDicts = 1
-
 	hideModules = help
 }
 
@@ -44,28 +41,24 @@ setup {
 		edit_docModuleUpload = 1
 		titleLen = 150
 		thumbnailsByDefault = 1
-        rteWidth = 95%
-        rteHeight = 400
-        rteResize = 1
     }
 
 	override {
 		edit_docModuleUpload = 1
-
-		// Warning https://forge.typo3.org/issues/67661
-		rteCleanPasteBehaviour = plainText
 	}
 }
 
 // ADMIN PANEL
 admPanel {
-    override {
-        preview {
-            showHiddenPages = 1
-        }
+	default {
+		preview {
+			showHiddenPages = 1
+		}
+	}
 
-        tsdebug.forceTemplateParsing = 1
-    }
+	override {
+		tsdebug.forceTemplateParsing = 1
+	}
 }
 
 // ADMIN USERS PERMISSIONS

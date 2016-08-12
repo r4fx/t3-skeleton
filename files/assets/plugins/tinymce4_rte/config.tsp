@@ -1,6 +1,25 @@
 RTE.default {
     tinymceConfiguration = files/assets/plugins/tinymce4_rte/tinymce_custom.js
     contentCSS = files/assets/plugins/tinymce4_rte/tinymce_custom.css
+
+    buttons {
+        image {
+            options {
+                removeItems = magic
+                magic.maxWidth = 1200
+                magic.maxHeight = 1200
+                plain.maxWidth = 1200
+                plain.maxHeight = 1200
+            }
+
+            properties {
+                class {
+                    #default =
+                    #allowedClasses := addToList(noShadow)
+                }
+            }
+        }
+    }
 }
 
 RTE.default.proc {
