@@ -11,13 +11,6 @@ RTE.default {
                 plain.maxWidth = 1200
                 plain.maxHeight = 1200
             }
-
-            properties {
-                class {
-                    #default =
-                    #allowedClasses := addToList(noShadow)
-                }
-            }
         }
     }
 }
