@@ -13,7 +13,6 @@ RTE.default {
             }
         }
 
-
         link {
             relAttribute.enabled = 1
             pageIdSelector.enabled = 1
