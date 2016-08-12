@@ -3,10 +3,7 @@ RTE.default {
     contentCSS = files/assets/plugins/tinymce4_rte/tinymce_custom.css
 }
 
-## Default RTE processing rules
 RTE.default.proc {
-
-    // TAGS ALLOWED OUTSIDE P & DIV
     allowTagsOutside := addToList(iframe,code,cite)
     allowTags := addToList(iframe)
     transformBoldAndItalicTags = 0
