@@ -31,7 +31,7 @@ options {
 		#backgroundColor.2 = rgba(122, 0, 255, 0.1)
 	}
 
-	hideModules = help
+	#hideModules = help
 }
 
 setup {
