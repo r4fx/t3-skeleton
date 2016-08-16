@@ -11,7 +11,17 @@
 <v:asset.script path="{settings.path.js.vendors}/jquery-2.2.4.min.js" name="jquery" standalone="1" movable="0"/>
 <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
 
+
+
+
+
 <f:comment>
+    <!-- Conditional style for PID in rootline of 21 -->
+    <v:condition.iterator.contains needle="21" haystack="{v:page.rootline() -> v:iterator.extract(key: 'uid')}">
+        <v:asset.style path="/{settings.path.css}/expo.css" standalone="1" external="1"/>
+    </v:condition.iterator.contains>
+
+    <!-- Inline js -->
     <v:asset.script name="inlinejs" fluid="1">
         var cookieBox = new cookieBox({
             privacyPolicy: true,
@@ -20,4 +30,4 @@
             textParagraph: '<p><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:files/assets/l10n/locallang.xlf:cookieBox.paragraph.url"/></a></p>'
         });
     </v:asset.script>
-<f:comment>
+</f:comment>
