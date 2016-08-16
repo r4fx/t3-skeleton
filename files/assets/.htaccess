@@ -1,4 +1,4 @@
-<FilesMatch "\.(ts|tss|tsc|tsp|tsu|xlf|xml|html)$">
+<FilesMatch "\.(ts|tss|tsc|tsp|tsu|t3s|xlf|xml|html)$">
  order deny,allow 
  deny from all 
 </FilesMatch>
