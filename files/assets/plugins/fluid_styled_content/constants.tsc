@@ -6,7 +6,7 @@ styles.templates {
 
 styles.content {
 	defaultHeaderType = 2
-	shortcut.tables = tt_content,tt_address,tt_news,tx_news_domain_model_news
+	shortcut.tables := addToList(tt_address,tx_news_domain_model_news)
 
 	// List of allowed HTML tags when rendering RTE content
     allowTags = a, abbr, acronym, address, b, bdo, big, blockquote, br, caption, cite, code, col, colgroup, dd, del, dfn, dl, div, dt, em, h1, h2, h3, h4, h5, h6, hr, i, img, ins, kbd, li, ol, p, pre, q, samp, sdfield, small, span, strike, strong, style, sub, sup, table, thead, tbody, tfoot, td, th, tr, title, tt, u, ul
