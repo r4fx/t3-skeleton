@@ -10,7 +10,7 @@ config {
     spamProtectEmailAddresses_atSubst = @
     headerComment = {$settings.headerComment}
     doctype = html5
-    lockFilePath = files/public/
+    lockFilePath = {$settings.path.lockFilePath}
 
     pageTitleFirst = 1
     pageTitleSeparator = -

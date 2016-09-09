@@ -3,7 +3,7 @@
 //===================================================
 lib.logo = TEXT
 lib.logo {
-    value = <img class="logotype" src="{$path.images}/logotype.svg" width="160" height="50">
+    value = <img class="logotype" src="{$settings.path.images}/logotype.svg" width="160" height="50">
     insertData = 1
     typolink.parameter = 1
 }

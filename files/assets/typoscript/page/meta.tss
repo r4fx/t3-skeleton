@@ -28,7 +28,7 @@ page.headerData.301 {
         value (
         <meta property="og:title" content="{DB:sys_template:1:sitetitle}">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}/{$path.images}/logo.png">
+        <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}/{$settings.path.images}/logo.png">
         <meta property="og:site_name" content="{DB:sys_template:1:sitetitle}">
         <meta property="fb:page_id" content="148253535239842" />
         <meta property="og:description" content="T3go">
