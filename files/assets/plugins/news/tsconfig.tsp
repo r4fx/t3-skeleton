@@ -11,16 +11,10 @@ tx_news {
         11 = Main page
         12 = Masonry
         13 = Headers only
-        14 = In sub nav
-        15 = Squares
 
         20 = --div--,Date menu
         21 = Years only menu
         22 = Years & months menu
-
-        30 = --div--,Events
-        31 = List
-        32 = Details
     }
 
     module {
