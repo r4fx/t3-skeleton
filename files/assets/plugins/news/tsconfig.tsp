@@ -34,7 +34,6 @@ tx_news {
 
 TCAdefaults {
     tx_news_domain_model_news.hidden = 1
-    sys_file_reference.showinpreview = 1
 }
 
 
@@ -54,4 +53,8 @@ TCEFORM.tx_news_domain_model_news {
     archive.disabled = 1
     alternative_title.disabled = 0
     path_segment.disabled = 0
+}
+
+TCEFORM.sys_file_reference {
+    showinpreview.disabled = 0
 }
