@@ -1,0 +1,28 @@
+plugin.tx_linkhandler {
+    tx_news {
+        // Do not force link generation when the news records are hidden or deleted.
+        forceLink = 0
+
+        typolink {
+            parameter.stdWrap.cObject = CASE
+            parameter.stdWrap.cObject {
+                key.field = pid
+
+                default = TEXT
+                default.value = 21
+
+                // News
+                105 = TEXT
+                105.value = 21
+
+                // Events
+                106 = TEXT
+                106.value = 22
+            }
+
+            additionalParams = &tx_news_pi1[news]={field:uid}&tx_news_pi1[controller]=News&tx_news_pi1[action]=detail
+            additionalParams.insertData = 1
+            useCacheHash = 1
+        }
+    }
+}

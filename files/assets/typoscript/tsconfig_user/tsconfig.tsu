@@ -16,6 +16,7 @@ options {
 	// in Skeleton complete path should be "files/public/uploads/"
 	defaultUploadFolder = 1:/uploads/
 	popupWindowSize = 800x600
+	RTE.popupWindowSize = 800x600
 	uploadFieldsInTopOfEB = 0
 	createFoldersInEB = 1
 	defaultFileUploads = 1
@@ -30,8 +31,6 @@ options {
 		showDomainNameWithTitle = 0
 		#backgroundColor.2 = rgba(122, 0, 255, 0.1)
 	}
-
-	#hideModules = help
 }
 
 setup {
