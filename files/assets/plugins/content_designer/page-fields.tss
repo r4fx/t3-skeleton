@@ -1,5 +1,5 @@
 pages.tx_contentdesigner_flexform.settings {
-    #cObjectFlexFile = private/assets/typoscript/plugins/content_designer/page-fields.xml
+    #cObjectFlexFile = files/assets/plugins/content_designer/page-fields.xml
 
     tca = --div--;Settings,tx_contentdesigner_flexform
 
