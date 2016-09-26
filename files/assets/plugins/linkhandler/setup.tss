@@ -3,6 +3,7 @@ plugin.tx_linkhandler {
         // Do not force link generation when the news records are hidden or deleted.
         forceLink = 0
 
+        // Link to detail view with case to multiple storages
         typolink {
             parameter.stdWrap.cObject = CASE
             parameter.stdWrap.cObject {
