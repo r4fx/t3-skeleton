@@ -13,7 +13,7 @@ tinymce.init({
 	],
 
 	toolbar1: 'undo redo cut copy paste searchreplace | bold italic strikethrough forecolor | blockquote nonbreaking | typo3image typo3link unlink | formatselect',
-	toolbar2: 'alignleft aligncenter alignright alignjustify | bullist numlist outdent indent hr table | visualchars visualblocks removeformat code',
+	toolbar2: 'alignleft aligncenter alignright alignjustify | bullist numlist outdent indent hr table | visualchars visualblocks removeformat code | template',
 
 	external_plugins: {
 		typo3filemanager: 'EXT:tinymce4_rte/Resources/Public/Plugins/Typo3FileManager/typo3filemanager.min.js',
@@ -70,5 +70,9 @@ tinymce.init({
 		"FFE600", "Gold",
 		"EC008C", "Pink",
 		"00AEEF", "Blue"
-	]
+	],
+	
+	//templates: [
+	//	{ title: 'Statement box', content: '<div class="statement-content-box"><div class="statement-content-box__text">«Text»<div class="statement-box__date inline-right">(Date)</div></div><div class="statement-content-box__person">Person, Position</div>' }
+	//]
 });
