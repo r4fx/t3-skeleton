@@ -20,7 +20,6 @@ options {
 	uploadFieldsInTopOfEB = 0
 	createFoldersInEB = 1
 	defaultFileUploads = 1
-
 	showHistory = 1
 	clipboardNumberPads = 2
 
