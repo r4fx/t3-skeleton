@@ -6,22 +6,31 @@
     * https://worksonmymachine.org/blog/asset-handling-with-fluidtypo3
 </f:comment>
 
-<v:asset.style path="/{settings.path.css}/typo3_fsc.css" standalone="1" external="1"/>
+<!-- Conditional assets for PID in rootline of xx -->
+<v:condition.iterator.contains needle="xx" haystack="{v:page.rootline() -> v:iterator.extract(key: 'uid')}">
+    <f:then>
+        <f:render section="assets-default" />
+        <f:render section="assets-for-rootline-xx" />
+    </f:then>
 
-<v:asset.script path="{settings.path.js.vendors}/jquery-2.2.4.min.js" name="jquery" standalone="1" movable="0"/>
-<v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
+    <f:else>
+        <f:render section="assets-default" />
+    </f:else>
+</v:condition.iterator.contains>
 
+<f:section name="assets-default">
+    <v:asset.style path="/{settings.path.css}/typo3_fsc.css" standalone="1" external="1"/>
 
+    <v:asset.script path="{settings.path.js.vendors}/jquery-2.2.4.min.js" name="jquery" standalone="1" movable="0"/>
+    <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
+</f:section>
 
+<f:section name="assets-for-rootline-xx">
+    <v:asset.style path="/{settings.path.css}/expo.css" standalone="1" external="1"/>
+</f:section>
 
 
 <f:comment>
-    <!-- Conditional style for PID in rootline of 21 -->
-    <v:condition.iterator.contains needle="21" haystack="{v:page.rootline() -> v:iterator.extract(key: 'uid')}">
-        <v:asset.style path="/{settings.path.css}/expo.css" standalone="1" external="1"/>
-    </v:condition.iterator.contains>
-
-    <!-- Inline js -->
     <v:asset.script name="inlinejs" fluid="1">
         var cookieBox = new cookieBox({
             privacyPolicy: true,
