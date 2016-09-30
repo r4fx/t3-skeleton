@@ -70,7 +70,7 @@ tinymce.init({
 		"FFE600", "Gold",
 		"EC008C", "Pink",
 		"00AEEF", "Blue"
-	],
+	]
 	
 	//templates: [
 	//	{ title: 'Statement box', content: '<div class="statement-content-box"><div class="statement-content-box__text">«Text»<div class="statement-box__date inline-right">(Date)</div></div><div class="statement-content-box__person">Person, Position</div>' }
