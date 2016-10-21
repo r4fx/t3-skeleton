@@ -68,3 +68,10 @@ lib.copyright {
     strftime = %Y
     noTrimWrap = |
 }
+
+//===================================================
+// BODY CLASS FOR BLANK LAYOUT
+//===================================================
+[globalVar = TSFE:page|backend_layout = 100]
+    page.bodyTagAdd = class="blank-page"
+[end]

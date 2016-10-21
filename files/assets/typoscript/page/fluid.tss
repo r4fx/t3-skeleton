@@ -20,6 +20,9 @@ page.10 {
 
             3 = TEXT
             3.value = {$settings.path.html}/templates/subpage-one-col.html
+
+            100 = TEXT
+            100.value = {$settings.path.html}/templates/blank-page.html
         }
     }
 

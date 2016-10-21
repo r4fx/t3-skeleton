@@ -231,6 +231,11 @@
 
         <!-- END: ke_search -->
 
+        <part>
+            <parameter>tx_yag_pi1[c10][albumUid]</parameter>
+        </part>
+        
+
 
         <!-- COMMON PATTERNS -->
 
