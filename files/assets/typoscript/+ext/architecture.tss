@@ -54,7 +54,7 @@ lib.sub-nav {
 }
 
 //===================================================
-// SUBPAHE HEADER
+// SUBPAGE HEADING
 //===================================================
 lib.header = TEXT
 lib.header.data = page:subtitle // page:title
@@ -75,3 +75,21 @@ lib.copyright {
 [globalVar = TSFE:page|backend_layout = 100]
     page.bodyTagAdd = class="blank-page"
 [end]
+
+// GET CURRENT PAGE URL
+// {f:cObject(typoscriptObjectPath: 'lib.currentUrl')}
+lib.currentUrl = TEXT
+lib.currentUrl {
+    dataWrap = {getIndpEnv:TYPO3_REQUEST_HOST}|
+    typolink.parameter.data = page:uid
+    typolink.returnLast = url
+}
+
+// GET CURRENT DOMAIN, WITH OPTIONAL PAGE UID
+//{f:cObject(typoscriptObjectPath: 'lib.currentDomain', data: '255')}
+lib.currentDomain = TEXT
+lib.currentDomain {
+    dataWrap = {getIndpEnv:TYPO3_REQUEST_HOST}|
+    typolink.parameter.current = 1
+    typolink.returnLast = url
+}
