@@ -49,4 +49,9 @@ RTE.default.proc {
     allowTagsOutside := addToList(iframe,code,cite)
     allowTags := addToList(iframe)
     transformBoldAndItalicTags = 0
+
+    entryHTMLparser_db = 1
+    entryHTMLparser_db {
+        allowTags < RTE.default.proc.allowTags
+    }
 }
