@@ -8,6 +8,17 @@
         concatenateCss = 0
         compressJs = 0
         concatenateJs = 0
+        tx_cooluri_enable = 0
+    }
+[global]
+
+[applicationContext = Production/Staging]
+    config {
+        compressCss = 1
+        concatenateCss = 1
+        compressJs = 1
+        concatenateJs = 1
+        tx_cooluri_enable = 1
     }
 [global]
 
@@ -17,5 +28,6 @@
         concatenateCss = 1
         compressJs = 1
         concatenateJs = 1
+        tx_cooluri_enable = 1
     }
 [global]
