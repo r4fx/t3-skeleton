@@ -88,6 +88,13 @@
   }
 }
 
+.ce-right,
+.ce-left {
+  .ce-gallery {
+    width: 50%;
+  }
+}
+
 .ce-gallery {
   .ce-row{
     margin-left: -$grid__col--gutter/2;
