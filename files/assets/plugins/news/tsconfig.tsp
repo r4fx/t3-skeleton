@@ -27,6 +27,22 @@ tx_news {
     }
 }
 
+// "SAVE & PREVIEW" FOR NEWS RECORDS
+
+TCEMAIN.preview {
+    tx_news_domain_model_news {
+        previewPageId = 109
+        useDefaultLanguageRecord = 0
+        fieldToParameterMap {
+            uid = tx_news_pi1[news_preview]
+        }
+        additionalGetParameters {
+            tx_news_pi1.controller = News
+            tx_news_pi1.action = detail
+        }
+    }
+}
+
 //============================================================
 // SET DEFAULT VALUES FOR FLEXFORM FIELDS
 // http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
@@ -36,16 +52,13 @@ TCAdefaults {
     tx_news_domain_model_news.hidden = 1
 }
 
-
 //============================================================
 // HIDE/RECONFIG FIELDS
 // http://docs.typo3.org/TYPO3/TSconfigReference/UserTsconfig/TopLevelObjects/Index.html?highlight=tcadefaults
 //============================================================
 
 TCEFORM.tx_news_domain_model_news {
-    type {
-        disabled = 1
-    }
+    type.disabled = 1
     sys_language_uid.disabled = 1
     rte_disabled.disabled = 1
     author.disabled = 0
