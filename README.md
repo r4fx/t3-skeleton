@@ -153,7 +153,7 @@ Backend Layout
 Wtyczki usprawniające pracę i dajace dodatkowe możliwości
 -----
 
-* DCE - https://typo3.org/extensions/repository/view/dce
+* Mask - https://typo3.org/extensions/repository/view/mask
 * VHS: Fluid ViewHelpers - http://typo3.org/extensions/repository/view/vhs
 
 
