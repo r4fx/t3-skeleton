@@ -153,6 +153,7 @@ Backend Layout
 Wtyczki usprawniające pracę i dajace dodatkowe możliwości
 -----
 
+* Grid Elements - https://typo3.org/extensions/repository/view/gridelements
 * Mask - https://typo3.org/extensions/repository/view/mask
 * VHS: Fluid ViewHelpers - http://typo3.org/extensions/repository/view/vhs
 
