@@ -16,10 +16,10 @@ lib.parseFunc_RTE {
     }
 
     // Extend default list of allowed tags
-    #allowTags := addToList(cite,code,iframe)
+    allowTags := addToList(cite,code,iframe)
 
     // Do not wrap these tags
     nonTypoTagStdWrap.encapsLines {
-        #encapsTagList := addToList(cite,code,p,div,iframe)
+        encapsTagList := addToList(cite,code,p,div,iframe)
     }
 }
