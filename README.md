@@ -14,6 +14,7 @@ W skład skeletona wchodzą:
 - [x] prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
 - [x] prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
+- [x] katalog (files/assets/l10n) ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - [x] i więcej
 
 > Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.x i nowszych
