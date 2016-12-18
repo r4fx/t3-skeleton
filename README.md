@@ -8,14 +8,15 @@ W skład skeletona wchodzą:
 - [x] struktura katalogów i pliki (HTML i TypoScript) na potrzeby FLUID TEMPLATES
 - [x] struktura katalogów na potrzeby Front-endu (STYLE, JS, HTML)
 - [x] startowa konfiguracja szablonów FLUID TEMPLATES
-- [x] podstawowy szablon Backend Layout
+- [x] 3 podstawowe szablony Backend Layout (strona szeroka, strona z boczną kolumną, czysta strona)
+- [x] kilka podstawowych szablonów dla wtyczki Grid elements
 - [x] podstawowe ustawienia środowiska w plikach TypoScript
 - [x] prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
-- [x] prekonfigurowane ustawienia TypoScript dla htmlArea RTE
+- [x] prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
 - [x] i więcej
 
-> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 6.2.x wzwyż
+> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.x i nowszych
 
 Instalacja
 =====
@@ -110,16 +111,16 @@ Załączenie plików TypoScript
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/context/" extensions="tss">
 ```
 
 **Page Constants**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
 ```
 
@@ -128,7 +129,7 @@ Załączenie plików TypoScript
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_page/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/content/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/context/" extensions="tsp">
 ```
 
 ####Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
@@ -152,6 +153,8 @@ Backend Layout
 
 Wtyczki usprawniające pracę i dajace dodatkowe możliwości
 -----
+
+Poniższe wtyczki poprostu musisz znać:
 
 * Grid Elements - https://typo3.org/extensions/repository/view/gridelements
 * Mask - https://typo3.org/extensions/repository/view/mask

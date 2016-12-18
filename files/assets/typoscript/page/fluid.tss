@@ -53,6 +53,6 @@ page.10 {
             l10nFile = {$settings.path.l10nFile}
         }
 
-        copyrightYearFrom = 2016
+        copyrightYearFrom = 2017
     }
 }
