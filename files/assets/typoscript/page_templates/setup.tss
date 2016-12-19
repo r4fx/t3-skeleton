@@ -1,0 +1,74 @@
+// Reference:  https://docs.typo3.org/typo3cms/TyposcriptReference/ContentObjects/Fluidtemplate/
+//============================================================
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+    templateName = TEXT
+    templateName.stdWrap.cObject = CASE
+    templateName.stdWrap.cObject {
+        key.data = levelfield:-1, backend_layout_next_level, slide
+        key.override.field = backend_layout
+
+        main = TEXT
+        main.value = main.html
+
+        subpage = TEXT
+        subpage.value = subpage.html
+
+        subpage-one-col = TEXT
+        subpage-one-col.value = subpage-one-col.html
+
+        blank-page = TEXT
+        blank-page.value = blank-page.html
+
+        default = TEXT
+        default.value = subpage.html
+    }
+
+    layoutRootPaths.10 = {$settings.path.html}/layouts/
+    partialRootPaths.10 = {$settings.path.html}/partials/
+    templateRootPaths.10 = {$settings.path.html}/templates/
+
+    // Variables used in Fluid template files
+
+    variables {
+        content-main < styles.content.get
+        content-main {
+            select.where = colPos = 0
+        }
+
+        content-aside < styles.content.get
+        content-aside {
+            select.where = colPos = 1
+            slide = -1
+        }
+
+        current-year = TEXT
+        current-year {
+            data = date:U
+            strftime = %Y
+        }
+    }
+
+    // Example for stdWrap replacement
+    stdWrap.replacement {
+        1 {
+            search = ###CURRENT_YEAR###
+            replace {
+                data = date:U
+                strftime = %Y
+            }
+        }
+    }
+
+    settings {
+        path {
+            vendors = {$settings.path.vendors}
+            css = {$settings.path.css}
+            js = {$settings.path.js}
+            vendors = {$settings.path.vendors}
+            images = {$settings.path.images}
+            l10nFile = {$settings.path.l10nFile}
+        }
+    }
+}

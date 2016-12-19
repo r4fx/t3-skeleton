@@ -1,9 +1,9 @@
-page = PAGE
-page.typeNum = 0
-
-// BASE SETTINGS
+// BASE PAGE SETTINGS
 // Reference: http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html
 //============================================================
+
+page = PAGE
+page.typeNum = 0
 
 config {
     absRefPrefix = /
