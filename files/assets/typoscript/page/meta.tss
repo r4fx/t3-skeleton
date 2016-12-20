@@ -10,7 +10,7 @@ page.meta {
     viewport = width=device-width, initial-scale=1, minimum-scale=1
 
     X-UA-Compatible = IE=edge
-    X-UA-Compatible.httpEquivalent = 1
+    X-UA-Compatible.attribute = http-equiv
 
     description =
     description.override.field = description
@@ -19,6 +19,93 @@ page.meta {
     keywords.override.field = keywords
 
     #robots = noindex, nofollow
+
+    // OPEN GRAPH
+
+    og:title {
+        attribute = property
+        field = title
+    }
+
+    og:site_name {
+        attribute = property
+        data = TSFE:tmpl|setup|sitetitle
+    }
+
+    og:description = T3go
+    og:description {
+        attribute = property
+        field = description
+    }
+
+    og:locale = pl_PL
+    og:locale.attribute = property
+
+    og:locale:alternate {
+        attribute = property
+        value {
+            1 = en_EN
+        }
+    }
+
+    og:image {
+        attribute = property
+
+        stdWrap.cObject = FILES
+        stdWrap.cObject {
+            references {
+                data = levelfield:-1, media, slide
+            }
+            maxItems = 1
+
+            renderObj = IMG_RESOURCE
+            renderObj {
+                file {
+                    import.data = file:current:uid
+                    treatIdAsReference = 1
+
+                    // FB best practices: https://developers.facebook.com/docs/sharing/best-practices#images
+                    width = 1200c
+                    height = 630c
+                }
+                stdWrap {
+                    typolink {
+                        parameter.data = TSFE:lastImgResourceInfo|3
+                        returnLast = url
+                        forceAbsoluteUrl = 1
+                    }
+                }
+            }
+
+            // Default image if empty
+            stdWrap.ifEmpty.cObject < .renderObj
+            stdWrap.ifEmpty.cObject {
+                file.import >
+                file = {$settings.path.images}/logo.png
+            }
+        }
+    }
+
+    og:url {
+        attribute = property
+        stdWrap {
+            typolink {
+                parameter.data = TSFE:id
+                returnLast = url
+                forceAbsoluteUrl = 1
+            }
+        }
+    }
+
+    og:type {
+        attribute = property
+        value = website
+    }
+
+    fb:page_id {
+        attribute = property
+        value = 148253535239842
+    }
 }
 
 // MOBILE TOUCH ICONS
@@ -45,34 +132,6 @@ page.headerData.7.value (
     <meta name="msapplication-config" content="{$settings.path.images}/favicons/browserconfig.xml">
     <meta name="application-name" content="T3go">
 )
-
-// OPEN GRAPH
-//============================================================
-page.headerData.301 = COA
-page.headerData.301 {
-    10 = TEXT
-    10 {
-        insertData = 1
-        value (
-        <meta property="og:title" content="{DB:sys_template:1:sitetitle}">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="{getIndpEnv:TYPO3_REQUEST_HOST}/{$settings.path.images}/logo.png">
-        <meta property="og:site_name" content="{DB:sys_template:1:sitetitle}">
-        <meta property="fb:page_id" content="148253535239842" />
-        <meta property="og:description" content="T3go">
-        )
-    }
-
-    // For security reason because of getIndpEnv:TYPO3_REQUEST_URL
-    20 = TEXT
-    20 {
-        #value = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_URL}">
-        dataWrap = <meta property="og:url" content="{getIndpEnv:TYPO3_REQUEST_HOST}|">
-        typolink.parameter.data = page:uid
-        typolink.returnLast = url
-    }
-}
-
 
 // Disable default open graph for single view of news plugin (news has own OG tags VH)
 [globalVar = GP:tx_news_pi1|news > 0]
