@@ -57,7 +57,7 @@ config {
 config {
     sys_language_uid = 0
     language = pl
-    locale_all = pl_PL.utf-8
+    locale_all = pl_PL.UTF-8
     htmlTag_langKey = pl
 }
 
@@ -66,7 +66,7 @@ config {
     config {
         sys_language_uid = 1
         language = en
-        locale_all = en_EN.utf-8
+        locale_all = en_EN.UTF-8
         htmlTag_langKey = en
     }
 [end]
