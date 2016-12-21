@@ -12,11 +12,15 @@ page.meta {
     X-UA-Compatible = IE=edge
     X-UA-Compatible.attribute = http-equiv
 
-    description =
-    description.override.field = description
+    description {
+        field = description
+        stdWrap.ifBlank = T3go - blog integratora TYPO3
+    }
 
-    keywords =
-    keywords.override.field = keywords
+    keywords {
+        field = keywords
+        stdWrap.ifBlank = TYPO3, skeleton
+    }
 
     #robots = noindex, nofollow
 
@@ -32,10 +36,10 @@ page.meta {
         data = TSFE:tmpl|setup|sitetitle
     }
 
-    og:description = T3go
     og:description {
         attribute = property
         field = description
+        stdWrap.ifEmpty = T3go - blog integratora TYPO3
     }
 
     og:locale = pl_PL
@@ -108,7 +112,21 @@ page.meta {
     }
 }
 
-// MOBILE TOUCH ICONS
+// DISABLE DEFAULT OPEN GRAPH FOR SINGLE VIEW OF NEWS PLUGIN (NEWS HAS OWN OG TAGS VH)
+//============================================================
+[globalVar = GP:tx_news_pi1|news > 0]
+    page.meta {
+        og:url >
+        og:image >
+        og:title >
+        og:description >
+        description >
+        keywords >
+    }
+[end]
+
+
+// MOBILE TOUCH ICONS (generate yours own http://realfavicongenerator.net/)
 //============================================================
 page.headerData.7 = TEXT
 page.headerData.7.value (
@@ -132,8 +150,3 @@ page.headerData.7.value (
     <meta name="msapplication-config" content="{$settings.path.images}/favicons/browserconfig.xml">
     <meta name="application-name" content="T3go">
 )
-
-// Disable default open graph for single view of news plugin (news has own OG tags VH)
-[globalVar = GP:tx_news_pi1|news > 0]
-    page.headerData.301 >
-[end]
