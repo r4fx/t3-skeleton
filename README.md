@@ -17,7 +17,7 @@ W skład skeletona wchodzą:
 - [x] katalog (files/assets/l10n) ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - [x] i więcej
 
-> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.x i nowszych
+> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.4 i nowszych
 
 Instalacja
 =====
