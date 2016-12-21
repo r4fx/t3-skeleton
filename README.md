@@ -22,7 +22,7 @@ W skład skeletona wchodzą:
 Instalacja
 =====
 
-###Wstęp. Dlaczego `files` zamiast `fileadmin`.
+### Wstęp. Dlaczego `files` zamiast `fileadmin`.
 
 Postanowiliśmy zmienić konwencję standardowo przyjętą w TYPO3 i zmieniliśmy nazwę katalogu roboczego.
 Nazwa `fileadmin` mogła kojarzyć się z katalogiem administracyjnym, dostępnym tylko dla autoryzownych
