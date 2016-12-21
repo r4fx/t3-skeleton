@@ -5,17 +5,17 @@ TYPO3 skeleton to startowy pakiet plików konfiguracyjnych i szablonów dla proj
 
 W skład skeletona wchodzą:
 
-- [x] struktura katalogów i pliki (HTML i TypoScript) na potrzeby FLUID TEMPLATES
-- [x] struktura katalogów na potrzeby Front-endu (STYLE, JS, HTML)
-- [x] startowa konfiguracja szablonów FLUID TEMPLATES
-- [x] 3 podstawowe szablony Backend Layout (strona szeroka, strona z boczną kolumną, czysta strona)
-- [x] kilka podstawowych szablonów dla wtyczki Grid elements
-- [x] podstawowe ustawienia środowiska w plikach TypoScript
-- [x] prekonfigurowane ustawienia TypoScript dla stron i elementów treści
-- [x] prekonfigurowane ustawienia TypoScript dla użytkowników BE
-- [x] prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
-- [x] katalog (files/assets/l10n) ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
-- [x] i więcej
+- struktura katalogów i pliki (HTML i TypoScript) na potrzeby FLUID TEMPLATES
+- struktura katalogów na potrzeby Front-endu (STYLE, JS, HTML)
+- startowa konfiguracja szablonów FLUID TEMPLATES
+- 3 podstawowe szablony Backend Layout (strona szeroka, strona z boczną kolumną, czysta strona)
+- kilka podstawowych szablonów dla wtyczki Grid elements
+- podstawowe ustawienia środowiska w plikach TypoScript
+- prekonfigurowane ustawienia TypoScript dla stron i elementów treści
+- prekonfigurowane ustawienia TypoScript dla użytkowników BE
+- prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
+- katalog (files/assets/l10n) ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
+- i więcej
 
 > Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.4 i nowszych
 
