@@ -1,5 +1,4 @@
-TYPO3 Skeleton
-=====
+## TYPO3 Skeleton
 
 TYPO3 skeleton to startowy pakiet plików konfiguracyjnych i szablonów dla projektów budowanych na TYPO3 opartych o FLUID i Backend Layout.
 
