@@ -41,7 +41,7 @@
 
 .ce-right .ce-gallery,
 .ce-left .ce-gallery {
-  width: 50%; }
+  max-width: 50%; }
 
 .ce-gallery .ce-row {
   margin-left: -12.5px;
