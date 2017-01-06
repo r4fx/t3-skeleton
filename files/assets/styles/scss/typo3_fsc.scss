@@ -74,6 +74,10 @@
     float: none;
     right: auto;
   }
+
+  .ce-column{
+    text-align: center;
+  }
 }
 
 .ce-above {
@@ -95,6 +99,15 @@
   }
 }
 
+.ce-intext {
+  &.ce-right,
+  &.ce-left {
+    .ce-gallery {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .ce-gallery {
   .ce-row{
     margin-left: -$grid__col--gutter/2;
@@ -105,5 +118,21 @@
     @extend %grid-cols-common;
   }
 
+  figure{
+    display: inline-block;
+  }
+
+  figcaption{
+    display: block;
+  }
+
   @include grid-cols;
+}
+
+// FILE LIST
+
+.ce-uploads {
+  span {
+    display: inline-block;
+  }
 }
