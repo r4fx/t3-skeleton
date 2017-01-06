@@ -134,7 +134,7 @@ Załączenie plików TypoScript
 <INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/context/" extensions="tsp">
 ```
 
-####Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
+#### Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
 
 **User/User group TSConfig**
 
@@ -158,9 +158,9 @@ Wtyczki usprawniające pracę i dajace dodatkowe możliwości
 
 Poniższe wtyczki poprostu musisz znać:
 
-* Grid Elements - https://typo3.org/extensions/repository/view/gridelements
-* Mask - https://typo3.org/extensions/repository/view/mask
-* VHS: Fluid ViewHelpers - http://typo3.org/extensions/repository/view/vhs
+* [Grid Elements](https://typo3.org/extensions/repository/view/gridelements)
+* [Mask](https://typo3.org/extensions/repository/view/mask)
+* [VHS Fluid ViewHelpers](http://typo3.org/extensions/repository/view/vhs)
 
 
 Developer helpers
