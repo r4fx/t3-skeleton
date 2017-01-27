@@ -26,8 +26,23 @@ TCEFORM.tt_content.layout {
     keepItems = 0
     altLabels.0 = ---
 
+    // Common layout options
     addItems {
-        1 = Box container
-        2 = Box centered
+        101 = common layout 101
+        102 = common layout 102
+    }
+
+    types {
+        # Layout options for textmedia elements
+        textmedia.addItems {
+            1 = textmedia layout 1
+            2 = textmedia layout 2
+        }
+
+        # Layout options for html elements
+        html.addItems {
+            1 = html layout 1
+            2 = html layout 2
+        }
     }
 }
