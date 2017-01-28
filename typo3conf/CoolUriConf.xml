@@ -114,24 +114,22 @@
 
     <uriparts>
 
-        <!-- nn_address -->
+        <!-- news -->
         <part>
-            <parameter>tx_nnaddress_list[person]</parameter>
+            <parameter>tx_news_pi1[news]</parameter>
             <lookindb>
-                <to>SELECT CONCAT( first_name, '-', last_name ) FROM tx_nnaddress_domain_model_person WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <to>SELECT CONCAT(title , '-', uid) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
                 <translatetoif>
                     <match>^[0-9]+$</match>
                 </translatetoif>
                 <t3conv>1</t3conv>
             </lookindb>
         </part>
-        <!-- END: nn_address -->
 
-        <!-- news -->
         <part>
-            <parameter>tx_news_pi1[news]</parameter>
+            <parameter>tx_news_pi1[categories]</parameter>
             <lookindb>
-                <to>SELECT CONCAT( title , '-', uid) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <to>SELECT CONCAT(title) FROM sys_category WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
                 <translatetoif>
                     <match>^[0-9]+$</match>
                 </translatetoif>
@@ -142,7 +140,7 @@
         <part>
             <parameter>tx_news_pi1[overwriteDemand][categories]</parameter>
             <lookindb>
-                <to>SELECT CONCAT('cat-', title) FROM sys_category WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <to>SELECT CONCAT(title) FROM sys_category WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
                 <translatetoif>
                     <match>^[0-9]+$</match>
                 </translatetoif>
@@ -151,11 +149,31 @@
         </part>
 
         <part>
-            <parameter>tx_news_pi1[overwriteDemand][tags]</parameter>
+            <parameter>tx_news_pi1[tags]</parameter>
             <lookindb>
-                <to>SELECT title FROM tx_news_domain_model_tag WHERE uid=$1</to>
+                <to>SELECT CONCAT('tag-', title) FROM tx_news_domain_model_tag WHERE uid=$1</to>
                 <t3conv>1</t3conv>
             </lookindb>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[overwriteDemand][tags]</parameter>
+            <lookindb>
+                <to>SELECT CONCAT('tag-', title) FROM tx_news_domain_model_tag WHERE uid=$1</to>
+                <t3conv>1</t3conv>
+            </lookindb>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[year]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[month]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_news_pi1[day]</parameter>
         </part>
 
         <part>
@@ -230,11 +248,6 @@
         </part>
 
         <!-- END: ke_search -->
-
-        <part>
-            <parameter>tx_yag_pi1[c10][albumUid]</parameter>
-        </part>
-        
 
 
         <!-- COMMON PATTERNS -->
