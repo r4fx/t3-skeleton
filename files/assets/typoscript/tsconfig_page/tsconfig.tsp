@@ -6,12 +6,7 @@
 
 // INTERFACE AND DEFAULT ACTIONS
 TCEMAIN.table {
-	pages{
-		disableHideAtCopy = 0
-	}
-
 	tt_content {
-		disableHideAtCopy = 0
 		disablePrependAtCopy = 1
 	}
 }
