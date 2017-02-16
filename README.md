@@ -69,9 +69,9 @@ Ustawienia magazynów plików
 
 ### File Storage
 
-**Utwórz rekord `File Storage` z ustawieniami:**
+**Edytuj rekord `File Storage` według poniższego:**
 
-> ID tego rekordu powiązane jest z konfiguracją domyślnego katalogu dla wgrywanych plików, patrz `defaultUploadFolder` w konfiguracji `/tsconfig_user/tsconfig.tsu`.
+> Zapamiętaj, że ID tego rekordu powiązane jest z konfiguracją domyślnego katalogu dla wgrywanych plików, patrz `defaultUploadFolder` w konfiguracji `/tsconfig_user/tsconfig.tsu`.
 
 * `Name: Public`
 * `Base path: files/`
@@ -82,7 +82,7 @@ Ustawienia magazynów plików
 
 > Filemount używane jest w konfiguracji uprawnień dostępów użytkownikom BE do plików i katalogów.
 
-**Utwórz rekord `Filemount` z ustawieniami:**
+**Edytuj rekord `Filemount` według poniższego:**
 
 * `Label: Public`
 * `Storage: Public`
@@ -105,7 +105,7 @@ Załączenie plików TypoScript
 > - **.tsp** - Page TSConfig
 > - **.tsu** - User TSConfig
 
-#### Poniższe linie kodu umieść w stronie głównej serwisu.
+#### Poniższe linie kodu umieść w ustawieniach strony głównej serwisu przez moduł Template
 
 **Page Setup**
 
@@ -141,7 +141,7 @@ Załączenie plików TypoScript
 > **WAŻNE:**
 >
 > plik `assets/typoscript/tsconfig_user/tsconfig.tsu` jest dołączany automatycznie dla wszystkich użytkowników BE
-> poprzez plik `typo3conf/AdditionalConfiguration.php`
+> w pliku `typo3conf/AdditionalConfiguration.php`
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/tsconfig_user/" extensions="tsu">
