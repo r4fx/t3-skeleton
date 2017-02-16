@@ -13,7 +13,7 @@ mod.web_list {
 // OPTIONS
 options {
 	// Check your ID of File Storage at Root page,
-	// in Skeleton complete path should be "files/public/uploads/"
+	// in Skeleton complete path should be "files/uploads/"
 	defaultUploadFolder = 1:/uploads/
 	popupWindowSize = 800x600
 	RTE.popupWindowSize = 800x600

@@ -20,7 +20,7 @@
 
 !/typo3conf/CoolUriConf.xml
 !/typo3conf/AdditionalConfiguration.php
-!/files/assets/
+!/assets/
 !/xview/
 !.gitignore
 !README.md

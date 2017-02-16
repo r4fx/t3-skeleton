@@ -13,7 +13,7 @@ W skład skeletona wchodzą:
 - prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - prekonfigurowane ustawienia TypoScript dla użytkowników BE
 - prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
-- katalog `(files/assets/l10n)` ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
+- katalog `(assets/l10n)` ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - i więcej
 
 > Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.4 i nowszych
@@ -50,7 +50,7 @@ Ustawienia systemowe
 **zmiana domyśnego katalogu systemowego do obrazków dodawanych przez edytor RTE**
 
 ```javascript
-[BE][RTE_imageStorageDir] = files/public/uploads/
+[BE][RTE_imageStorageDir] = files/uploads/
 ```
 
 **Dodanie katalogu `files` do obsługi przez `config.absRefPrefix`**
@@ -74,7 +74,7 @@ Ustawienia magazynów plików
 > ID tego rekordu powiązane jest z konfiguracją domyślnego katalogu dla wgrywanych plików, patrz `defaultUploadFolder` w konfiguracji `/tsconfig_user/tsconfig.tsu`.
 
 * `Name: Public`
-* `Base path: files/public/`
+* `Base path: files/`
 * `Is default storage?: [x]`
 
 
@@ -110,28 +110,28 @@ Załączenie plików TypoScript
 **Page Setup**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page_templates/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/context/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page_templates/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tss">
 ```
 
 **Page Constants**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsc">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/+ext/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tsc">
 ```
 
 **Page TSConfig**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/plugins/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/page_templates/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_page/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/context/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page_templates/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/tsconfig_page/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tsp">
 ```
 
 #### Ustawienia użytkownika, dodaj w edycji użytkownika/grupy w module Backend users
@@ -140,11 +140,11 @@ Załączenie plików TypoScript
 
 > **WAŻNE:**
 >
-> plik `files/assets/typoscript/tsconfig_user/tsconfig.tsu` jest dołączany automatycznie dla wszystkich użytkowników BE
+> plik `assets/typoscript/tsconfig_user/tsconfig.tsu` jest dołączany automatycznie dla wszystkich użytkowników BE
 > poprzez plik `typo3conf/AdditionalConfiguration.php`
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:files/assets/typoscript/tsconfig_user/" extensions="tsu">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/tsconfig_user/" extensions="tsu">
 ```
 
 
@@ -169,4 +169,4 @@ Developer helpers
 
 **debug**
 
-dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/files/assets/typoscript/page/config.tss#L78)
+dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/assets/typoscript/page/config.tss#L78)

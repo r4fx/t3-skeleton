@@ -1,7 +1,7 @@
 styles.templates {
-	templateRootPath = files/assets/plugins/fluid_styled_content/Templates/
-	partialRootPath = files/assets/plugins/fluid_styled_content/Partials/
-	layoutRootPath = files/assets/plugins/fluid_styled_content/Layouts/
+	templateRootPath = assets/plugins/fluid_styled_content/Templates/
+	partialRootPath = assets/plugins/fluid_styled_content/Partials/
+	layoutRootPath = assets/plugins/fluid_styled_content/Layouts/
 }
 
 styles.content {

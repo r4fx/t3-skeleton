@@ -10,7 +10,7 @@ Allow: /typo3temp/compressor/
 # **********************************************************************
 # Disallow
 
-Disallow: /files/assets/
+Disallow: /assets/
 Disallow: /files/_temp_/
 
 Disallow: /typo3/

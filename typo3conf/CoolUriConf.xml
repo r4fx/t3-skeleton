@@ -231,7 +231,7 @@
 
 
         <!-- ke_search -->
-        <part key="p-(.*)" regexp="1">
+        <part key="p/(.*)" regexp="1">
             <parameter>tx_kesearch_pi1[page]</parameter>
         </part>
 
