@@ -3,46 +3,49 @@
 }
 
 .mce-content-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     padding: 0 !important;
     margin: 0 15px !important;
 }
 
-.mce-content-body h1, .mce-content-body h2, .mce-content-body h3, .mce-content-body h4, .mce-content-body h5, .mce-content-body h6 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 200;
-    line-height: 1.4em;
-    margin: 25px 0 25px
+.mce-content-body h1,
+.mce-content-body h2,
+.mce-content-body h3,
+.mce-content-body h4,
+.mce-content-body h5,
+.mce-content-body h6 {
+    font-weight: 400;
+    line-height: normal;
+    margin: 15px 0;
 }
 
 .mce-content-body h1 {
-    font-size: 34px
+    font-size: 34px;
 }
 
 .mce-content-body h2 {
-    font-size: 30px
+    font-size: 30px;
 }
 
 .mce-content-body h3 {
-    font-size: 26px
+    font-size: 26px;
 }
 
 .mce-content-body h4 {
-    font-size: 22px
+    font-size: 22px;
 }
 
 .mce-content-body h5 {
-    font-size: 18px
+    font-size: 18px;
 }
 
 .mce-content-body h6 {
-    font-size: 14px
+    font-size: 14px;
 }
 
 .mce-content-body p {
-    margin: 15px 0
+    margin: 15px 0;
 }
 
 .mce-content-body ol, .mce-content-body ul {
@@ -69,16 +72,16 @@
     width: 100%;
     border-spacing: 0;
     border-collapse: separate;
-    border: 1px solid #aaa
+    border: 1px solid #aaa;
 }
 
 .mce-content-body table tr:nth-child(even) {
-    background: #FAFAFA
+    background: #FAFAFA;
 }
 
 .mce-content-body table caption, .mce-content-body table td, .mce-content-body table th {
     padding: 15px 7px;
-    font: inherit
+    font: inherit;
 }
 
 .mce-content-body table th {
@@ -86,11 +89,11 @@
     color: #000;
     background-position: 100% 100%;
     background-size: 2px 10px;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 .mce-content-body table th:last-child {
-    background: 0 0
+    background: 0 0;
 }
 
 /*  */
