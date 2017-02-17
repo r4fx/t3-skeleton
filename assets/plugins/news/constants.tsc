@@ -10,11 +10,12 @@ plugin.tx_news {
         cssFile =
 
         list {
+            #listPid = 95
             paginateFile = {$plugin.tx_news.view.templateRootPath}ViewHelpers/Widget/Paginate/Index.html
         }
 
         details {
-            detailPid = 4
+            #detailPid = 4
         }
     }
 
@@ -22,14 +23,14 @@ plugin.tx_news {
         site_name =
         type = website
         admins =
-        locality = pl_PL
+        locality = en_EN
     }
 
     rss.channel {
         title =
         description =
         link =
-        language = pl_PL
+        language = en_EN
         copyright =
         category =
         generator = TYPO3 EXT:news

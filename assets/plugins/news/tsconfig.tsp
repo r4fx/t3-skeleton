@@ -4,6 +4,8 @@
 //============================================================
 
 tx_news {
+    #categoryRestrictionForFlexForms = 1
+    predefine.author = 1
     singlePid = 28
 
     templateLayouts {
@@ -12,9 +14,9 @@ tx_news {
         12 = Masonry
         13 = Headers only
 
-        20 = --div--,Date menu
-        21 = Years only menu
-        22 = Years & months menu
+        100 = --div--,Date menu
+        101 = Years only menu
+        102 = Years & months menu
     }
 
     module {
@@ -26,6 +28,8 @@ tx_news {
         }
     }
 }
+
+#TCEFORM.tx_news_domain_model_news.categories.PAGE_TSCONFIG_IDLIST = 110, 260, 257
 
 // "SAVE & PREVIEW" FOR NEWS RECORDS
 
@@ -58,12 +62,12 @@ TCAdefaults {
 //============================================================
 
 TCEFORM.tx_news_domain_model_news {
-    type.disabled = 1
-    sys_language_uid.disabled = 1
-    rte_disabled.disabled = 1
+    type.disabled = 0
+    sys_language_uid.disabled = 0
+    rte_disabled.disabled = 0
     author.disabled = 0
     author_email.disabled = 0
-    archive.disabled = 1
+    archive.disabled = 0
     alternative_title.disabled = 0
     path_segment.disabled = 0
 }
