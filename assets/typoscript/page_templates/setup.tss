@@ -3,14 +3,18 @@
 
 page.10 = FLUIDTEMPLATE
 page.10 {
+    layoutRootPaths.10 = {$settings.path.html}/layouts/
+    partialRootPaths.10 = {$settings.path.html}/partials/
+    templateRootPaths.10 = {$settings.path.html}/templates/
+
     templateName = TEXT
     templateName.stdWrap.cObject = CASE
     templateName.stdWrap.cObject {
         key.data = levelfield:-1, backend_layout_next_level, slide
         key.override.field = backend_layout
 
-        main = TEXT
-        main.value = main.html
+        main-page = TEXT
+        main-page.value = main.html
 
         subpage = TEXT
         subpage.value = subpage.html
@@ -25,12 +29,7 @@ page.10 {
         default.value = subpage.html
     }
 
-    layoutRootPaths.10 = {$settings.path.html}/layouts/
-    partialRootPaths.10 = {$settings.path.html}/partials/
-    templateRootPaths.10 = {$settings.path.html}/templates/
-
     // Variables used in Fluid template files
-
     variables {
         content-main < styles.content.get
         content-main {
