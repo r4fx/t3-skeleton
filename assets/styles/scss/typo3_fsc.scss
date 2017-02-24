@@ -33,7 +33,14 @@
 }
 
 .ce-textpic{
-  margin-bottom: $rowSpacing;
+  margin-bottom: $rowSpacing*2;
+
+  &:after,
+  &:before{
+    content: '';
+    display: block;
+    clear: both;
+  }
 
   &:last-child{
     margin-bottom: 0;
@@ -48,7 +55,7 @@
   }
 
   li{
-    margin-bottom: $textMargin;
+    margin-bottom: 5px;
 
     &:last-child{
       margin-bottom: 0;
@@ -106,6 +113,21 @@
       margin-bottom: 0;
     }
   }
+
+  &.ce-right .ce-gallery{
+    float: right;
+    margin-left: $grid__col--gutter;
+  }
+
+  &.ce-left .ce-gallery{
+    float: left;
+    margin-right: $grid__col--gutter;
+  }
+
+  // no-wrap
+  &.ce-nowrap .ce-bodytext{
+    overflow: hidden;
+  }
 }
 
 .ce-gallery {
@@ -134,5 +156,9 @@
 .ce-uploads {
   span {
     display: inline-block;
+  }
+
+  li {
+    margin: 0 0 10px 0;
   }
 }

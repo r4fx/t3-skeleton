@@ -12,13 +12,17 @@
     clear: both; }
 
 .ce-textpic {
-  margin-bottom: 25px; }
+  margin-bottom: 50px; }
+  .ce-textpic:after, .ce-textpic:before {
+    content: '';
+    display: block;
+    clear: both; }
   .ce-textpic:last-child {
     margin-bottom: 0; }
   .ce-textpic .ce-bodytext > .ce-header:first-child {
     margin-top: 0; }
   .ce-textpic li {
-    margin-bottom: 15px; }
+    margin-bottom: 5px; }
     .ce-textpic li:last-child {
       margin-bottom: 0; }
   .ce-textpic p:last-child {
@@ -47,6 +51,14 @@
 
 .ce-intext.ce-right .ce-gallery, .ce-intext.ce-left .ce-gallery {
   margin-bottom: 0; }
+.ce-intext.ce-right .ce-gallery {
+  float: right;
+  margin-left: 25px; }
+.ce-intext.ce-left .ce-gallery {
+  float: left;
+  margin-right: 25px; }
+.ce-intext.ce-nowrap .ce-bodytext {
+  overflow: hidden; }
 
 .ce-gallery .ce-row {
   margin-left: -12.5px;
@@ -82,5 +94,7 @@
 
 .ce-uploads span {
   display: inline-block; }
+.ce-uploads li {
+  margin: 0 0 10px 0; }
 
 /*# sourceMappingURL=typo3_fsc.css.map */
