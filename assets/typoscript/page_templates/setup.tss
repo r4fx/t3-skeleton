@@ -13,17 +13,17 @@ page.10 {
         key.data = levelfield:-1, backend_layout_next_level, slide
         key.override.field = backend_layout
 
-        main-page = TEXT
-        main-page.value = main.html
+        pagets__main-page = TEXT
+        pagets__main-page.value = main.html
 
-        subpage = TEXT
-        subpage.value = subpage.html
+        pagets__subpage = TEXT
+        pagets__subpage.value = subpage.html
 
-        subpage-one-col = TEXT
-        subpage-one-col.value = subpage-one-col.html
+        pagets__subpage-one-col = TEXT
+        pagets__subpage-one-col.value = subpage-one-col.html
 
-        blank-page = TEXT
-        blank-page.value = blank-page.html
+        pagets__blank-page = TEXT
+        pagets__blank-page.value = blank-page.html
 
         default = TEXT
         default.value = subpage.html
