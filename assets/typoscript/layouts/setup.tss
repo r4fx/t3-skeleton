@@ -8,25 +8,23 @@ page.10 {
     templateRootPaths.10 = {$settings.path.html}/templates/
 
     templateName = TEXT
-    templateName.stdWrap.cObject = CASE
-    templateName.stdWrap.cObject {
-        key.data = levelfield:-1, backend_layout_next_level, slide
-        key.override.field = backend_layout
+    templateName.stdWrap {
+        cObject = TEXT
+        cObject {
+            data = levelfield:-1,backend_layout_next_level,slide
+            override.field = backend_layout
 
-        pagets__main-page = TEXT
-        pagets__main-page.value = main.html
+            // Automatically get layout name from layout filename, without "pagets__" prefix.
+            // For example: pagets__subpage -> layouts/subpage.html
+            split {
+                token = pagets__
+                1.current = 1
+                1.wrap = |
+            }
+        }
 
-        pagets__subpage = TEXT
-        pagets__subpage.value = subpage.html
-
-        pagets__subpage-one-col = TEXT
-        pagets__subpage-one-col.value = subpage-one-col.html
-
-        pagets__blank-page = TEXT
-        pagets__blank-page.value = blank-page.html
-
-        default = TEXT
-        default.value = subpage.html
+        // Default layout
+        ifEmpty = subpage.html
     }
 
     // Variables used in Fluid template files
