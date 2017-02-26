@@ -11,7 +11,7 @@ page.10 {
     templateName.stdWrap {
         cObject = TEXT
         cObject {
-            data = levelfield:-1,backend_layout_next_level,slide
+            data = levelfield:-2,backend_layout_next_level,slide
             override.field = backend_layout
 
             // Automatically get layout name from layout filename, without "pagets__" prefix.
