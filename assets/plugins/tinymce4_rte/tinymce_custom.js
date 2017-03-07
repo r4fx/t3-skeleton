@@ -63,6 +63,11 @@ tinymce.init({
 			'margin': '0 10px 0 10px'
 		}}
 	],
+	
+	
+	table_default_attributes: {
+		class: 'contenttable contenttable--rte'
+	},
 
 	// style_formats_merge: true,
 
