@@ -189,6 +189,7 @@
 	AddType video/mp4                                   f4v f4p m4v mp4
 	AddType video/ogg                                   ogv
 	AddType video/webm                                  webm
+	AddType video/x-m4v                                 m4v
 	AddType video/x-flv                                 flv
 	AddType image/x-icon                                cur ico
 
