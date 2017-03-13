@@ -9,9 +9,6 @@ lib.parseFunc_RTE {
         // FIX TABLE CLASS FOR RTE
         table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
             list >
-            default =
-            always = 0
-            #set = contenttable contenttable--rte
         }
     }
 

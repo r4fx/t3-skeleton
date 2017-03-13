@@ -65,7 +65,7 @@ tinymce.init({
 	],
 
 	table_default_attributes: {
-		class: 'contenttable contenttable--rte'
+		class: 'ce-table table--striped table--bordered'
 	},
 
 	// style_formats_merge: true,
