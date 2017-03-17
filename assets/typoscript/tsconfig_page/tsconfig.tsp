@@ -11,6 +11,16 @@ TCEMAIN.table {
 	}
 }
 
+// SET DEFAULTS PERMISSIONS FOR NEW PAGES
+TCEMAIN {
+    permissions {
+        #userid = 
+        #groupid = 
+        #group = show,edit,delete,new,editcontent
+        #everybody = show
+    }
+}
+
 mod {
 
     // WEB -> PAGE
