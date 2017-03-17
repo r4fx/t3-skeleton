@@ -11,8 +11,15 @@ TCEMAIN.table {
 	}
 }
 
-// DEFAULT USERS GROUP ID FOR NEW PAGES IN ACCESS MODULE
-TCEMAIN.permissions.groupid = 
+// SET DEFAULTS PERMISSIONS FOR NEW PAGES
+TCEMAIN {
+    permissions {
+        #userid = 
+        #groupid = 
+        #group = show,edit,delete,new,editcontent
+        #everybody = show
+    }
+}
 
 mod {
 
