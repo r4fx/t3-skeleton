@@ -1,15 +1,5 @@
 User-Agent: *
 
-# **********************************************************************
-# Allow
-
-Allow: /
-Allow: /sitemap.xml
-Allow: /typo3temp/compressor/
-
-# **********************************************************************
-# Disallow
-
 Disallow: /assets/
 Disallow: /files/_temp_/
 
