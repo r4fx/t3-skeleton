@@ -118,7 +118,7 @@
         <part>
             <parameter>tx_news_pi1[news]</parameter>
             <lookindb>
-                <to>SELECT CONCAT(title , '-id', uid) FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
+                <to>SELECT CASE WHEN path_segment !='' THEN CONCAT(path_segment , '_', uid) ELSE CONCAT(title , '_', uid) END FROM tx_news_domain_model_news WHERE (uid=$1 or l10n_parent=$1) AND sys_language_uid={L=0}</to>
                 <translatetoif>
                     <match>^[0-9]+$</match>
                 </translatetoif>
