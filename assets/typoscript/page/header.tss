@@ -7,6 +7,8 @@
 // META TAGS
 //============================================================
 page.meta {
+    #robots = noindex, nofollow
+
     viewport = width=device-width, initial-scale=1, minimum-scale=1
 
     X-UA-Compatible = IE=edge
@@ -22,9 +24,7 @@ page.meta {
         stdWrap.ifBlank = TYPO3, skeleton
     }
 
-    #robots = noindex, nofollow
-
-    // OPEN GRAPH
+    // OPEN GRAPH BEGIN:
 
     og:title {
         attribute = property
