@@ -3,8 +3,6 @@
 
 lib.parseFunc_RTE {
     externalBlocks {
-        // FIX STYLES FOR BLOCKQUOTE TAG
-        #blockquote.callRecursive.tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
 
         // FIX TABLE CLASS FOR RTE
         table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
