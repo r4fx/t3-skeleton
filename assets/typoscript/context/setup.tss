@@ -9,6 +9,7 @@
         compressJs = 0
         concatenateJs = 0
         tx_cooluri_enable = 0
+        redirectOldLinksToNew = 0
     }
 [global]
 
@@ -19,6 +20,7 @@
         compressJs = 1
         concatenateJs = 1
         tx_cooluri_enable = 1
+        redirectOldLinksToNew = 1
     }
 [global]
 
@@ -29,5 +31,6 @@
         compressJs = 1
         concatenateJs = 1
         tx_cooluri_enable = 1
+        redirectOldLinksToNew = 1
     }
 [global]
