@@ -73,7 +73,7 @@ Ustawienia magazynów plików
 
 > Zapamiętaj, że ID tego rekordu powiązane jest z konfiguracją domyślnego katalogu dla wgrywanych plików, patrz `defaultUploadFolder` w konfiguracji `/tsconfig_user/tsconfig.tsu`.
 
-* `Name: Public`
+* `Name: Files`
 * `Base path: files/`
 * `Is default storage?: [x]`
 
@@ -84,8 +84,8 @@ Ustawienia magazynów plików
 
 **Edytuj rekord `Filemount` według poniższego:**
 
-* `Label: Public`
-* `Storage: Public`
+* `Label: Files`
+* `Storage: Files`
 * `Folder: /`
 
 
