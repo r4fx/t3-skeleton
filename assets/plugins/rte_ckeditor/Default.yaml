@@ -19,20 +19,22 @@ editor:
       # Inline styles
       - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
 
-    toolbarGroups:
-      - { name: clipboard, groups: [clipboard, undo] }
-      - { name: find }
-      - { name: links }
-      - { name: insert, groups: [ table, horizontalrule ] }
-      - { name: doctools }
-      - { name: tools, groups: [ maximize, showblocks ] }
-      - { name: mode }
-      - { name: cleanup }
+    toolbar:
+      - [ 'ShowBlocks', 'RemoveFormat' ]
+      - [ 'Undo', 'Redo' ]
+      - [ 'Find' ]
+      - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
+      - [ 'Link', 'Unlink', 'Anchor' ]
+      - [ 'Table', 'HorizontalRule' ]
+      - [ 'Maximize' ]
+      - [ 'Source' ]
       - "/"
-      - { name: styles }
-      - { name: basicstyles, groups: [ basicstyles, align ] }
-      - { name: paragraph,   groups: [ list, indent, blocks, align ] }
-      - { name: colors, groups: [ textcolor, bgcolor ] }
+      - [ 'Format', 'Styles' ]
+      - [ 'Bold', 'Italic', 'Underline', 'Strike', 'Blockquote' ]
+      - [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ]
+      - [ 'NumberedList', 'BulletedList' ]
+      - [ 'Outdent', 'Indent' ]
+      - [ 'TextColor', 'BGColor' ]
 
     justifyClasses:
       - inline-left
