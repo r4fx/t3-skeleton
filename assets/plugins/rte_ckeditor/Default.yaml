@@ -63,3 +63,4 @@ processing:
   allowTags:
     - s
     - u
+    - iframe
