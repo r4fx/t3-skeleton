@@ -1,0 +1,63 @@
+# Load default processing options
+imports:
+    - { resource: "assets/plugins/rte_ckeditor/Processing.yaml" }
+    - { resource: "assets/plugins/rte_ckeditor/Editor/Base.yaml" }
+    - { resource: "assets/plugins/rte_ckeditor/Editor/Plugins.yaml" }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+  config:
+    pasteFilter: 'semantic-content'
+    format_tags: "p;h2;h3;h4;h5;h6;pre"
+    colorButton_colors: '00A631,249cff,ffb82d'
+    colorButton_enableAutomatic: false
+
+    stylesSet:
+      # block level styles
+      - { name: "Paragraph with special class", element: "p", attributes: { class: "my_fancy_css_class"} }
+      # Inline styles
+      - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
+
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: find }
+      - { name: links }
+      - { name: insert, groups: [ table, horizontalrule ] }
+      - { name: doctools }
+      - { name: tools, groups: [ maximize, showblocks ] }
+      - { name: mode }
+      - { name: cleanup }
+      - "/"
+      - { name: styles }
+      - { name: basicstyles, groups: [ basicstyles, align ] }
+      - { name: paragraph,   groups: [ list, indent, blocks, align ] }
+      - { name: colors, groups: [ textcolor, bgcolor ] }
+
+    justifyClasses:
+      - inline-left
+      - inline-center
+      - inline-right
+      - inline-justify
+
+    extraPlugins:
+      - justify
+      - find
+      - showblocks
+      - colorbutton
+      #- templates
+
+    removePlugins:
+      - image
+
+    removeButtons:
+      - Superscript
+      - Subscript
+      - Replace
+      - SpecialChar
+
+# Allow s and u tag
+processing:
+  allowTags:
+    - s
+    - u
