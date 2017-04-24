@@ -1,7 +1,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            main-page {
+            MainPage {
                 title = Main page
                 #icon = /Images/BackendLayouts/default_2_columns_25_75.gif
                 config {

@@ -1,7 +1,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            blank-page {
+            BlankPage {
                 title = Blank page
                 #icon = /Images/BackendLayouts/default_2_columns_25_75.gif
                 config {
