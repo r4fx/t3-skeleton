@@ -25,7 +25,7 @@ editor:
       - [ 'Find' ]
       - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
       - [ 'Link', 'Unlink', 'Anchor' ]
-      - [ 'Table', 'HorizontalRule' ]
+      - [ 'Table', 'HorizontalRule', 'Iframe' ]
       - [ 'Maximize' ]
       - [ 'Source' ]
       - "/"
@@ -47,6 +47,7 @@ editor:
       - find
       - showblocks
       - colorbutton
+      #- iframe
       #- templates
 
     removePlugins:

@@ -2,7 +2,7 @@
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   config:
-    contentsCss: "/assets/plugins/rte_ckeditor/Css/contents.css"
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "/assets/plugins/rte_ckeditor/Css/contents.css"]
     browserContextMenuOnCtrl: true
     disableNativeSpellChecker: false
     # will be overridden by the record (if a language is set)
