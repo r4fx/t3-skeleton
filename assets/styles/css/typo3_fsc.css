@@ -11,22 +11,20 @@
     display: block;
     clear: both; }
 
-.ce-textpic {
-  margin-bottom: 50px; }
-  .ce-textpic:after, .ce-textpic:before {
-    content: '';
-    display: block;
-    clear: both; }
-  .ce-textpic:last-child {
+.ce-textpic:after, .ce-textpic:before {
+  content: '';
+  display: block;
+  clear: both; }
+.ce-textpic:last-child {
+  margin-bottom: 0; }
+.ce-textpic .ce-bodytext > .ce-header:first-child {
+  margin-top: 0; }
+.ce-textpic li {
+  margin-bottom: 5px; }
+  .ce-textpic li:last-child {
     margin-bottom: 0; }
-  .ce-textpic .ce-bodytext > .ce-header:first-child {
-    margin-top: 0; }
-  .ce-textpic li {
-    margin-bottom: 5px; }
-    .ce-textpic li:last-child {
-      margin-bottom: 0; }
-  .ce-textpic p:last-child {
-    margin-bottom: 0; }
+.ce-textpic p:last-child {
+  margin-bottom: 0; }
 
 .ce-center .ce-outer {
   position: static;
