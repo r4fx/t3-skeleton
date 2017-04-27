@@ -3,9 +3,8 @@
 //============================================================
 
 TCEFORM.tt_content.header_layout {
-    // Default header tag, see at {$styles.content.defaultHeaderType}
+    // Default header tag is number 0, see at {$styles.content.defaultHeaderType}
     altLabels.0 = LLL:assets/l10n/locallang.xlf:header_layout.default
-
     altLabels.1 = H2
     altLabels.2 = H3
     altLabels.3 = H4
@@ -22,9 +21,7 @@ TCEFORM.tt_content.header_layout {
 
 TCEFORM.tt_content.layout {
     disableNoMatchingValueElement = 1
-
     keepItems = 0
-    altLabels.0 = ---
 
     // Common layout options
     addItems {
@@ -33,16 +30,28 @@ TCEFORM.tt_content.layout {
     }
 
     types {
-        # Layout options for textmedia elements
+        // Layout options for textmedia elements
         textmedia.addItems {
             1 = textmedia layout 1
             2 = textmedia layout 2
         }
 
-        # Layout options for html elements
+        // Layout options for html elements
         html.addItems {
             1 = html layout 1
             2 = html layout 2
         }
+    }
+}
+
+//============================================================
+// CONTENT WRAPPERS
+//============================================================
+
+TCEFORM.tt_content.frame_class {
+    disableNoMatchingValueElement = 1
+    keepItems = default, none
+    addItems {
+        custom_1 = Custom wrapper nr 1
     }
 }
