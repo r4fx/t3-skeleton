@@ -25,7 +25,7 @@ editor:
       - [ 'Find' ]
       - [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ]
       - [ 'Link', 'Unlink', 'Anchor' ]
-      - [ 'Table', 'HorizontalRule', 'Iframe' ]
+      - [ 'Image', 'Table', 'HorizontalRule', 'Iframe' ]
       - [ 'Maximize' ]
       - [ 'Source' ]
       - "/"
@@ -47,11 +47,12 @@ editor:
       - find
       - showblocks
       - colorbutton
-      #- iframe
+      - iframe
+      - image
       #- templates
 
     removePlugins:
-      - image
+      #- image
 
     removeButtons:
       - Superscript
@@ -59,7 +60,7 @@ editor:
       - Replace
       - SpecialChar
 
-# Allow s and u tag
+# Allow tags
 processing:
   allowTags:
     - s
