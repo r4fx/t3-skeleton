@@ -12,12 +12,7 @@ editor:
     format_tags: "p;h2;h3;h4;h5;h6;pre"
     colorButton_colors: '00A631,249cff,ffb82d'
     colorButton_enableAutomatic: false
-
-    stylesSet:
-      # block level styles
-      - { name: "Paragraph with special class", element: "p", attributes: { class: "my_fancy_css_class"} }
-      # Inline styles
-      - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
+    #fillEmptyBlocks: false
 
     toolbar:
       - [ 'ShowBlocks', 'RemoveFormat' ]
@@ -48,17 +43,27 @@ editor:
       - showblocks
       - colorbutton
       - iframe
-      - image
+      - image2
       #- templates
 
     removePlugins:
-      #- image
+      - image
 
     removeButtons:
       - Superscript
       - Subscript
       - Replace
       - SpecialChar
+
+    # Custom styles for elements
+    stylesSet:
+      - { name: "Paragraph with special class", element: "p", attributes: { class: "fancy-css-class"} }
+      - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
+      #- { name: 'Image decoration', type: 'widget', widget: 'image', attributes: { 'class': 'test-class' } }
+
+    # Plugin image2
+    image2_alignClasses: [ 'inline-left', 'inline-center', 'inline-right' ]
+    image2_captionedClass: 'image-captioned'
 
 # Allow tags
 processing:
