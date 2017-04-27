@@ -33,16 +33,13 @@
 }
 
 .ce-textpic{
+  margin-bottom: $rowSpacing;
 
   &:after,
   &:before{
     content: '';
     display: block;
     clear: both;
-  }
-
-  &:last-child{
-    margin-bottom: 0;
   }
 
   .ce-bodytext{
@@ -140,7 +137,7 @@
   }
 
   figure{
-    display: inline-block;
+    display: block;
   }
 
   figcaption{
