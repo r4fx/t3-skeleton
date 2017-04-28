@@ -1,2 +1,8 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
 <f:render section="content"/>
-<f:render partial="assets" arguments="{_all}"/>
+
+<f:comment>
+    <!-- Optional VHS assets -->
+    <f:render partial="AssetsVhs" arguments="{_all}"/>
+</f:comment>

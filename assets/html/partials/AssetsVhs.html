@@ -1,3 +1,7 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
 {namespace v=FluidTYPO3\Vhs\ViewHelpers}
 
 <f:comment>
@@ -21,7 +25,7 @@
 <f:section name="assets-default">
     <v:asset.style path="/{settings.path.css}/typo3_fsc.css" standalone="1" external="1"/>
 
-    <v:asset.script path="{settings.path.js.vendors}/jquery-2.2.4.min.js" name="jquery" standalone="1" movable="0"/>
+    <v:asset.script path="{settings.path.js.vendors}/jquery-3.2.1.min.js" name="jquery" standalone="1" movable="0"/>
     <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
 </f:section>
 

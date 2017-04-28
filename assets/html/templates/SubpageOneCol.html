@@ -3,6 +3,15 @@
 <!-- Use layout from file (assets/html/layouts) -->
 <f:layout name="Subpage.html"/>
 
+<!-- Assets -->
+<f:section name="HeaderAssets">
+    <f:render partial="AssetsHeader" arguments="{_all}"/>
+</f:section>
+
+<f:section name="FooterAssets">
+    <f:render partial="AssetsFooter" arguments="{_all}"/>
+</f:section>
+
 <!-- Main section for content -->
 <f:section name="content">
     <section>

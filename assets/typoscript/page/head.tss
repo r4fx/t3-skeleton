@@ -1,5 +1,4 @@
-// PAGE TITLE
-//============================================================
+// Page title on home page
 [globalVar = TSFE:id = 1]
     config.noPageTitle = 1
 [end]
@@ -7,21 +6,9 @@
 // META TAGS
 //============================================================
 page.meta {
-    #robots = noindex, nofollow
-
-    viewport = width=device-width, initial-scale=1, minimum-scale=1
-
-    X-UA-Compatible = IE=edge
-    X-UA-Compatible.attribute = http-equiv
-
     description {
         field = description
         stdWrap.ifBlank = T3go - blog integratora TYPO3
-    }
-
-    keywords {
-        field = keywords
-        stdWrap.ifBlank = TYPO3, skeleton
     }
 
     // OPEN GRAPH BEGIN:
@@ -143,29 +130,3 @@ page.meta {
         keywords >
     }
 [end]
-
-
-// MOBILE TOUCH ICONS (generate yours own http://realfavicongenerator.net/)
-//============================================================
-page.headerData.7 = TEXT
-page.headerData.7.value (
-    <link rel="shortcut icon" href="{$settings.path.images}/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="{$settings.path.images}/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{$settings.path.images}/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{$settings.path.images}/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{$settings.path.images}/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{$settings.path.images}/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{$settings.path.images}/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{$settings.path.images}/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{$settings.path.images}/favicons/apple-touch-icon-152x152.png">
-    <meta name="apple-mobile-web-app-title" content="T3go">
-    <link rel="icon" type="image/png" href="{$settings.path.images}/favicons/favicon-196x196.png" sizes="196x196">
-    <link rel="icon" type="image/png" href="{$settings.path.images}/favicons/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="{$settings.path.images}/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="{$settings.path.images}/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="{$settings.path.images}/favicons/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="msapplication-TileImage" content="{$settings.path.images}/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="{$settings.path.images}/favicons/browserconfig.xml">
-    <meta name="application-name" content="T3go">
-)
