@@ -90,6 +90,24 @@ page.meta {
         }
     }
 
+    twitter:image < .og:image
+    twitter:image {
+        stdWrap.cObject {
+            renderObj {
+                file {
+                    width = 1024c
+                    height = 512c
+                }
+            }
+
+            stdWrap.ifEmpty.cObject < .renderObj
+            stdWrap.ifEmpty.cObject {
+                file.import >
+                file = {$settings.path.images}/logo.png
+            }
+        }
+    }
+
     og:url {
         attribute = property
         stdWrap {
