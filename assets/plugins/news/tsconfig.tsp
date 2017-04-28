@@ -29,13 +29,13 @@ tx_news {
     }
 }
 
+// // Folder with news categories
 #TCEFORM.tx_news_domain_model_news.categories.PAGE_TSCONFIG_IDLIST = 110, 260, 257
 
 // "SAVE & PREVIEW" FOR NEWS RECORDS
-
 TCEMAIN.preview {
     tx_news_domain_model_news {
-        previewPageId = 109
+        previewPageId = set_page_id_here
         useDefaultLanguageRecord = 0
         fieldToParameterMap {
             uid = tx_news_pi1[news_preview]
@@ -75,3 +75,13 @@ TCEFORM.tx_news_domain_model_news {
 TCEFORM.sys_file_reference {
     showinpreview.disabled = 0
 }
+
+//============================================================
+// Allowed content types for news records.
+// Should be set for storage folder with news records.
+//============================================================
+
+[PIDinRootline = set_system_folder_id_here]
+    TCAdefaults.tt_content.CType = text
+    TCEFORM.tt_content.CType.keepItems = text,image,textpic,textmedia
+[END]
