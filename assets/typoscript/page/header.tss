@@ -136,6 +136,7 @@ page.meta {
     page.meta {
         og:url >
         og:image >
+        twitter:image >
         og:title >
         og:description >
         description >
