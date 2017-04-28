@@ -1,0 +1,11 @@
+page.10.settings {
+    path {
+        css = {$settings.path.css}
+        js = {$settings.path.js}
+        vendors = {$settings.path.vendors}
+        images = {$settings.path.images}
+        l10nFile = {$settings.path.l10nFile}
+    }
+
+    facebookEnable = 0
+}
