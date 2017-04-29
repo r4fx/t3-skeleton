@@ -1,18 +1,14 @@
-// BASE PAGE SETTINGS
+// BASE PAGE CONFIGURATION
 // Reference: http://docs.typo3.org/typo3cms/TyposcriptReference/Setup/Config/Index.html
 //============================================================
 
-page = PAGE
-page.typeNum = 0
-
 config {
     absRefPrefix = /
+    doctype = html5
     linkVars = L(int)
     spamProtectEmailAddresses = ascii
     spamProtectEmailAddresses_atSubst = @
     headerComment = {$settings.headerComment}
-    doctype = html5
-    lockFilePath = {$settings.path.lockFilePath}
 
     pageTitleFirst = 1
     pageTitleSeparator = -
@@ -20,23 +16,10 @@ config {
 
     // Multidomain setup
     typolinkCheckRootline = 1
-    typolinkEnableLinksAcrossDomains = 1
 
-    // Performance and cleanup
+    // Cleanup
     disablePrefixComment = 1
-
-    // CSS
-    removeDefaultCss = 0
-    removePageCss = 0
     inlineStyle2TempFile = 1
-    compressCss = 0
-    concatenateCss = 0
-
-    // JS
-    moveJsFromHeaderToFooter = 0
-    removeDefaultJS = 0
-    compressJs = 0
-    concatenateJs = 0
 
     // Use cache for one week (google recommendations)
     cache_period = 604800
@@ -90,6 +73,7 @@ config {
     }
 
     // Plugins
+    plugin.tx_min.tinysource.enable = 0
     plugin.tx_vhs.settings.debug = 0
     plugin.tx_vhs.settings.asset.debug = 0
 [global]

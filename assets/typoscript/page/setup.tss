@@ -1,11 +1,13 @@
 // Reference:  https://docs.typo3.org/typo3cms/TyposcriptReference/ContentObjects/Fluidtemplate/
 //============================================================
+page = PAGE
+page.typeNum = 0
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-    layoutRootPaths.10 = {$settings.path.html}/layouts/
-    partialRootPaths.10 = {$settings.path.html}/partials/
-    templateRootPaths.10 = {$settings.path.html}/templates/
+    layoutRootPaths.10 = assets/html/layouts/
+    partialRootPaths.10 = assets/html/partials/
+    templateRootPaths.10 = assets/html/templates/
 
     templateName = TEXT
     templateName.stdWrap {

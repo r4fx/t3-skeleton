@@ -7,5 +7,6 @@ page.10.settings {
         l10nFile = {$settings.path.l10nFile}
     }
 
-    facebookEnable = 0
+    googleAnaliticsUA =
+    socialScriptsEnable = 0
 }

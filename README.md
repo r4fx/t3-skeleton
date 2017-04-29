@@ -111,7 +111,6 @@ Załączenie plików TypoScript
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/fluid/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tss">
@@ -129,7 +128,7 @@ Załączenie plików TypoScript
 
 ```javascript
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsp">
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/fluid/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/backend_layouts/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/tsconfig_page/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tsp">
 ```

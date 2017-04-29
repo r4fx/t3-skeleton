@@ -1,16 +1,11 @@
-// PAGE SETTINGS
-//============================================================
 settings {
-    headerComment = ======= Created by frontside [fside.pl] ======= 2017 =======
-    googleAnaliticsUA =
+    headerComment = ======= Created by frontside [fside.pl] =======
 
     path {
-        html = assets/html
         css = assets/styles/css
         js = assets/js
         vendors = assets/vendors
         images = assets/images
         l10nFile = assets/l10n/locallang.xlf
-        lockFilePath = files/
     }
 }
