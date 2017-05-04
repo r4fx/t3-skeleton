@@ -62,7 +62,6 @@ Ustawienia systemowe
 
 Ustawienia magazynów plików
 -----
-`todo: dodać zrzuty ekranu (Filelist, root)`
 
 > Poniższe ustawienia wykonaj w korzeniu strony (id=0).
 > Niewymienone pola pozostaw domyślnie.
@@ -77,6 +76,7 @@ Ustawienia magazynów plików
 * `Base path: files/`
 * `Is default storage?: [x]`
 
+![File Storage](/assets/images/file_storage.png)
 
 ### Filemount
 
@@ -87,6 +87,8 @@ Ustawienia magazynów plików
 * `Label: Files`
 * `Storage: Files`
 * `Folder: /`
+
+![File Storage](/assets/images/file_mount.png)
 
 
 ### Automatyczne generowanie brakujących plików i katalogów

@@ -52,6 +52,6 @@ TCEFORM.tt_content.frame_class {
     disableNoMatchingValueElement = 1
     keepItems = default, none
     addItems {
-        custom_1 = Custom wrapper nr 1
+        custom_1 = LLL:assets/l10n/locallang.xlf:frame_class.custom_1
     }
 }

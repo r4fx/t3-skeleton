@@ -5,9 +5,9 @@ page.typeNum = 0
 
 page.10 = FLUIDTEMPLATE
 page.10 {
-    layoutRootPaths.10 = assets/html/layouts/
-    partialRootPaths.10 = assets/html/partials/
-    templateRootPaths.10 = assets/html/templates/
+    layoutRootPaths.10 = assets/html/Layouts/
+    partialRootPaths.10 = assets/html/Partials/
+    templateRootPaths.10 = assets/html/Templates/
 
     templateName = TEXT
     templateName.stdWrap {

@@ -14,6 +14,10 @@
             <trans-unit id="header_layout.default" xml:space="preserve">
                 <source>Default (H2)</source>
             </trans-unit>
+
+            <trans-unit id="frame_class.custom_1" xml:space="preserve">
+                <source>Custom container no 1</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
