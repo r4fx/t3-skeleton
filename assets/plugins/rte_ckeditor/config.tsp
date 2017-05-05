@@ -1,7 +1,6 @@
 RTE.default {
     // Available core presets: default, minimal, full
     preset = skelton
-    #contentCSS = assets/plugins/rte_ckeditor/Css/contents.css
 }
 
 RTE.config {
