@@ -12,11 +12,11 @@
             </trans-unit>
 
             <trans-unit id="header_layout.default" xml:space="preserve">
-                <source>Domyślny (H2)</source>
+                <target>Domyślny (H2)</target>
             </trans-unit>
 
             <trans-unit id="frame_class.custom_1" xml:space="preserve">
-                <source>Własny kontener nr 1</source>
+                <target>Własny kontener nr 1</target>
             </trans-unit>
         </body>
     </file>
