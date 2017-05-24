@@ -12,7 +12,7 @@ W skład skeletona wchodzą:
 - podstawowe ustawienia środowiska w plikach TypoScript
 - prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - prekonfigurowane ustawienia TypoScript dla użytkowników BE
-- prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
+- prekonfigurowane ustawienia TypoScript dla CKEditor RTE i TinyMCE RTE (nie używamy htmlArea RTE)
 - katalog `(assets/l10n)` ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - i więcej
 
