@@ -170,4 +170,4 @@ Developer helpers
 
 **debug**
 
-dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/assets/typoscript/page/config.tss#L78)
+dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione [w pliku `config.tss`](https://github.com/r4fx/t3-skeleton/blob/master/assets/typoscript/page/config.tss)
