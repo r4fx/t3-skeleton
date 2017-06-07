@@ -12,11 +12,11 @@ W skład skeletona wchodzą:
 - podstawowe ustawienia środowiska w plikach TypoScript
 - prekonfigurowane ustawienia TypoScript dla stron i elementów treści
 - prekonfigurowane ustawienia TypoScript dla użytkowników BE
-- prekonfigurowane ustawienia TypoScript dla TinyMCE RTE (nie używamy htmlArea RTE)
+- prekonfigurowane ustawienia TypoScript dla CKEditor RTE i TinyMCE RTE (nie używamy htmlArea RTE)
 - katalog `(assets/l10n)` ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - i więcej
 
-> Zawartość TYPO3 Skeleton jest kompatybilna z wersją TYPO3 7.6.4 i nowszych
+> Zawartość TYPO3 Skeleton jest kompatybilna z wersjami TYPO3 8 LTS i 7 LTS
 
 Instalacja
 =====
@@ -170,4 +170,4 @@ Developer helpers
 
 **debug**
 
-dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione w pliku `config.tss` [[Link]](https://github.com/r4fx/t3-skeleton/blob/master/assets/typoscript/page/config.tss#L78)
+dodaj w adresie url `&debug=1` lub `?debug=1`, debug wyłącza/włącza na stronie opcje developerskie, ustawione [w pliku `config.tss`](https://github.com/r4fx/t3-skeleton/blob/master/assets/typoscript/page/config.tss)

@@ -55,3 +55,16 @@ TCEFORM.tt_content.frame_class {
         custom_1 = LLL:assets/l10n/locallang.xlf:frame_class.custom_1
     }
 }
+
+//============================================================
+// PAGE LAYOUT
+//============================================================
+TCEFORM.pages.layout {
+    disableNoMatchingValueElement = 1
+    keepItems = 0
+
+    addItems {
+        1 = Style 1
+        2 = Style 2
+    }
+}
