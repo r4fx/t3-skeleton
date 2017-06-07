@@ -1,5 +1,5 @@
 //===================================================
-// LOGO WITH LINK (WORKS WITH MULTILANGUE SITE)
+// LOGO WITH LINK (WORKS WITH MULTI LANGUAGE SITE)
 //===================================================
 lib.logo = TEXT
 lib.logo {

@@ -1,4 +1,4 @@
-## How to use localisation labels in Fluid templates
+## How to use localisation labels in Fluid templates or in TypoScript
 
 **Tag notation:**
 

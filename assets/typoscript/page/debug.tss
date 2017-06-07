@@ -1,0 +1,30 @@
+// DEBUG OPTIONS ON FRONTEND (just add to URL: &debug=1 or ?debug=1 to the url)
+//============================================================
+
+[globalVar = GP:debug=1]
+    config {
+        contentObjectExceptionHandler = 0
+        admPanel = 1
+        debug = 1
+        no_cache = 1
+        compressCss = 0
+        concatenateCss = 0
+        removeDefaultJS = 0
+        compressJs = 0
+        concatenateJs = 0
+    }
+
+    // Debug additional infos
+    page.footerData.7100 = TEXT
+    page.footerData.7100 {
+        field = uid
+        noTrimWrap = |<!--[Skeleton debug][PageID: |]-->|
+    }
+
+    // Plugins
+    config.tx_cooluri_enable = 0
+    config.redirectOldLinksToNew = 0
+    plugin.tx_min.tinysource.enable = 0
+    plugin.tx_vhs.settings.debug = 0
+    plugin.tx_vhs.settings.asset.debug = 0
+[end]

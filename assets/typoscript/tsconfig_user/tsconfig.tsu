@@ -1,6 +1,6 @@
 // Manual:
 // https://docs.typo3.org/typo3cms/TSconfigReference/
-// **********************************************************************
+//============================================================
 
 // INTERFACE AND DEFAULT ACTIONS
 mod.web_list {
@@ -15,6 +15,7 @@ options {
 	// Check your ID of File Storage at Root page,
 	// in Skeleton complete path should be "files/uploads/"
 	defaultUploadFolder = 1:/uploads/
+
 	popupWindowSize = 800x600
 	RTE.popupWindowSize = 800x600
 	uploadFieldsInTopOfEB = 0
@@ -30,6 +31,10 @@ options {
 		showDomainNameWithTitle = 0
 		#backgroundColor.2 = rgba(122, 0, 255, 0.1)
 	}
+
+    clearCache {
+        pages = 1
+    }
 }
 
 setup {
@@ -61,5 +66,5 @@ admPanel {
 
 // ADMIN USERS PERMISSIONS
 [adminUser = 1]
-	//
+
 [end]

@@ -1,6 +1,6 @@
 // Manual:
 // https://docs.typo3.org/typo3cms/TSconfigReference/
-// **********************************************************************
+//============================================================
 
 admPanel {
     enable {
@@ -9,6 +9,6 @@ admPanel {
         publish = 0
         edit = 0
         tsdebug = 0
-        info = 0
+        info = 1
     }
 }

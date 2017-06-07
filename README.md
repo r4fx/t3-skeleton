@@ -116,6 +116,7 @@ Załączenie plików TypoScript
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="FILE:assets/typoscript/page/debug.tss">
 ```
 
 **Page Constants**

@@ -1,11 +1,5 @@
-// CUSTOM BE-USER AND BE-GROUP CONFIG
+// IN THIS FILE YOU CAN OVERRIDE BE-USER AND BE-GROUP CONFIG
 //
 // Manual:
 // https://docs.typo3.org/typo3cms/TSconfigReference/
-// **********************************************************************
-
-options {
-    clearCache {
-        pages = 1
-    }
-}
+//============================================================
