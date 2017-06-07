@@ -112,8 +112,8 @@ Załączenie plików TypoScript
 **Page Setup**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tss">
 ```
@@ -121,8 +121,8 @@ Załączenie plików TypoScript
 **Page Constants**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tsc">
 ```
 
