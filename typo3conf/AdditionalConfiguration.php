@@ -9,6 +9,7 @@ $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultUserTSconfig'] .= '<INCLUDE_TYPOSCRIPT
 
 # Frontend Settings
 $GLOBALS['TYPO3_CONF_VARS']['FE']['additionalAbsRefPrefixDirectories'] = 'files/';
+$GLOBALS['TYPO3_CONF_VARS']['FE']['cHashExcludedParameters'] .= ', debug';
 
 # rte_ckeditor custom presets
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['skelton'] = 'assets/plugins/rte_ckeditor/Default.yaml';
