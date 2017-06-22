@@ -2,7 +2,7 @@
 
 # Backend Settings
 $GLOBALS['TYPO3_CONF_VARS']['BE']['fileadminDir'] = 'files/';
-$GLOBALS['TYPO3_CONF_VARS']['BE']['RTE_imageStorageDir'] = 'files/uploads/';
+$GLOBALS['TYPO3_CONF_VARS']['BE']['RTE_imageStorageDir'] = 'files/user_upload/';
 
 # Default BE User settings
 $GLOBALS['TYPO3_CONF_VARS']['BE']['defaultUserTSconfig'] .= '<INCLUDE_TYPOSCRIPT: source="FILE:assets/typoscript/tsconfig_user/tsconfig.tsu">';
