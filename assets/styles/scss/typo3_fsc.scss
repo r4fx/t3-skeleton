@@ -23,7 +23,7 @@
 .ce-row {
   margin-left: -$grid__col--gutter;
   margin-right: -$grid__col--gutter;
-
+  
   &:before,
   &:after {
     content: '';
@@ -34,14 +34,14 @@
 
 .ce-textpic{
   margin-bottom: $rowSpacing;
-
+  
   &:after,
   &:before{
     content: '';
     display: block;
     clear: both;
   }
-
+  
   .ce-bodytext{
     > .ce-header{
       &:first-child{
@@ -49,15 +49,15 @@
       }
     }
   }
-
+  
   li{
     margin-bottom: 5px;
-
+    
     &:last-child{
       margin-bottom: 0;
     }
   }
-
+  
   p{
     &:last-child{
       margin-bottom: 0;
@@ -71,13 +71,13 @@
     float: none;
     right: auto;
   }
-
+  
   .ce-inner{
     position: static;
     float: none;
     right: auto;
   }
-
+  
   .ce-column{
     text-align: center;
   }
@@ -109,17 +109,17 @@
       margin-bottom: 0;
     }
   }
-
+  
   &.ce-right .ce-gallery{
     float: right;
     margin-left: $grid__col--gutter;
   }
-
+  
   &.ce-left .ce-gallery{
     float: left;
     margin-right: $grid__col--gutter;
   }
-
+  
   // no-wrap
   &.ce-nowrap .ce-bodytext{
     overflow: hidden;
@@ -127,23 +127,28 @@
 }
 
 .ce-gallery {
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .ce-row{
     margin-left: -$grid__col--gutter/2;
     margin-right: -$grid__col--gutter/2;
   }
-
+  
   .ce-column{
     @extend %grid-cols-common;
   }
-
+  
   figure{
     display: block;
   }
-
+  
   figcaption{
     display: block;
   }
-
+  
   @include grid-cols;
 }
 
@@ -153,7 +158,7 @@
   span {
     display: inline-block;
   }
-
+  
   li {
     margin: 0 0 10px 0;
   }
