@@ -81,7 +81,7 @@ TCEFORM.sys_file_reference {
 // Should be set for storage folder with news records.
 //============================================================
 
-[PIDinRootline = set_system_folder_id_here]
+[PIDinRootline = -1]
     TCAdefaults.tt_content.CType = text
     TCEFORM.tt_content.CType.keepItems = text,image,textpic,textmedia
 [END]
