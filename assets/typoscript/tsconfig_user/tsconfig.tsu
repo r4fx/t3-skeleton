@@ -7,7 +7,6 @@ mod.web_list {
 	enableDisplayBigControlPanel = activated
 	itemsLimitSingleTable = 50
 	itemsLimitPerTable = 10
-	hideTables = static_template, static_countries, static_country_zones, static_currencies, static_languages, static_territories, static_taxes, static_markets
 }
 
 // OPTIONS
