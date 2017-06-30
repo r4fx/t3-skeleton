@@ -3,8 +3,8 @@ settings {
 
     path {
         css = assets/styles/css
-        js = /assets/js
-        vendors = /assets/vendors
+        js = assets/js
+        js-vendor = assets/js/vendor
         images = /assets/images
         l10nFile = /assets/l10n/locallang.xlf
     }
