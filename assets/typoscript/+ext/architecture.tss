@@ -1,73 +1,8 @@
 //===================================================
-// LOGO WITH LINK (WORKS WITH MULTI LANGUAGE SITE)
-//===================================================
-lib.logo = TEXT
-lib.logo {
-    value = <img class="logotype" src="{$settings.path.images}/logotype.svg" width="160" height="50">
-    insertData = 1
-    typolink.parameter = 1
-}
-
-//===================================================
-// MAIN NAVIGATION
-//===================================================
-lib.main-nav = HMENU
-lib.main-nav {
-    special = list
-    special.value = {$settings.nav.main-nav}
-
-    1 = TMENU
-    1 {
-        wrap = <ul>|</ul>
-
-        NO {
-            allWrap = <li>|</li>
-        }
-
-        ACT = 1
-        ACT {
-            allWrap = <li class="active">|</li>
-        }
-    }
-}
-
-//===================================================
-// SUBPAGE NAVIGATION
-//===================================================
-lib.sub-nav = HMENU
-lib.sub-nav {
-    entryLevel = 1
-
-    1 = TMENU
-    1 {
-        wrap = <ul>|</ul>
-
-        NO {
-            allWrap = <li>|</li>
-        }
-
-        ACT = 1
-        ACT {
-            allWrap = <li class="active">|</li>
-        }
-    }
-}
-
-//===================================================
 // SUBPAGE HEADING
 //===================================================
 lib.header = TEXT
 lib.header.data = page:subtitle // page:title
-
-//===================================================
-// YEAR OF COPYRIGHT
-//===================================================
-lib.copyright = TEXT
-lib.copyright {
-    data = date:U
-    strftime = %Y
-    noTrimWrap = |
-}
 
 //===================================================
 // BODY CLASS FOR BLANK LAYOUT

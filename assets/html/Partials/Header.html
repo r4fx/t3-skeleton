@@ -1,21 +1,15 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
 <div>
     <figure class="logo">
-        <f:cObject typoscriptObjectPath="lib.logo"/>
+        <f:link.typolink parameter="1">
+            <img src="{settings.path.images}/logo.svg" alt="">
+        </f:link.typolink>
     </figure>
 
     <nav>
-        <f:cObject typoscriptObjectPath="lib.main-nav"/>
+        <v:menu.list pages="{settings.nav.mainNav}" class="nav list-inline" classActive="" classCurrent="active"/>
     </nav>
 </div>
-
-<f:if condition="{data.uid} > 1">
-    <hr>
-
-    <div>
-        <nav class="subNav">
-            <f:cObject typoscriptObjectPath="lib.sub-nav"/>
-        </nav>
-    </div>
-</f:if>
