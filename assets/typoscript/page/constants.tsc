@@ -6,6 +6,6 @@ settings {
         js = assets/js
         js-vendor = assets/js/vendor
         images = /assets/images
-        l10nFile = /assets/l10n/locallang.xlf
+        l10nFile = assets/l10n/locallang.xlf
     }
 }
