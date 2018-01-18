@@ -1,0 +1,250 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedFileMounts:
+          10: 1:/user_upload/
+        allowSaveToExtensionPaths: false
+        allowDeleteFromExtensionPaths: false
+
+      prototypes:
+        standard:
+          ########### DEFAULT FORM ELEMENT DEFINITIONS ###########
+          formElementsDefinition:
+
+            ### BASE ELEMENTS ###
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  10: 'EXT:form/Resources/Private/Frontend/Templates/'
+                partialRootPaths:
+                  10: 'EXT:form/Resources/Private/Frontend/Partials/'
+                layoutRootPaths:
+                  10: 'EXT:form/Resources/Private/Frontend/Layouts/'
+                addQueryString: false
+                argumentsToBeExcludedFromQueryString: []
+                additionalParams: []
+                httpMethod: post
+                httpEnctype: 'multipart/form-data'
+                _isCompositeFormElement: false
+                _isTopLevelFormElement: true
+
+                honeypot:
+                  enable: true
+                  formElementToUse: 'Honeypot'
+
+                # set this to TRUE if you want to avoid exceptions for FormElements without definitions
+                skipUnknownElements: true
+
+                translation:
+                  translationFile:
+                    # default translation files for the frontend
+                    10: 'EXT:form/Resources/Private/Language/locallang.xlf'
+                    20: 'assets/l10n/locallang.xlf'
+
+            ### FORM ELEMENTS: CONTAINER ###
+            Page:
+              renderingOptions:
+                _isTopLevelFormElement: true
+                _isCompositeFormElement: true
+                nextButtonLabel: 'next Page'
+                previousButtonLabel: 'previous Page'
+
+            SummaryPage:
+              renderingOptions:
+                _isTopLevelFormElement: true
+                _isCompositeFormElement: false
+                nextButtonLabel: 'next Page'
+                previousButtonLabel: 'previous Page'
+
+            GridContainer:
+              properties:
+                elementClassAttribute: 'container'
+                # overrules 'GridRow.properties.gridColumnClassAutoConfiguration'
+                gridColumnClassAutoConfiguration:
+                  gridSize: 12
+                  viewPorts:
+                    xs:
+                      classPattern: 'col-xs-{@numbersOfColumnsToUse}'
+                    sm:
+                      classPattern: 'col-sm-{@numbersOfColumnsToUse}'
+                    md:
+                      classPattern: 'col-md-{@numbersOfColumnsToUse}'
+                    lg:
+                      classPattern: 'col-lg-{@numbersOfColumnsToUse}'
+
+            GridRow:
+              properties:
+                elementClassAttribute: 'row'
+                gridColumnClassAutoConfiguration:
+                  gridSize: 12
+                  viewPorts:
+                    xs:
+                      classPattern: 'col-xs-{@numbersOfColumnsToUse}'
+                    sm:
+                      classPattern: 'col-sm-{@numbersOfColumnsToUse}'
+                    md:
+                      classPattern: 'col-md-{@numbersOfColumnsToUse}'
+                    lg:
+                      classPattern: 'col-lg-{@numbersOfColumnsToUse}'
+              renderingOptions:
+                _isCompositeFormElement: true
+                _isGridRowFormElement: true
+
+            ### FORM ELEMENTS: INPUT ###
+
+            AdvancedPassword:
+              properties:
+                elementClassAttribute: 'input-medium'
+                confirmationLabel: ''
+                # Optional description (hint) for the first password input element
+                #passwordDescription: ''
+                confirmationClassAttribute: 'input-medium'
+
+            Textarea:
+              properties:
+                elementClassAttribute: 'xxlarge'
+
+            Honeypot:
+              properties:
+                renderAsHiddenField: false
+                styleAttribute: 'position:absolute; margin:0 0 0 -999em;'
+
+            ### FORM ELEMENTS: SELECT ###
+            Checkbox:
+              properties:
+                elementClassAttribute: 'add-on'
+                containerClassAttribute: 'input checkbox'
+                value: 1
+
+            MultiCheckbox:
+              properties:
+                containerClassAttribute: 'input checkbox'
+
+            MultiSelect:
+              properties:
+                elementClassAttribute: 'xlarge'
+
+            RadioButton:
+              properties:
+                elementClassAttribute: 'xlarge'
+
+            ### FORM ELEMENTS: CUSTOM ###
+            DatePicker:
+              properties:
+                elementClassAttribute: 'small form-control'
+                timeSelectorClassAttribute: 'mini'
+                timeSelectorHourLabel: ''
+                timeSelectorMinuteLabel: ''
+                dateFormat: 'Y-m-d'
+                enableDatePicker: true
+                displayTimeSelector: false
+
+            StaticText:
+              properties:
+                text: ''
+
+            ContentElement:
+              properties:
+                contentElementUid: ''
+
+            ### FORM ELEMENTS: UPLOADS ###
+            FileUpload:
+              properties:
+                allowedMimeTypes: ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.oasis.opendocument.text', 'application/pdf']
+
+            ImageUpload:
+              properties:
+                allowedMimeTypes: ['image/jpeg', 'image/png', 'image/bmp']
+                elementClassAttribute: 'lightbox'
+                imageLinkMaxWidth: 500
+                imageMaxWidth: 500
+                imageMaxHeight: 500
+
+          ### FINISHERS ###
+
+          finishersDefinition:
+            Confirmation:
+              options:
+                message: 'Thank you, the form has been submitted.'
+
+            FlashMessage:
+              implementationClassName: 'TYPO3\CMS\Form\Domain\Finishers\FlashMessageFinisher'
+              #options:
+                #messageBody: ''
+                #messageTitle: ''
+                #messageArguments: {}
+                #messageCode: 0
+                #severity: 0
+
+            Redirect:
+              implementationClassName: 'TYPO3\CMS\Form\Domain\Finishers\RedirectFinisher'
+              #options:
+                #pageUid: 1
+                #additionalParameters: ''
+                #delay: 0
+                #statusCode: 303
+
+            SaveToDatabase:
+              implementationClassName: 'TYPO3\CMS\Form\Domain\Finishers\SaveToDatabaseFinisher'
+              #options:
+                #table: ''
+                #mode: 'insert'
+                #whereClause: []
+                #elements:
+                #  <elementIdentifier>:
+                #    mapOnDatabaseColumn: <databaseColumnName>
+                #    saveFileIdentifierInsteadOfUid: false
+                #    skipIfValueIsEmpty: false
+                #databaseColumnMappings:
+                #  <databaseColumnName>:
+                #    value: 'someValue'
+                #    skipIfValueIsEmpty: false
+
+      ########### MIXINS ###########
+      mixins:
+
+        ########### FORM ELEMENT MIXINS ###########
+        formElementMixins:
+
+          FormElementMixin:
+            properties:
+              containerClassAttribute: 'input'
+              elementClassAttribute: ''
+              elementErrorClassAttribute: 'error'
+              #gridColumnClassAutoConfiguration:
+              #  viewPorts:
+              #    xs:
+              #      numbersOfColumnsToUse: ''
+              #    sm:
+              #      numbersOfColumnsToUse: ''
+              #    md:
+              #      numbersOfColumnsToUse: ''
+              #    lg:
+              #      numbersOfColumnsToUse: ''
+
+          FileUploadMixin:
+            properties:
+              saveToFileMount: '1:/user_upload/'
+
+        finishersEmailMixin:
+          options:
+            #subject: ''
+            #recipientAddress: ''
+            #recipientName: ''
+            #senderAddress:
+            #senderName: ''
+            #replyToAddress: ''
+            #carbonCopyAddress: ''
+            #blindCarbonCopyAddress: ''
+            #format: 'html'
+            #attachUploads: true
+            #translation:
+            #  language: 'default'
+            # {@format} depends the 'format' value
+            templateName: '{@format}.html'
+            templateRootPaths:
+              10: 'EXT:form/Resources/Private/Frontend/Templates/Finishers/Email/'
+            #partialRootPaths: []
+            #layoutRootPaths: []
+            #variables: {}

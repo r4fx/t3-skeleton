@@ -18,6 +18,26 @@
             <trans-unit id="frame_class.custom_1" xml:space="preserve">
                 <target>Własny kontener nr 1</target>
             </trans-unit>
+
+            <!-- Form manager -->
+
+            <trans-unit id="element.contact.renderingOptions.submitButtonLabel" xml:space="preserve">
+                <target>Wyślij wiadomość</target>
+            </trans-unit>
+
+            <trans-unit id="contact.element.text-1.properties.label" xml:space="preserve">
+                <target>Imię i nazwisko</target>
+            </trans-unit>
+
+            <trans-unit id="contact.element.text-2.properties.label" xml:space="preserve">
+                <target>E-mail</target>
+            </trans-unit>
+
+            <trans-unit id="contact.element.textarea-1.properties.label" xml:space="preserve">
+                <target>Wiadomość</target>
+            </trans-unit>
+
+            <!-- END: Form manager -->
         </body>
     </file>
 </xliff>

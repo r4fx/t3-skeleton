@@ -18,6 +18,14 @@
             <trans-unit id="frame_class.custom_1" xml:space="preserve">
                 <source>Custom container no 1</source>
             </trans-unit>
+
+            <!-- Form manager -->
+
+            <trans-unit id="element.Form.renderingOptions.submitButtonLabel" xml:space="preserve">
+                <source>Send message</source>
+            </trans-unit>
+
+            <!-- END: Form manager -->
         </body>
     </file>
 </xliff>
