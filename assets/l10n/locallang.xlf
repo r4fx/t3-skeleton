@@ -19,13 +19,13 @@
                 <source>Custom container no 1</source>
             </trans-unit>
 
-            <!-- Form manager -->
+            <!-- Form framework -->
 
             <trans-unit id="element.Form.renderingOptions.submitButtonLabel" xml:space="preserve">
                 <source>Send message</source>
             </trans-unit>
 
-            <!-- END: Form manager -->
+            <!-- END: Form framework -->
         </body>
     </file>
 </xliff>

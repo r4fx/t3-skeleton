@@ -246,8 +246,17 @@
         <part key="q=(.*)" regexp="1">
             <parameter>tx_kesearch_pi1[sword]</parameter>
         </part>
-
         <!-- END: ke_search -->
+
+        <!-- Form framework -->
+        <part>
+            <parameter>tx_form_formframework[action]</parameter>
+        </part>
+
+        <part>
+            <parameter>tx_form_formframework[controller]</parameter>
+        </part>
+        <!-- END: Form framework -->
 
 
         <!-- COMMON PATTERNS -->

@@ -19,7 +19,7 @@
                 <target>Własny kontener nr 1</target>
             </trans-unit>
 
-            <!-- Form manager -->
+            <!-- Form framework -->
 
             <trans-unit id="element.contact.renderingOptions.submitButtonLabel" xml:space="preserve">
                 <target>Wyślij wiadomość</target>
@@ -37,7 +37,7 @@
                 <target>Wiadomość</target>
             </trans-unit>
 
-            <!-- END: Form manager -->
+            <!-- END: Form framework -->
         </body>
     </file>
 </xliff>
