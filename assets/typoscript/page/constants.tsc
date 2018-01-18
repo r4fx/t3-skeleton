@@ -8,4 +8,9 @@ settings {
         images = /assets/images
         l10nFile = assets/l10n/locallang.xlf
     }
+
+    nav {
+        mainNav = 1,3,4,5
+        footerNav = 1,3,4,5
+    }
 }
