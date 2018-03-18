@@ -280,18 +280,19 @@ AddDefaultCharset utf-8
 	# Access block for folders
 	RewriteRule _(?:recycler|temp)_/ - [F]
 	RewriteRule fileadmin/templates/.*\.(?:txt|ts)$ - [F]
-	RewriteRule typo3temp/logs/ - [F]
-	RewriteRule ^(vendor|typo3_src) - [F]
-	RewriteRule (?:typo3conf/ext|typo3/sysext|typo3/ext)/[^/]+/(?:Configuration|Resources/Private|Tests?)/ - [F]
+	RewriteRule ^(?:vendor|typo3_src|typo3temp/var) - [F]
+	RewriteRule (?:typo3conf/ext|typo3/sysext|typo3/ext)/[^/]+/(?:Configuration|Resources/Private|Tests?|Documentation|docs?)/ - [F]
 
-	# Access block for files or folders starting with a dot
+	# Block access to all hidden files and directories with the exception of
+	# the visible content from within the `/.well-known/` hidden directory (RFC 5785).
+	RewriteCond %{REQUEST_URI} "!(^|/)\.well-known/([^./]+./?)+$" [NC]
 	RewriteCond %{SCRIPT_FILENAME} -d [OR]
 	RewriteCond %{SCRIPT_FILENAME} -f
 	RewriteRule (?:^|/)\. - [F]
 
 	# Stop rewrite processing, if we are in the typo3/ directory or any other known directory
 	# NOTE: Add your additional local storages here
-	RewriteRule (?:typo3/|fileadmin/|files/|assets/|typo3conf/|typo3temp/|uploads/|favicon\.ico) - [L]
+	RewriteRule ^(?:typo3/|fileadmin/|typo3conf/|typo3temp/|uploads/|favicon\.ico) - [L]
 
 	# If the file/symlink/directory does not exist => Redirect to index.php.
 	# For httpd.conf, you need to prefix each '%{REQUEST_FILENAME}' with '%{DOCUMENT_ROOT}'.
@@ -304,19 +305,20 @@ AddDefaultCharset utf-8
 
 
 # Access block for files
-<FilesMatch "(?i:^\.|^#.*#|^(?:ChangeLog|ToDo|Readme|License)(?:\.md|\.txt)?|^composer\.(?:json|lock)|^ext_conf_template\.txt|^ext_typoscript_constants\.txt|^ext_typoscript_setup\.txt|flexform[^.]*\.xml|locallang[^.]*\.(?:xml|xlf)|\.(?:bak|co?nf|cfg|ya?ml|ts|dist|fla|in[ci]|log|sh|sql(?:\..*)?|sw[op]|git.*)|.*(?:~|rc))$">
-	# Apache < 2.3
-	<IfModule !mod_authz_core.c>
-		Order allow,deny
-		Deny from all
-		Satisfy All
-	</IfModule>
-
-	# Apache ≥ 2.3
-	<IfModule mod_authz_core.c>
-		Require all denied
-	</IfModule>
-</FilesMatch>
+# Apache < 2.3
+<IfModule !mod_authz_core.c>
+    <FilesMatch "(?i:^\.|^#.*#|^(?:ChangeLog|ToDo|Readme|License)(?:\.md|\.txt)?|^composer\.(?:json|lock)|^ext_conf_template\.txt|^ext_typoscript_constants\.txt|^ext_typoscript_setup\.txt|flexform[^.]*\.xml|locallang[^.]*\.(?:xml|xlf)|\.(?:bak|co?nf|cfg|ya?ml|ts|typoscript|dist|fla|in[ci]|log|sh|sql(?:\..*)?|sw[op]|git.*)|.*(?:~|rc))$">
+        Order allow,deny
+        Deny from all
+        Satisfy All
+    </FilesMatch>
+</IfModule>
+# Apache ≥ 2.3
+<IfModule mod_authz_core.c>
+    <If "%{REQUEST_URI} =~ m#(?i:/\.|/\x23.*\x23|/(?:ChangeLog|ToDo|Readme|License)(?:\.md|\.txt)?|/composer\.(?:json|lock)|/ext_conf_template\.txt|/ext_typoscript_constants\.txt|/ext_typoscript_setup\.txt|flexform[^.]*\.xml|locallang[^.]*\.(?:xml|xlf)|\.(?:bak|co?nf|cfg|ya?ml|ts|typoscript|dist|fla|in[ci]|log|sh|sql(?:\..*)?|sw[op]|git.*)|.*(?:~|rc))$#">
+        Require all denied
+    </If>
+</IfModule>
 
 # Block access to vcs directories
 <IfModule mod_alias.c>
@@ -375,13 +377,13 @@ FileETag None
 # ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
-	#RewriteCond %{REQUEST_URI} ^/anatomia-htmlarea-rte-wstaeep/ [NC]
-	#RewriteRule .* /anatomia-htmlarea-rte-wstep/ [L,R=301]
+	#RewriteCond %{REQUEST_URI} ^/foo-bar/ [NC]
+	#RewriteRule .* /foo-bar-baz/ [L,R=301]
 
 	# Ignore trailing slash
 
-	#RewriteCond %{REQUEST_URI} ^/anatomia-htmlarea-rte-czesc-1-dozwolone-tagi(/|$) [NC]
-	#RewriteRule .* /anatomia-htmlarea-rte-czesc-1-dozwolone-tagi-allowtags-iframe/ [L,R=301]
+	#RewriteCond %{REQUEST_URI} ^/foo-bar(/|$) [NC]
+	#RewriteRule .* /foo-bar-baz/ [L,R=301]
 </IfModule>
 
 
@@ -389,14 +391,8 @@ FileETag None
 # PHP optimisation
 # ----------------------------------------------------------------------
 
-php_value suhosin.request.max_vars 400
-php_value suhosin.request.max_varname_length 200
-php_value suhosin.post.max_name_length 200
-php_value suhosin.post.max_vars 400
-php_value suhosin.get.max_name_length 200
-php_value suhosin.get.max_value_length 2000
 php_value max_execution_time 240
-php_value upload_max_filesize 20M
-php_value post_max_size 20M
-php_value memory_limit 512M
-php_value always_populate_raw_post_data -1
+#php_value memory_limit 512M
+#php_value upload_max_filesize 20M
+#php_value post_max_size 20M
+#php_value always_populate_raw_post_data -1
