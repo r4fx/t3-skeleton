@@ -10,6 +10,7 @@ page.10.settings {
     nav {
         mainNav =  {$settings.nav.mainNav}
         footerNav = {$settings.nav.footerNav}
+        cookiesPageURL = {$settings.nav.cookiesPageURL}
     }
 
     googleAnaliticsUA =

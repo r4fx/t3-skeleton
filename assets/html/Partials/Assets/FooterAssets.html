@@ -1,13 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<script src="/{settings.path.js-vendor}/jquery-3.2.1.min.js"></script>
-<script src="/{settings.path.js}/main.js"></script>
+<f:comment>
+    Scripts section
+    ===============
+    
+    <script src="{settings.path.js}/main.js"></script>
+</f:comment>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
     /*var cookieBox = new cookieBox({
         privacyPolicy: true,
         //selfPosition: true,
-        cookiesPageURL: '<f:uri.page pageUid="9" />',
+        cookiesPageURL: '<f:uri.page pageUid="{settings.nav.cookiesPageURL}" />',
         textParagraph: '<p><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph.url"/></a></p>'
     });*/
 </script>
@@ -15,6 +23,7 @@
 
 <f:comment>
     FACEBOOK & TWITTER scripts
+    ==========================
 </f:comment>
 
 <f:if condition="{settings.socialScriptsEnable}">
@@ -48,6 +57,7 @@
 
 <f:comment>
     Google analytics
+    ================
 </f:comment>
 
 <f:if condition="{settings.googleAnaliticsUA}">

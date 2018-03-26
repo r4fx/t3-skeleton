@@ -8,40 +8,47 @@
     * https://worksonmymachine.org/blog/asset-handling-with-fluidtypo3
 </f:comment>
 
-<!-- Conditional assets for PID in rootline of PAGEID -->
-<v:condition.iterator.contains needle="PAGEID" haystack="{v:page.rootline() -> v:iterator.extract(key: 'uid')}">
-    <f:then>
-        <f:render section="assets-default" />
-        <f:render section="assets-for-rootline-PAGEID" />
-    </f:then>
+<f:render section="assets-default" />
 
-    <f:else>
-        <f:render section="assets-default" />
-    </f:else>
+<v:condition.iterator.contains needle="PAGEID" haystack="{v:page.rootline() -> v:iterator.extract(key: 'uid')}">
+    <f:render section="assets-for-rootline-PAGEID" />
 </v:condition.iterator.contains>
 
-<!-- Default assets -->
 <f:section name="assets-default">
-    <v:asset.style path="{settings.path.css}/typo3_fsc.css" standalone="1" external="1"/>
-
-    <v:asset.script path="{settings.path.js-vendor}/jquery-3.2.1.min.js" name="jquery" standalone="1" movable="0"/>
-    <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
+    <f:comment>
+        Default assets
+        ==============
+    
+        <v:asset.script path="{settings.path.js.main}/main.js" fluid="0" name="main" />
+    </f:comment>
+    
+    <v:asset.style path="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" standalone="1" external="1" name="bootstrap"/>
+    <v:asset.style path="{settings.path.css}/typo3_fsc.css" standalone="1" external="1" name="typo3_fsc"/>
+    
+    <v:asset.script path="https://code.jquery.com/jquery-3.2.1.slim.min.js" standalone="1" external="1" name="jquery" movable="0"/>
+    <v:asset.script path="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" standalone="1" external="1" name="popper" movable="0"/>
+    <v:asset.script path="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" standalone="1" external="1" name="bootstrap" movable="0"/>
 </f:section>
 
-<!-- Assets for specific rootline -->
 <f:section name="assets-for-rootline-PAGEID">
-    <v:asset.style path="{settings.path.css}/expo.css" standalone="1" external="1"/>
+    <f:comment>
+        Assets for specific rootline
+        ============================
+    </f:comment>
+    
+    <v:asset.style path="{settings.path.css}/special-styles.css" standalone="1" external="1"/>
 </f:section>
-
 
 <f:comment>
-    <!-- Example of inlinejs  -->
+    Example of inline JS
+    ====================
+    
     <v:asset.script name="inlinejs" fluid="1" dependencies="cookiebox">
         var cookieBox = new cookieBox({
-            privacyPolicy: true,
-            //selfPosition: true,
-            cookiesPageURL: '<f:uri.page pageUid="9" />',
-            textParagraph: '<p><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph.url"/></a></p>'
+        privacyPolicy: true,
+        //selfPosition: true,
+        cookiesPageURL: '<f:uri.page pageUid="{settings.nav.cookiesPageURL}" />',
+        textParagraph: '<p><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph"/> <a data-cookie-box-url><f:translate key="LLL:{settings.path.l10nFile}:cookieBox.paragraph.url"/></a></p>'
         });
     </v:asset.script>
 </f:comment>
