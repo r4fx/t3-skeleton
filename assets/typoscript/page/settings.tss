@@ -1,10 +1,10 @@
 page.10.settings {
     path {
-        css = {$settings.path.css}
-        js = {$settings.path.js}
-        js-vendor = {$settings.path.js-vendor}
-        images = {$settings.path.images}
-        l10nFile = {$settings.path.l10nFile}
+        css = assets/styles/css
+        js = assets/js
+        vendor = assets/vendor
+        images = assets/images
+        l10nFile = assets/l10n/locallang.xlf
     }
 
     nav {
