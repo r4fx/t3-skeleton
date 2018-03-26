@@ -7,7 +7,7 @@ config {
     doctype = html5
     spamProtectEmailAddresses = ascii
     spamProtectEmailAddresses_atSubst = @
-    headerComment = {$settings.headerComment}
+    headerComment = ======= Created by frontside [fside.pl] =======
 
     pageTitleFirst = 1
     pageTitleSeparator = -
