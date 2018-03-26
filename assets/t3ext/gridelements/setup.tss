@@ -14,7 +14,7 @@ tt_content.gridelements_pi1.20.10.setup {
 
     2_col < .default
     2_col {
-        cObject.file = assets/plugins/gridelements/html/2-columns.html
+        cObject.file = assets/t3ext/gridelements/html/2-columns.html
 
         #wrap = <div class="grid"><div class="grid__header">{field:header}</div>|</div>
         #wrap.insertData = 1
@@ -22,6 +22,6 @@ tt_content.gridelements_pi1.20.10.setup {
 
     3_col < .default
     3_col {
-        cObject.file = assets/plugins/gridelements/html/3-columns.html
+        cObject.file = assets/t3ext/gridelements/html/3-columns.html
     }
 }

@@ -16,7 +16,7 @@ W skład skeletona wchodzą:
 - katalog `(assets/l10n)` ze startowymi plikami językowymi `.xlf` do wykorzystania w szablonach FLUID i w TS.
 - i więcej
 
-> Zawartość TYPO3 Skeleton jest kompatybilna z wersjami TYPO3 8 LTS i 7 LTS
+> Zawartość TYPO3 Skeleton jest kompatybilna z wersjami TYPO3 8 LTS
 
 Instalacja
 =====
@@ -112,7 +112,7 @@ Załączenie plików TypoScript
 **Page Setup**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tss">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/t3ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tss">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tss">
@@ -122,7 +122,7 @@ Załączenie plików TypoScript
 **Page Constants**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsc">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/t3ext/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/page/" extensions="tsc">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/+ext/" extensions="tsc">
 ```
@@ -130,7 +130,7 @@ Załączenie plików TypoScript
 **Page TSConfig**
 
 ```javascript
-<INCLUDE_TYPOSCRIPT: source="DIR:assets/plugins/" extensions="tsp">
+<INCLUDE_TYPOSCRIPT: source="DIR:assets/t3ext/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/backend_layouts/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/tsconfig_page/" extensions="tsp">
 <INCLUDE_TYPOSCRIPT: source="DIR:assets/typoscript/context/" extensions="tsp">

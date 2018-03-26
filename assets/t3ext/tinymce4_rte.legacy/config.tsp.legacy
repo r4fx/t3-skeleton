@@ -1,6 +1,6 @@
 RTE.default {
-    tinymceConfiguration = assets/plugins/tinymce4_rte/tinymce_custom.js
-    contentCSS = assets/plugins/tinymce4_rte/tinymce_custom.css
+    tinymceConfiguration = assets/t3ext/tinymce4_rte/tinymce_custom.js
+    contentCSS = assets/t3ext/tinymce4_rte/tinymce_custom.css
 
     buttons {
         image {

@@ -1,9 +1,9 @@
 plugin.tx_news {
 
     view {
-        templateRootPath = assets/plugins/news/Templates/
-        partialRootPath = assets/plugins/news/Partials/
-        layoutRootPath = assets/plugins/news/Layouts/
+        templateRootPath = assets/t3ext/news/Templates/
+        partialRootPath = assets/t3ext/news/Partials/
+        layoutRootPath = assets/t3ext/news/Layouts/
     }
 
     settings {

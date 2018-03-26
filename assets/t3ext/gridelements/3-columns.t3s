@@ -1,5 +1,5 @@
 // In CE Backend Layout record insert:
-// <INCLUDE_TYPOSCRIPT:source="FILE:assets/plugins/gridelements/3-columns.t3s">
+// <INCLUDE_TYPOSCRIPT:source="FILE:assets/t3ext/gridelements/3-columns.t3s">
 
 backend_layout {
     colCount = 3

@@ -1,8 +1,8 @@
 # Load default processing options
 imports:
-    - { resource: "assets/plugins/rte_ckeditor/Processing.yaml" }
-    - { resource: "assets/plugins/rte_ckeditor/Editor/Base.yaml" }
-    - { resource: "assets/plugins/rte_ckeditor/Editor/Plugins.yaml" }
+    - { resource: "assets/t3ext/rte_ckeditor/Processing.yaml" }
+    - { resource: "assets/t3ext/rte_ckeditor/Editor/Base.yaml" }
+    - { resource: "assets/t3ext/rte_ckeditor/Editor/Plugins.yaml" }
 
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
