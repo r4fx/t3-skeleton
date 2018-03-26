@@ -12,4 +12,4 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['additionalAbsRefPrefixDirectories'] = 'files/
 $GLOBALS['TYPO3_CONF_VARS']['FE']['cHashExcludedParameters'] .= ', debug';
 
 # rte_ckeditor custom presets
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['skelton'] = 'assets/plugins/rte_ckeditor/Default.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['skelton'] = 'assets/t3ext/rte_ckeditor/Default.yaml';
