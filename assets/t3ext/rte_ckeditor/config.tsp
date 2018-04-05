@@ -1,6 +1,10 @@
 RTE.default {
     // Available core presets: default, minimal, full
     preset = skelton
+    buttons.image.options.magic {
+        maxWidth = 1024
+        maxHeight = 1024
+    }
 }
 
 RTE.config {

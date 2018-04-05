@@ -1,0 +1,9 @@
+// TABLE CLASSES
+// https://forge.typo3.org/issues/81676
+// https://stackoverflow.com/questions/45030237/typo3-ckeditor-add-bootstrap-class-for-tables
+//============================================================
+
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+    default = contenttable table table-bordered
+    list := addToList(table, table-bordered)
+}

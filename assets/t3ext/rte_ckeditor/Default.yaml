@@ -3,6 +3,7 @@ imports:
     - { resource: "assets/t3ext/rte_ckeditor/Processing.yaml" }
     - { resource: "assets/t3ext/rte_ckeditor/Editor/Base.yaml" }
     - { resource: "assets/t3ext/rte_ckeditor/Editor/Plugins.yaml" }
+    - { resource: "EXT:rte_ckeditor_image/Configuration/RTE/Plugin.yaml" }
 
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
@@ -43,11 +44,11 @@ editor:
       - showblocks
       - colorbutton
       - iframe
-      - image2
+      # - image2
       #- templates
 
     removePlugins:
-      - image
+      # - image
 
     removeButtons:
       - Superscript
@@ -60,6 +61,7 @@ editor:
       - { name: "Paragraph with special class", element: "p", attributes: { class: "fancy-css-class"} }
       - { name: "Yellow marker", element: "span", styles: { background-color: "yellow" } }
       #- { name: 'Image decoration', type: 'widget', widget: 'image', attributes: { 'class': 'test-class' } }
+      #- { name: "Table bordered", element: "table", attributes: { 'class': "table table-striped" } }
 
     # Plugin image2
     image2_alignClasses: [ 'inline-left', 'inline-center', 'inline-right' ]

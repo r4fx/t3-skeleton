@@ -1,7 +1,5 @@
-// Page title on home page
-[globalVar = TSFE:id = 1]
-    config.noPageTitle = 1
-[end]
+// Disable default page title tag <title>, title is set in HeaderAssets.html
+config.noPageTitle = 1
 
 // META TAGS
 //============================================================

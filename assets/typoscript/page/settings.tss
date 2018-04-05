@@ -13,6 +13,7 @@ page.10.settings {
         cookiesPageURL = {$settings.nav.cookiesPageURL}
     }
 
+    titleEndSegment = TYPO3 Skeleton
     googleAnaliticsUA =
     socialScriptsEnable = 0
 }

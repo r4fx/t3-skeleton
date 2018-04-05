@@ -17,3 +17,4 @@
 !/assets/
 !/typo3conf/CoolUriConf.xml
 !/typo3conf/AdditionalConfiguration.php
+!/composer.json

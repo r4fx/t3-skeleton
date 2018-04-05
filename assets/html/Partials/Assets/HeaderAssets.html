@@ -4,7 +4,12 @@
     Meta section
     ============
 </f:comment>
-
+<title>
+    {v:page.info(field: 'title')}
+    <f:if condition="{settings.titleEndSegment}">
+        — {settings.titleEndSegment}
+    </f:if>
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
