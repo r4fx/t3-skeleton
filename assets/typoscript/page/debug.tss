@@ -26,5 +26,9 @@
     config.redirectOldLinksToNew = 0
     plugin.tx_min.tinysource.enable = 0
     plugin.tx_vhs.settings.debug = 0
-    plugin.tx_vhs.settings.asset.debug = 0
+    plugin.tx_vhs.settings.asset {
+        debug = 0
+        standalone = 1
+        mergedAssetsUseHashedFilename = 1
+    }
 [end]
