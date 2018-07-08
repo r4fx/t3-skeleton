@@ -1,42 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:comment>
-    Meta section
-    ============
-</f:comment>
-<title>
-    {v:page.info(field: 'title')}
-    <f:if condition="{settings.titleEndSegment}">
-        — {settings.titleEndSegment}
-    </f:if>
-</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<f:variable name="pageInfo" value="{v:page.info()}"/>
+<f:variable name="absoluteUrl" value="{v:page.absoluteUrl()}"/>
+<f:variable name="defaultDescription" value="{f:translate(key: 'LLL:{settings.path.l10nFile}:defaultDescription')}"/>
+<f:variable name="description" value="{f:if(condition: pageInfo.description, then: pageInfo.description, else: defaultDescription)}"/>
+<f:variable name="pageImageSrc" value="{v:page.resources.fal(slide: '-1', limit: '1') -> v:iterator.extract(key: 'id', single: '1')}"/>
+<f:variable name="fbOgImage" value="{f:uri.image(width: '880c', height: '175c', src: pageImageSrc, treatIdAsReference: 1, absolute: 1)}"/>
+<f:variable name="twitterOgImage" value="{f:uri.image(width: '1024c', height: '512c', src: pageImageSrc, treatIdAsReference: 1, absolute: 1)}"/>
 
-<f:comment>
-    Styles section
-    ==============
-    
-    <link rel="stylesheet" href="{settings.path.css}/styles.css" media="all">
-    <link rel="stylesheet" href="{settings.path.css}/typo3_fsc.css" media="all">
-</f:comment>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
-
-
-<f:comment>
-    Favicons section
-    ================
-    
-    Generate yours favicons at http://realfavicongenerator.net/
-</f:comment>
-
-<link rel="apple-touch-icon" sizes="180x180" href="{settings.path.images}/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{settings.path.images}/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{settings.path.images}/favicons/favicon-16x16.png">
-<link rel="manifest" href="{settings.path.images}/favicons/manifest.json">
-<link rel="mask-icon" href="{settings.path.images}/favicons/safari-pinned-tab.svg" color="#f7891e">
-<link rel="shortcut icon" href="{settings.path.images}/favicons/favicon.ico">
-<meta name="msapplication-config" content="{settings.path.images}/favicons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<f:render partial="Assets/Meta" arguments="{_all}"/>
+<f:render partial="Assets/Favicons" arguments="{_all}"/>
+<f:render partial="Assets/Styles" arguments="{_all}"/>

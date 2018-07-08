@@ -13,7 +13,13 @@ page.10.settings {
         cookiesPageURL = {$settings.nav.cookiesPageURL}
     }
 
-    titleEndSegment = TYPO3 Skeleton
     googleAnaliticsUA =
     socialScriptsEnable = 0
+    titleEndSegment = - TYPO3 Skeleton
+    ogTags {
+        fbPageId =
+        locale = pl_PL
+        localeAlternate = en_EN
+        siteName = Clear Intec
+    }
 }

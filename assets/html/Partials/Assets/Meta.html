@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>
+  // OG image Facebook best practices: https://developers.facebook.com/docs/sharing/best-practices#images
+</f:comment>
+
+<title>{pageInfo.title} {f:if(condition: settings.titleEndSegment, then: settings.titleEndSegment)}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="description" content="{description}">
+
+<meta property="og:title" content="{pageInfo.title}">
+<meta property="og:description" content="{description}">
+<meta property="og:locale" content="{settings.ogTags.locale}">
+<meta property="og:locale:alternate" content="{settings.ogTags.localeAlternate}">
+<meta property="og:url" content="{absoluteUrl}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{settings.ogTags.siteName}">
+<meta property="fb:page_id" content="{settings.ogTags.fbPageId}">
+<meta property="og:image" content="{fbOgImage}">
+<meta property="twitter:image" content="{twitterOgImage}">

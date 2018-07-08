@@ -3,6 +3,10 @@
     <file source-language="pl" datatype="plaintext" original="messages" date="2015-05-23T22:02:23Z">
         <header/>
         <body>
+            <trans-unit id="defaultDescription" xml:space="preserve">
+                <target>TYPO3 Skeleton</target>
+            </trans-unit>
+
             <trans-unit id="cookieBox.paragraph" xml:space="preserve">
                 <target>Nasz serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub wykorzystanie. Więcej informacji można znaleźć w</target>
             </trans-unit>
