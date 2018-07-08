@@ -50,3 +50,6 @@ config {
     htmlTag_langKey = pl
     }
 [end]
+
+// Disable default page title tag <title>, title is set in HeaderAssets
+config.noPageTitle = 1
