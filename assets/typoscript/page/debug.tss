@@ -29,6 +29,8 @@
     plugin.tx_vhs.settings.asset {
         debug = 0
         standalone = 1
-        mergedAssetsUseHashedFilename = 1
+    }
+    plugin.tx_vhs.assets {
+        mergedAssetsUseHashedFilename = 0
     }
 [end]
