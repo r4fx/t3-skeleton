@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2024-12-21UTC15:35:250">
+        <header>
+            <authorName>Rafał Brzeski</authorName>
+            <authorEmail>r.brzeski@gmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default: One column</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.stage">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.right">
+                <source>Right</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,7 +1,0 @@
-plugin.tx_form {
-    settings {
-        yamlConfigurations {
-            100 = assets/t3ext/form/CustomFormSetup.yaml
-        }
-    }
-}

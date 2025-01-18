@@ -1,0 +1,13 @@
+<f:layout name="Default" />
+
+<f:section name="HeaderAssets">
+    <f:render partial="HeaderAssets" arguments="{_all}"/>
+</f:section>
+
+<f:section name="FooterAssets">
+    <f:render partial="FooterAssets" arguments="{_all}"/>
+</f:section>
+
+<f:section name="Main">
+    <f:render partial="Content" arguments="{records: content.main.records}"/>
+</f:section>

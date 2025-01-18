@@ -1,0 +1,5 @@
+name: frontside/cms-setup-kit
+label: 'CMS setup kit'
+dependencies:
+  - typo3/fluid-styled-content
+  - typo3/fluid-styled-content-css

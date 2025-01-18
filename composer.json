@@ -1,12 +1,23 @@
 {
-  "name": "r4fx/t3-skeleton",
-  "type": "typo3-cms-extension",
-  "description": "Starter pack for TYPO3 projects",
-  "license": ["GPL-2.0+"],
-  "require": {
-    "typo3/cms-core": "^8.7 || ^9",
-    "typo3/cms-rte-ckeditor": "^8.7 || ^9",
-    "fluidtypo3/vhs": "^4.4",
-    "netresearch/rte_ckeditor_image": "^8.7"
-  }
+    "name": "frontside/cms-setup-kit",
+    "type": "typo3-cms-extension",
+    "description": "Universal site package kit",
+    "homepage": "https://mprt.pl/",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Frontside\\CmsSetupKit\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "cms_setup_kit"
+        }
+    }
 }

@@ -1,0 +1,30 @@
+#
+# BACKENDLAYOUT: Default: one column
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = LLL:EXT:cms_setup_kit/Resources/Private/Language/locallang_be.xlf:backend_layout.default
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:cms_setup_kit/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
+                                        colPos = 0
+                                        identifier = main
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                # icon = EXT:cms_setup_kit/Resources/Public/Icons/BackendLayouts/two-columns.png
+            }
+        }
+    }
+}
