@@ -1,5 +1,13 @@
-body {
-  background-color: #eeeeee;
-}
+/*@import "./tailwind.config.css";*/
+@import "./base.css";
 
-/*# sourceMappingURL=index.css.map */
+/* Components */
+/*
+@import "./Components/badge.css";
+@import "./Components/breadcrumbs.css";
+@import "./Components/button.css";
+@import "./Components/layout.css";
+@import "./Components/icon.css";
+@import "./Components/nav.css";
+@import "./Components/text.css";
+*/

@@ -1,22 +1,17 @@
-################
-#### CONFIG ####
-################
 config {
     absRefPrefix = auto
-    no_cache = {$config.no_cache}
+    no_cache = 0
     uniqueLinkVars = 1
     pageTitleFirst = 1
     linkVars = L
-    prefixLocalAnchors = {$config.prefixLocalAnchors}
+    prefixLocalAnchors = all
     renderCharset = utf-8
     metaCharset = utf-8
     doctype = html5
-    removeDefaultJS = {$config.removeDefaultJS}
+    removeDefaultJS = 1
     inlineStyle2TempFile = 1
-    admPanel = {$config.admPanel}
-    debug = 0
     cache_period = 86400
-    sendCacheHeaders = {$config.sendCacheHeaders}
+    sendCacheHeaders = 1
     intTarget =
     extTarget =
     disablePrefixComment = 1
@@ -24,6 +19,8 @@ config {
     index_externals = 1
     index_metatags = 1
     headerComment = {$config.headerComment}
+    pageTitleSeparator = {$config.pageTitleSeparator}
+    pageTitleSeparator.noTrimWrap = | | |
 
     // Disable Image Upscaling
     noScaleUp = 1
@@ -34,3 +31,11 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+[applicationContext = Development]
+   config {
+        contentObjectExceptionHandler = 0
+        admPanel = 1
+        debug = 1
+    }
+[end]

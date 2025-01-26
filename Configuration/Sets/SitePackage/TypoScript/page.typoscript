@@ -1,59 +1,35 @@
-##############
-#### PAGE ####
-##############
 page = PAGE
 page {
-    typeNum = 0
-    shortcutIcon = EXT:cms_setup_kit/Resources/Public/Icons/favicon.ico
-
     10 = PAGEVIEW
     10 {
         paths {
             0 = EXT:cms_setup_kit/Resources/Private/PageView/
-            1 = {$page.pageview.paths}
+            10 = {$page.pageview.paths}
         }
+
         dataProcessing {
-            10 = files
-            10 {
+            # makes content elements available as {content} in Fluid template
+            10 = page-content
+
+            20 = files
+            20 {
                 references.fieldName = media
             }
-            20 = menu
-            20 {
+
+            30 = menu
+            30 {
                 levels = 2
                 includeSpacer = 1
                 as = mainnavigation
             }
-            30 = page-content
         }
     }
 
-    meta {
-        viewport = {$page.meta.viewport}
-        robots = {$page.meta.robots}
-        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
-    }
+    headerData {
+        1001 = FLUIDTEMPLATE
+        1001.file = EXT:cms_setup_kit/Resources/Private/FluidTemplate/Partials/FavIcons.html
 
-    includeCSSLibs {
-
-    }
-
-    includeCSS {
-        #cms_setup_kit_layout = EXT:cms_setup_kit/Resources/Public/Css/main.css
-    }
-
-    includeJSLibs {
-
-    }
-
-    includeJS {
-
-    }
-
-    includeJSFooterlibs {
-
-    }
-
-    includeJSFooter {
-        #cms_setup_kit_scripts = EXT:cms_setup_kit/Resources/Public/JavaScript/main.js
+        1002 = FLUIDTEMPLATE
+        1002.file = EXT:cms_setup_kit/Resources/Private/FluidTemplate/Partials/Meta.html
     }
 }

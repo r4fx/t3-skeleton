@@ -3,25 +3,18 @@ styles:
     layoutRootPath: 'EXT:cms_setup_kit/Resources/Private/ContentElements/Layouts/'
     partialRootPath: 'EXT:cms_setup_kit/Resources/Private/ContentElements/Partials/'
     templateRootPath: 'EXT:cms_setup_kit/Resources/Private/ContentElements/Templates/'
+  content:
+    textmedia:
+      maxW: 1200
+      maxWInText: 600
+      linkWrap:
+        lightboxEnabled: true
+        lightboxCssClass: lightbox
 
 page:
   pageview:
     paths: 'EXT:cms_setup_kit/Resources/Private/PageView/'
 
-  meta:
-    viewport: 'width=device-width, initial-scale=1, minimum-scale=1'
-    robots: 'index,follow'
-    apple-mobile-web-app-capable: 'no'
-
-  tracking:
-    google:
-      trackingID: ''
-      anonymizeIp: '1'
-
 config:
-  no_cache: '0'
-  removeDefaultJS: '0'
-  admPanel: '1'
-  prefixLocalAnchors: 'all'
-  headerComment: 'build by get.typo3.org/sitepackage'
-  sendCacheHeaders: '1'
+  headerComment: ''
+  pageTitleSeparator: ' - '

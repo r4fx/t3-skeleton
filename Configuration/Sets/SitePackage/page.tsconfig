@@ -1,21 +1,2 @@
+@import './PageTsConfig/'
 @import './PageTsConfig/BackendLayouts/'
-
-RTE {
-    default {
-        preset = cms_setup_kit
-    }
-}
-
-TCEFORM {
-    pages {
-
-    }
-    tt_content {
-
-    }
-}
-
-TCEMAIN {
-
-}
-

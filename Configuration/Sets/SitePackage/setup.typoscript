@@ -1,1 +1,2 @@
-@import './TypoScript/'
+@import './TypoScript/*.typoscript'
+#@import './TypoScript/Navigation/*.typoscript'
